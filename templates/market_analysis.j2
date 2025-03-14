@@ -1,0 +1,12 @@
+📊 Weekly Update:
+{% for coin in top_coins[:5] %}
+#{{ coin.symbol.upper() }}: {{ coin.price_change_percentage_7d | format_percent }}% ({{ "🟢" if coin.price_change_percentage_7d >= 0 else "🔴" }})
+{% endfor %}
+Volume: {{ "Up" if volume_change > 0 else "Down" }} {{ volume_change|abs|format_percent }}%
+
+Market Sentiment: {{ market_sentiment }}
+
+Key Events:
+{{ market_events }}
+
+#Crypto #Bitcoin #Analysis

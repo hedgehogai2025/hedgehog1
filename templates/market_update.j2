@@ -1,0 +1,9 @@
+📊 #Crypto Market Update ({{ timestamp }}):
+{% for coin in top_coins[:5] %}
+{{ coin.symbol.upper() }}: ${{ coin.current_price | format_price }} ({{ coin.price_change_percentage_24h | format_percent }}% {{ "🟢" if coin.price_change_percentage_24h >= 0 else "🔴" }})
+{% endfor %}
+Market Cap: ${{ total_market_cap | format_large_number }}B ({{ market_cap_change | format_percent }}% {{ "🟢" if market_cap_change >= 0 else "🔴" }})
+24h Volume: ${{ total_volume | format_large_number }}B
+BTC Dominance: {{ btc_dominance | format_percent }}%
+
+#Bitcoin #Ethereum #Crypto

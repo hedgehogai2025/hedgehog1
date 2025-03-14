@@ -1,0 +1,10 @@
+🔍 Sentiment Analysis:
+{% for coin, sentiment in coin_sentiment.items() %}
+#{{ coin }}: {{ sentiment.overall }} ({{ "🟢" if sentiment.overall_score > 0 else "🔴" }} {{ sentiment.overall_score | format_percent }}%)
+{% endfor %}
+
+Community Buzz:
+{{ community_topics }}
+
+Data from: Reddit, Twitter, News
+#CryptoSentiment

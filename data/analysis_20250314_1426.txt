@@ -1,0 +1,80 @@
+=== Market Update ===
+
+Error: 401
+
+=== Market Analysis ===
+
+📊 Market Analysis: Error generating analysis. Please try again later.
+
+=== Trading Signals ===
+
+📈 #TradingSignal Alert:
+
+🔴 NEUTRAL BTC: Strength 0.5/1.0
+
+🔴 NEUTRAL ETH: Strength 0.5/1.0
+
+🔴 NEUTRAL USDT: Strength 0.5/1.0
+
+🔴 NEUTRAL XRP: Strength 0.5/1.0
+
+🔴 NEUTRAL BNB: Strength 0.5/1.0
+
+
+Based on: Chart pattern recognition
+
+DISCLAIMER: Not financial advice
+#CryptoTrading
+
+=== Market Thread ===
+
+📊 Market Analysis: Error generating thread. Please try again later.
+
+=== Sentiment Analysis ===
+
+🔍 Sentiment Analysis:
+
+#ripple: Bullish 📈 (🟢 12.78%)
+
+#bitcoin: Neutral ↔️ (🟢 9.78%)
+
+#ethereum: Bullish 📈 (🟢 10.87%)
+
+#dogecoin: Bullish 📈 (🟢 15.93%)
+
+#shiba inu: Neutral ↔️ (🟢 9.74%)
+
+#litecoin: Neutral ↔️ (🟢 9.74%)
+
+#chainlink: Neutral ↔️ (🟢 9.74%)
+
+#uniswap: Neutral ↔️ (🟢 9.74%)
+
+#solana: Bullish 📈 (🟢 10.25%)
+
+#stellar: Bullish 📈 (🟢 12.79%)
+
+#cardano: Neutral ↔️ (🟢 8.05%)
+
+#near protocol: Neutral ↔️ (🟢 5.76%)
+
+#avalanche: Neutral ↔️ (🟢 6.19%)
+
+
+Community Buzz:
+No significant topics detected
+
+Data from: Reddit, Twitter, News
+#CryptoSentiment
+
+=== AI Market Analysis ===
+
+Error: 401
+
+=== AI BTC Technical Analysis ===
+
+Error: 401
+
+=== AI ETH Technical Analysis ===
+
+Error: 401

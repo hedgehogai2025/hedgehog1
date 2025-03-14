@@ -417,3 +417,365 @@ Unauthorized
 2025-03-14 12:29:57,538 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
 Unauthorized
 2025-03-14 12:29:57,538 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 12:34:57,793 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:34:57,793 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:34:58,094 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:34:58,094 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:34:58,264 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:34:58,264 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 12:39:58,484 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:39:58,484 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:39:58,689 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:39:58,689 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:39:58,859 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:39:58,859 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 12:44:59,100 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:44:59,101 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:44:59,301 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:44:59,301 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:44:59,472 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:44:59,472 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 12:49:59,679 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 12:49:59,980 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 12:49:59,984 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-14 12:50:00,040 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 12:50:00,045 - __main__ - INFO - Market data collected and saved to data/market_data_20250314_1249.json
+2025-03-14 12:50:00,907 - modules.nlp_analyzer - INFO - Fetched 23 posts from r/CryptoCurrency
+2025-03-14 12:50:02,817 - modules.nlp_analyzer - INFO - Fetched 46 posts from r/Bitcoin
+2025-03-14 12:50:04,808 - modules.nlp_analyzer - INFO - Fetched 69 posts from r/ethereum
+2025-03-14 12:50:05,810 - modules.nlp_analyzer - INFO - Fetched 69 posts from Reddit
+2025-03-14 12:50:05,810 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 12:50:05,983 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:05,984 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 12:50:05,984 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 12:50:06,153 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:06,153 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 12:50:06,153 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 12:50:06,322 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:06,322 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 12:50:06,322 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 12:50:06,497 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:06,498 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 12:50:06,498 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 12:50:06,670 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:06,670 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 12:50:06,670 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 12:50:06,841 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:06,841 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 12:50:06,841 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 12:50:07,010 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:07,011 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 12:50:07,011 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 12:50:07,183 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:07,183 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 12:50:07,185 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 12:50:07,355 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:07,356 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 12:50:07,356 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 12:50:07,526 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:07,526 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 12:50:07,526 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 12:50:07,526 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:50:07,526 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:50:07,697 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:07,698 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 12:50:07,698 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 12:50:07,698 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:50:07,698 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:50:07,872 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:07,873 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 12:50:07,873 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 12:50:07,873 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:50:07,873 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:50:08,043 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:08,044 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 12:50:08,044 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 12:50:08,044 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:50:08,044 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:50:08,214 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:08,214 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 12:50:08,549 - modules.nlp_analyzer - ERROR - Failed to fetch crypto news from CoinGecko Pro API: 400
+2025-03-14 12:50:08,871 - modules.nlp_analyzer - ERROR - Failed to fetch coin data from CoinGecko: 422
+2025-03-14 12:50:09,551 - modules.nlp_analyzer - INFO - Fetched 0 crypto news articles from CryptoCompare
+2025-03-14 12:50:10,392 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 12:50:12,187 - modules.nlp_analyzer - INFO - Fetched 56 posts from r/Bitcoin
+2025-03-14 12:50:14,340 - modules.nlp_analyzer - INFO - Fetched 84 posts from r/ethereum
+2025-03-14 12:50:15,341 - modules.nlp_analyzer - INFO - Fetched 84 posts from Reddit
+2025-03-14 12:50:15,413 - __main__ - INFO - Social data collected and saved to data/social_data_20250314_1249.json
+2025-03-14 12:50:15,413 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:50:15,413 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:50:15,623 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:50:15,623 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:50:15,794 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:50:15,794 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 12:55:16,067 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:55:16,067 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:55:16,273 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:55:16,274 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:55:16,443 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:55:16,443 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:00:16,699 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:00:16,700 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:00:16,905 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:00:16,905 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:00:17,075 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:00:17,075 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:05:17,335 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:05:17,335 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:05:17,543 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:05:17,543 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:05:17,714 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:05:17,714 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:10:17,953 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:10:17,953 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:10:18,161 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:10:18,162 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:10:18,332 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:10:18,332 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:15:18,589 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:15:18,589 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:15:18,799 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:15:18,799 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:15:18,972 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:15:18,972 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:20:19,246 - __main__ - INFO - Generating market updates...
+2025-03-14 13:20:19,246 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 13:20:19,999 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 13:20:20,003 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-14 13:20:20,062 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 13:20:20,069 - __main__ - INFO - Market data collected and saved to data/market_data_20250314_1320.json
+2025-03-14 13:20:20,925 - modules.nlp_analyzer - INFO - Fetched 23 posts from r/CryptoCurrency
+2025-03-14 13:20:22,772 - modules.nlp_analyzer - INFO - Fetched 46 posts from r/Bitcoin
+2025-03-14 13:20:24,733 - modules.nlp_analyzer - INFO - Fetched 69 posts from r/ethereum
+2025-03-14 13:20:25,734 - modules.nlp_analyzer - INFO - Fetched 69 posts from Reddit
+2025-03-14 13:20:25,734 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 13:20:25,907 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:25,908 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 13:20:25,908 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 13:20:26,079 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:26,079 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 13:20:26,079 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 13:20:26,249 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:26,249 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 13:20:26,249 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 13:20:26,423 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:26,423 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 13:20:26,423 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 13:20:26,594 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:26,594 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 13:20:26,594 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 13:20:26,762 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:26,763 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 13:20:26,763 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 13:20:26,932 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:26,932 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 13:20:26,932 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 13:20:27,114 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:27,114 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 13:20:27,114 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 13:20:27,283 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:27,284 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 13:20:27,284 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 13:20:27,453 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:27,453 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 13:20:27,453 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 13:20:27,453 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:27,453 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:27,623 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:27,623 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 13:20:27,623 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 13:20:27,623 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:27,623 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:27,791 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:27,791 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 13:20:27,791 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 13:20:27,791 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:27,791 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:27,962 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:27,962 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 13:20:27,962 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 13:20:27,963 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:27,963 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:28,132 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:28,132 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 13:20:28,438 - modules.nlp_analyzer - ERROR - Failed to fetch crypto news from CoinGecko Pro API: 400
+2025-03-14 13:20:28,737 - modules.nlp_analyzer - ERROR - Failed to fetch coin data from CoinGecko: 422
+2025-03-14 13:20:30,379 - modules.nlp_analyzer - INFO - Fetched 0 crypto news articles from CryptoCompare
+2025-03-14 13:20:31,287 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 13:20:33,148 - modules.nlp_analyzer - INFO - Fetched 56 posts from r/Bitcoin
+2025-03-14 13:20:35,352 - modules.nlp_analyzer - INFO - Fetched 84 posts from r/ethereum
+2025-03-14 13:20:36,353 - modules.nlp_analyzer - INFO - Fetched 84 posts from Reddit
+2025-03-14 13:20:36,431 - __main__ - INFO - Social data collected and saved to data/social_data_20250314_1320.json
+2025-03-14 13:20:36,431 - __main__ - ERROR - Error generating market overview chart: 'ChartGenerator' object has no attribute 'generate_market_overview'
+2025-03-14 13:20:36,431 - __main__ - ERROR - Error generating BTC technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 13:20:36,431 - __main__ - ERROR - Error generating ETH technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 13:20:36,431 - __main__ - ERROR - Error generating BNB technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 13:20:36,431 - __main__ - ERROR - Error generating SOL technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 13:20:36,432 - __main__ - ERROR - Error generating XRP technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 13:20:36,432 - modules.content_generator - ERROR - Missing template variable: 'rising_sector'
+2025-03-14 13:20:36,432 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1320.txt
+2025-03-14 13:20:36,432 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 13:20:36,726 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900416752821170552): 🔥 Market Alert: bearish momentum building in #BTC!...
+2025-03-14 13:20:37,026 - modules.twitter_client - INFO - Replied to tweet 1900416752821170552 via v2 API (ID: 1900416754024931823): 📈 Sector Rotation: Capital flowing from {declining...
+2025-03-14 13:20:37,026 - __main__ - INFO - Analysis thread successfully posted to Twitter
+2025-03-14 13:20:37,309 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900416755274768570): 📈 #TradingSignal Alert:
+🟢 BUY S: Strength 1.0/1.0
+...
+2025-03-14 13:20:37,309 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 13:20:37,616 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900416756482793491): 📊 #Crypto Market Update (2025-03-14 13:20):
+BTC: $...
+2025-03-14 13:20:37,616 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 13:20:37,616 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 13:20:37,616 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 13:20:37,680 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 13:20:37,684 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-14 13:20:37,964 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 13:20:37,970 - __main__ - INFO - Market data collected and saved to data/market_data_20250314_1320.json
+2025-03-14 13:20:38,899 - modules.nlp_analyzer - INFO - Fetched 23 posts from r/CryptoCurrency
+2025-03-14 13:20:40,733 - modules.nlp_analyzer - INFO - Fetched 46 posts from r/Bitcoin
+2025-03-14 13:20:42,795 - modules.nlp_analyzer - INFO - Fetched 69 posts from r/ethereum
+2025-03-14 13:20:43,796 - modules.nlp_analyzer - INFO - Fetched 69 posts from Reddit
+2025-03-14 13:20:43,797 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 13:20:43,966 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:43,966 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 13:20:43,966 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 13:20:44,137 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:44,138 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 13:20:44,138 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 13:20:44,307 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:44,307 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 13:20:44,307 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 13:20:44,475 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:44,476 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 13:20:44,476 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 13:20:44,646 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:44,646 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 13:20:44,646 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 13:20:44,815 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:44,815 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 13:20:44,815 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 13:20:44,988 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:44,988 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 13:20:44,988 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 13:20:45,159 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:45,159 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 13:20:45,160 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 13:20:45,330 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:45,330 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 13:20:45,330 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 13:20:45,500 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:45,500 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 13:20:45,500 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 13:20:45,500 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:45,500 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:45,669 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:45,669 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 13:20:45,669 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 13:20:45,670 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:45,670 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:45,840 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:45,840 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 13:20:45,840 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 13:20:45,840 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:45,841 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:46,010 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:46,010 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 13:20:46,010 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 13:20:46,010 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:46,010 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:46,184 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:46,184 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 13:20:46,496 - modules.nlp_analyzer - ERROR - Failed to fetch crypto news from CoinGecko Pro API: 400
+2025-03-14 13:20:46,795 - modules.nlp_analyzer - ERROR - Failed to fetch coin data from CoinGecko: 422
+2025-03-14 13:20:47,471 - modules.nlp_analyzer - INFO - Fetched 0 crypto news articles from CryptoCompare
+2025-03-14 13:20:48,303 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 13:20:50,119 - modules.nlp_analyzer - INFO - Fetched 56 posts from r/Bitcoin
+2025-03-14 13:20:52,175 - modules.nlp_analyzer - INFO - Fetched 84 posts from r/ethereum
+2025-03-14 13:20:53,176 - modules.nlp_analyzer - INFO - Fetched 84 posts from Reddit
+2025-03-14 13:20:53,250 - __main__ - INFO - Social data collected and saved to data/social_data_20250314_1320.json
+2025-03-14 13:20:53,250 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:20:53,250 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:20:53,458 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:20:53,458 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:20:53,632 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:20:53,632 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:25:53,906 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:25:53,907 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:25:54,111 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:25:54,112 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:25:54,280 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:25:54,280 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:30:54,545 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:30:54,545 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:30:54,755 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:30:54,755 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:30:54,930 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:30:54,930 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:35:55,203 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:35:55,203 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:35:55,406 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:35:55,406 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:35:55,582 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:35:55,582 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:40:55,871 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:40:55,871 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:40:56,086 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 13:40:56,086 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 13:40:56,256 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:40:56,256 - modules.user_interaction - INFO - No new mentions found

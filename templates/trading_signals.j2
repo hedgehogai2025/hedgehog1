@@ -1,0 +1,9 @@
+📈 #TradingSignal Alert:
+{% for signal in signals %}
+{{ "🟢" if signal.signal_type == "buy" else "🔴" }} {{ signal.signal_type|upper }} {{ signal.symbol }}: Strength {{ signal.strength }}/1.0
+{% endfor %}
+
+Based on: {{ signal_methodology }}
+
+DISCLAIMER: Not financial advice
+#CryptoTrading

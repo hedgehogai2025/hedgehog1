@@ -1,0 +1,26 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bearish",
+    "analysis_text": "Error: 401",
+    "predictions": {
+      "BTC": "neutral",
+      "ETH": "neutral",
+      "USDT": "neutral",
+      "XRP": "neutral",
+      "BNB": "neutral"
+    },
+    "token_usage": {
+      "error": "{\n    \"error\": {\n        \"message\": \"Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.\",\n        \"type\": \"invalid_request_error\",\n        \"param\": null,\n        \"code\": \"invalid_api_key\"\n    }\n}\n"
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "Error: 401",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "error": "{\n    \"error\": {\n        \"message\": \"Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.\",\n        \"type\": \"invalid_request_error\",\n        \"param\": null,\n        \"code\": \"invalid_api_key\"\n    }\n}\n"
+    }
+  }
+}

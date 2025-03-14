@@ -1,380 +1,375 @@
-# modules/user_interaction.py
-import re
-import time
-import json
 import logging
-import random
-from datetime import datetime, timedelta
+import json
+import os
+from typing import Dict, Any, List, Optional
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
 class UserInteractionHandler:
-    def __init__(self, twitter_client, nlp_analyzer, market_data):
+    def __init__(self, twitter_client=None, data_dir: str = "data"):
+        """Initialize user interaction handler with Twitter client and data directory."""
         self.twitter_client = twitter_client
-        self.nlp_analyzer = nlp_analyzer
-        self.market_data = market_data
-        self.last_mention_id = None
-        self.processed_mentions = set()
-        self.last_processed_time = datetime.now() - timedelta(hours=1)  # 初始检查1小时前的提及
+        self.data_dir = data_dir
         
-        # 加载之前的状态（如果有）
-        self._load_state()
+        # Create data directory if it doesn't exist
+        os.makedirs(data_dir, exist_ok=True)
         
-    def _load_state(self):
-        """加载之前保存的状态"""
+        # Create interaction history file if it doesn't exist
+        self.interactions_file = os.path.join(data_dir, "interaction_history.json")
+        if not os.path.exists(self.interactions_file):
+            with open(self.interactions_file, "w") as f:
+                json.dump({"last_mention_id": None, "interactions": []}, f)
+    
+    def _load_interaction_history(self) -> Dict[str, Any]:
+        """Load interaction history from file."""
         try:
-            with open('data/interaction_state.json', 'r') as f:
-                state = json.load(f)
-                self.last_mention_id = state.get('last_mention_id')
-                self.processed_mentions = set(state.get('processed_mentions', []))
-                logger.info(f"Loaded interaction state, last mention ID: {self.last_mention_id}")
-        except (FileNotFoundError, json.JSONDecodeError):
-            logger.info("No previous interaction state found, starting fresh")
-            
-    def _save_state(self):
-        """保存当前状态以便下次加载"""
-        try:
-            state = {
-                'last_mention_id': self.last_mention_id,
-                'processed_mentions': list(self.processed_mentions),
-                'last_updated': datetime.now().isoformat()
-            }
-            
-            with open('data/interaction_state.json', 'w') as f:
-                json.dump(state, f)
-                
-            logger.info(f"Saved interaction state, last mention ID: {self.last_mention_id}")
+            with open(self.interactions_file, "r") as f:
+                return json.load(f)
         except Exception as e:
-            logger.error(f"Error saving interaction state: {str(e)}")
-        
-    def check_and_respond_mentions(self):
-        """检查新的提及并回复"""
+            logger.error(f"Error loading interaction history: {str(e)}")
+            return {"last_mention_id": None, "interactions": []}
+    
+    def _save_interaction_history(self, history: Dict[str, Any]):
+        """Save interaction history to file."""
+        try:
+            with open(self.interactions_file, "w") as f:
+                json.dump(history, f, default=str)
+        except Exception as e:
+            logger.error(f"Error saving interaction history: {str(e)}")
+    
+    def check_mentions(self) -> List[Dict[str, Any]]:
+        """Check for new mentions on Twitter."""
         if not self.twitter_client:
-            logger.warning("Twitter client not initialized, can't check mentions")
-            return
-            
-        try:
-            logger.info("Checking for new mentions...")
-            mentions = self.twitter_client.get_mentions(since_id=self.last_mention_id)
-            
-            if not mentions:
-                logger.info("No new mentions found")
-                return
-                
-            logger.info(f"Found {len(mentions)} new mentions")
-            
-            for mention in mentions:
-                # 获取提及ID
-                mention_id = mention.id if hasattr(mention, 'id') else mention['id']
-                
-                # 更新最新的提及ID
-                if self.last_mention_id is None or mention_id > self.last_mention_id:
-                    self.last_mention_id = mention_id
-                
-                # 跳过已处理的提及
-                if mention_id in self.processed_mentions:
-                    continue
-                    
-                # 处理提及
-                self._process_mention(mention)
-                self.processed_mentions.add(mention_id)
-                
-                # 添加短暂延迟避免频率限制
-                time.sleep(2)
-                
-            # 保存状态
-            self._save_state()
-                
-        except Exception as e:
-            logger.error(f"Error handling mentions: {str(e)}")
+            logger.error("Twitter client not initialized")
+            return []
+        
+        logger.info("Checking for new mentions...")
+        
+        # Load interaction history
+        history = self._load_interaction_history()
+        last_mention_id = history.get("last_mention_id")
+        
+        # Fetch mentions
+        mentions = self.twitter_client.get_mentions(since_id=last_mention_id)
+        
+        if not mentions:
+            logger.info("No new mentions found")
+            return []
+        
+        # Update last mention ID
+        if mentions:
+            history["last_mention_id"] = mentions[0]["id"]
+            self._save_interaction_history(history)
+        
+        logger.info(f"Found {len(mentions)} new mentions")
+        return mentions
     
-    def _process_mention(self, mention):
-        """处理单个提及并生成回复"""
-        try:
-            # 获取提及文本
-            text = mention.text if hasattr(mention, 'text') else mention['text']
-            mention_id = mention.id if hasattr(mention, 'id') else mention['id']
-            
-            # 移除@用户名
-            text = re.sub(r'@\w+\s*', '', text).strip()
-            
-            logger.info(f"Processing mention: '{text}'")
-            
-            # 分析查询意图
-            intent = self._analyze_intent(text)
-            logger.info(f"Detected intent: {intent}")
-            
-            # 根据意图生成回复
-            reply = self._generate_response(text, intent)
-            
-            # 发送回复
-            self.twitter_client.reply_to_tweet(
-                tweet_id=mention_id,
-                text=reply
-            )
-            
-            logger.info(f"Replied to mention {mention_id}")
-            
-        except Exception as e:
-            logger.error(f"Error processing mention: {str(e)}")
-    
-    def _analyze_intent(self, text):
-        """分析用户查询意图"""
+    def process_command(self, text: str) -> Dict[str, Any]:
+        """Process command from user interaction."""
         text_lower = text.lower()
         
-        # 检测币种
-        crypto_patterns = {
-            'btc': ['bitcoin', 'btc', '$btc', 'bitcoin price'],
-            'eth': ['ethereum', 'eth', '$eth', 'ethereum price'],
-            'sol': ['solana', 'sol', '$sol'],
-            'bnb': ['binance', 'bnb', '$bnb'],
-            'xrp': ['ripple', 'xrp', '$xrp'],
-            'doge': ['dogecoin', 'doge', '$doge'],
-            'ada': ['cardano', 'ada', '$ada'],
-            'dot': ['polkadot', 'dot', '$dot']
+        # Command format: @bot_name command [parameters]
+        command_result = {
+            "command": "unknown",
+            "parameters": {},
+            "response": "I didn't understand that command. Try 'help' for a list of commands."
         }
         
-        detected_coin = None
-        for coin, patterns in crypto_patterns.items():
-            if any(pattern in text_lower for pattern in patterns):
-                detected_coin = coin
-                break
+        # Help command
+        if "help" in text_lower:
+            command_result["command"] = "help"
+            command_result["response"] = """
+🤖 Commands:
+- price [coin]: Get current price and 24h change
+- analysis [coin]: Get technical analysis
+- sentiment [coin]: Get sentiment analysis
+- signals: Get top trading signals
+- market: Get market overview
+- help: Show this help message
+
+Example: @hedgehogai2025 price bitcoin
+            """.strip()
         
-        # 简单的基于关键词的意图分类
-        if any(word in text_lower for word in ['price', 'prediction', 'forecast', 'target', 'how high', 'how low']):
-            intent = 'price_prediction'
-        elif any(word in text_lower for word in ['analysis', 'analyze', 'think', 'opinion', 'outlook', 'perspective']):
-            intent = 'analysis_request'
-        elif any(word in text_lower for word in ['risk', 'safe', 'scam', 'legit', 'trust', 'invest', 'buy', 'sell']):
-            intent = 'risk_assessment'
-        elif any(word in text_lower for word in ['news', 'update', 'latest', 'happening', 'event']):
-            intent = 'news_request'
-        elif any(word in text_lower for word in ['trend', 'trending', 'popular', 'hot', 'hype']):
-            intent = 'trend_request'
-        elif any(word in text_lower for word in ['help', 'explain', 'what is', 'how does', 'tutorial']):
-            intent = 'educational_request'
-        else:
-            intent = 'general_inquiry'
+        # Price command
+        elif "price" in text_lower:
+            command_result["command"] = "price"
+            # Extract coin parameter
+            words = text_lower.split()
+            idx = words.index("price") if "price" in words else -1
             
-        return {
-            'type': intent,
-            'coin': detected_coin
-        }
-    
-    def _generate_response(self, query, intent):
-        """根据意图生成回复"""
-        # 获取意图类型和检测到的币种
-        intent_type = intent['type']
-        coin = intent['coin']
-        
-        # 更真实的回复前缀，增加多样性
-        prefixes = [
-            "Based on my analysis, ",
-            "Looking at the data, ",
-            "From what I'm seeing, ",
-            "According to recent trends, ",
-            "After reviewing the market, ",
-            "My AI analysis suggests that ",
-            "The signals indicate that ",
-            "📊 Market intel: ",
-            "🔍 Just analyzed this: ",
-            "👀 Here's what I'm seeing: "
-        ]
-        
-        prefix = random.choice(prefixes)
-        
-        # 根据不同意图生成回复
-        if intent_type == 'price_prediction':
-            return self._generate_price_prediction_response(prefix, coin)
-        elif intent_type == 'analysis_request':
-            return self._generate_analysis_response(prefix, coin)
-        elif intent_type == 'risk_assessment':
-            return self._generate_risk_assessment_response(prefix, coin)
-        elif intent_type == 'news_request':
-            return self._generate_news_response(prefix, coin)
-        elif intent_type == 'trend_request':
-            return self._generate_trend_response(prefix)
-        elif intent_type == 'educational_request':
-            return self._generate_educational_response(prefix, query)
-        else:
-            return self._generate_general_response(prefix, query)
-            
-    def _generate_price_prediction_response(self, prefix, coin):
-        """生成价格预测回复"""
-        if not coin:
-            return f"{prefix}the overall market is showing mixed signals right now. BTC dominance is at {random.randint(48, 55)}% with key resistance at ${random.randint(60, 70)}K. Which specific coin are you interested in?"
-            
-        coin = coin.upper()
-        current_price = self.market_data.get_current_price(coin) if hasattr(self.market_data, 'get_current_price') else None
-        
-        if not current_price:
-            # 使用模拟数据
-            if coin == 'BTC':
-                current_price = random.randint(58000, 65000)
-            elif coin == 'ETH':
-                current_price = random.randint(3000, 3500)
-            elif coin == 'SOL':
-                current_price = random.randint(120, 160)
+            if idx >= 0 and idx + 1 < len(words):
+                coin = words[idx + 1]
+                command_result["parameters"]["coin"] = coin
+                command_result["response"] = f"Getting price information for {coin.upper()}..."
             else:
-                current_price = random.randint(10, 1000)
+                command_result["response"] = "Please specify a coin. Example: price bitcoin"
         
-        # 随机生成支撑位和阻力位
-        support = current_price * (1 - random.uniform(0.05, 0.15))
-        resistance = current_price * (1 + random.uniform(0.08, 0.25))
-        
-        return f"{prefix}{coin} is currently trading at ${current_price:.2f}. Key support is at ${support:.2f}, with resistance at ${resistance:.2f}. Volume is {random.choice(['increasing', 'stable', 'slightly decreasing'])} with RSI at {random.randint(30, 70)}. For the next 24-48 hours, watch the ${resistance:.2f} level closely."
-        
-    def _generate_analysis_response(self, prefix, coin):
-        """生成分析回复"""
-        if not coin:
-            return f"{prefix}the crypto market is currently in a {random.choice(['consolidation phase', 'decisive moment', 'trend-establishing pattern'])}. BTC movement is closely correlated with {random.choice(['stock market performance', 'global economic indicators', 'institutional investment flows'])}. Which specific coin would you like me to analyze?"
+        # Analysis command
+        elif "analysis" in text_lower:
+            command_result["command"] = "analysis"
+            # Extract coin parameter
+            words = text_lower.split()
+            idx = words.index("analysis") if "analysis" in words else -1
             
-        coin = coin.upper()
-        trend = random.choice(['bullish', 'bearish', 'neutral', 'accumulation', 'distribution'])
-        volume_pattern = random.choice(['increasing', 'decreasing', 'steady', 'showing unusual spikes'])
+            if idx >= 0 and idx + 1 < len(words):
+                coin = words[idx + 1]
+                command_result["parameters"]["coin"] = coin
+                command_result["response"] = f"Generating technical analysis for {coin.upper()}..."
+            else:
+                command_result["response"] = "Please specify a coin. Example: analysis ethereum"
         
-        technical_indicators = [
-            f"RSI: {random.randint(30, 70)}",
-            f"MACD: {random.choice(['bullish crossover', 'bearish crossover', 'neutral'])}",
-            f"50MA: {random.choice(['above 200MA (bullish)', 'below 200MA (bearish)', 'crossing 200MA (transition)'])}",
-            f"Bollinger Bands: {random.choice(['tightening (low volatility expected)', 'expanding (increased volatility expected)', 'price near upper band', 'price near lower band'])}",
-            f"OBV: {random.choice(['rising with price (bullish)', 'diverging from price (potential reversal)', 'flat (accumulation)'])}"
-        ]
+        # Sentiment command
+        elif "sentiment" in text_lower:
+            command_result["command"] = "sentiment"
+            # Extract coin parameter
+            words = text_lower.split()
+            idx = words.index("sentiment") if "sentiment" in words else -1
+            
+            if idx >= 0 and idx + 1 < len(words):
+                coin = words[idx + 1]
+                command_result["parameters"]["coin"] = coin
+                command_result["response"] = f"Analyzing sentiment for {coin.upper()}..."
+            else:
+                command_result["response"] = "Please specify a coin. Example: sentiment bitcoin"
         
-        # 随机选择2-3个技术指标
-        selected_indicators = random.sample(technical_indicators, random.randint(2, 3))
+        # Signals command
+        elif "signals" in text_lower or "trading" in text_lower:
+            command_result["command"] = "signals"
+            command_result["response"] = "Generating current trading signals..."
         
-        return f"{prefix}{coin} is showing {trend} signals with {volume_pattern} volume. {'; '.join(selected_indicators)}. Key to watch: {random.choice(['whale accumulation', 'exchange outflows', 'futures open interest', 'options expiry this Friday'])}."
+        # Market command
+        elif "market" in text_lower:
+            command_result["command"] = "market"
+            command_result["response"] = "Generating market overview..."
+        
+        return command_result
     
-    def _generate_risk_assessment_response(self, prefix, coin):
-        """生成风险评估回复"""
-        if not coin:
-            return f"{prefix}investing in crypto always carries risk. Current market risk level: {random.choice(['moderate', 'elevated', 'high'])} due to {random.choice(['macroeconomic uncertainty', 'regulatory concerns', 'technical market structure'])}. Which specific coin are you concerned about?"
+    def handle_mention(self, mention: Dict[str, Any], market_data: Dict[str, Any], social_data: Dict[str, Any]) -> bool:
+        """Handle a mention and respond to the user."""
+        if not self.twitter_client:
+            logger.error("Twitter client not initialized")
+            return False
+        
+        try:
+            mention_id = mention["id"]
+            mention_text = mention["text"]
+            username = mention["username"]
             
-        coin = coin.upper()
-        
-        risk_levels = {
-            'BTC': 'low to moderate',
-            'ETH': 'low to moderate',
-            'SOL': 'moderate',
-            'BNB': 'moderate',
-            'XRP': 'moderate to high',
-            'DOGE': 'high',
-            'ADA': 'moderate',
-            'DOT': 'moderate'
-        }
-        
-        risk_level = risk_levels.get(coin, 'moderate to high')
-        
-        risk_factors = [
-            "market volatility",
-            "regulatory uncertainty",
-            "smart contract vulnerabilities",
-            "centralization concerns",
-            "competition in the space",
-            "developer activity trends",
-            "potential tokenomic changes",
-            "correlation with BTC movements",
-            "liquidity constraints"
-        ]
-        
-        # 随机选择2个风险因素
-        selected_risks = random.sample(risk_factors, 2)
-        
-        return f"{prefix}the risk profile for {coin} is currently {risk_level}. Key factors to consider: {selected_risks[0]} and {selected_risks[1]}. Always use proper position sizing (suggested: no more than {random.randint(1, 5)}% of portfolio for altcoins)."
+            logger.info(f"Processing mention from @{username}: {mention_text}")
+            
+            # Process command
+            command_result = self.process_command(mention_text)
+            command = command_result["command"]
+            parameters = command_result["parameters"]
+            
+            # Initial response
+            initial_response = command_result["response"]
+            
+            # Send initial response
+            self.twitter_client.reply_to_tweet(mention_id, initial_response)
+            
+            # Handle specific commands
+            if command == "price":
+                coin = parameters.get("coin", "").lower()
+                
+                # Find coin in market data
+                coin_data = None
+                for c in market_data.get("top_coins", []):
+                    if c["symbol"].lower() == coin or c["id"].lower() == coin:
+                        coin_data = c
+                        break
+                
+                if coin_data:
+                    price = coin_data["current_price"]
+                    change_24h = coin_data["price_change_percentage_24h"]
+                    market_cap = coin_data["market_cap"]
+                    volume = coin_data["total_volume"]
+                    
+                    response = f"""
+📊 {coin_data['name']} (${coin_data['symbol'].upper()})
+💰 Price: ${price:,.2f}
+📈 24h Change: {change_24h:.2f}% {"🟢" if change_24h >= 0 else "🔴"}
+💼 Market Cap: ${market_cap:,.0f}
+🔄 24h Volume: ${volume:,.0f}
+                    """.strip()
+                    
+                    self.twitter_client.reply_to_tweet(mention_id, response)
+                else:
+                    self.twitter_client.reply_to_tweet(mention_id, f"Sorry, I couldn't find data for {coin.upper()}.")
+            
+            elif command == "analysis":
+                coin = parameters.get("coin", "").lower()
+                
+                # Find coin in market data
+                coin_data = None
+                for c in market_data.get("top_coins", []):
+                    if c["symbol"].lower() == coin or c["id"].lower() == coin:
+                        coin_data = c
+                        break
+                
+                if coin_data:
+                    symbol = coin_data["symbol"].upper()
+                    tech_data = market_data.get("technical_data", {}).get(symbol, {})
+                    
+                    if tech_data:
+                        trend = tech_data.get("trend", "Unknown")
+                        rsi = tech_data.get("rsi", 0)
+                        rsi_signal = tech_data.get("rsi_signal", "Unknown")
+                        macd_signal = tech_data.get("macd_signal", "Unknown")
+                        summary = tech_data.get("summary", "Mixed signals")
+                        
+                        response = f"""
+📈 Technical Analysis: {coin_data['name']} (${symbol})
+
+Trend: {trend}
+RSI: {rsi:.2f} ({rsi_signal})
+MACD: {macd_signal}
+
+Summary: {summary}
+
+Note: This is not financial advice.
+                        """.strip()
+                        
+                        self.twitter_client.reply_to_tweet(mention_id, response)
+                    else:
+                        self.twitter_client.reply_to_tweet(mention_id, f"Sorry, I don't have technical data for {symbol}.")
+                else:
+                    self.twitter_client.reply_to_tweet(mention_id, f"Sorry, I couldn't find {coin.upper()} in my data.")
+            
+            elif command == "sentiment":
+                coin = parameters.get("coin", "").lower()
+                
+                # Map symbol to entity name if needed
+                entity_map = {
+                    "btc": "bitcoin",
+                    "eth": "ethereum",
+                    "sol": "solana",
+                    "doge": "dogecoin",
+                    "ada": "cardano",
+                    "xrp": "ripple"
+                }
+                
+                entity = entity_map.get(coin, coin)
+                
+                # Find sentiment in social data
+                sentiment_data = social_data.get("sentiment", {}).get(entity)
+                
+                if sentiment_data:
+                    overall = sentiment_data.get("overall", "Neutral")
+                    score = sentiment_data.get("overall_score", 0) * 100
+                    positive = sentiment_data.get("positive", 0)
+                    negative = sentiment_data.get("negative", 0)
+                    neutral = sentiment_data.get("neutral", 0)
+                    total = sentiment_data.get("total", 0)
+                    
+                    response = f"""
+🔍 Sentiment Analysis: {entity.title()}
+
+Overall: {overall} ({score:.2f}%)
+Mentions: {total}
+Positive: {positive} ({positive/total*100:.1f}%)
+Neutral: {neutral} ({neutral/total*100:.1f}%)
+Negative: {negative} ({negative/total*100:.1f}%)
+
+Based on Reddit posts, tweets, and news articles.
+                    """.strip()
+                    
+                    self.twitter_client.reply_to_tweet(mention_id, response)
+                else:
+                    self.twitter_client.reply_to_tweet(mention_id, f"Sorry, I don't have enough sentiment data for {entity.title()}.")
+            
+            elif command == "signals":
+                signals = market_data.get("trading_signals", [])
+                
+                if signals:
+                    top_signals = signals[:5]  # Get top 5 signals
+                    
+                    response = "📊 Current Trading Signals:\n\n"
+                    
+                    for signal in top_signals:
+                        symbol = signal["symbol"]
+                        signal_type = signal["signal_type"].upper()
+                        strength = signal["strength"]
+                        emoji = "🟢" if signal_type == "BUY" else "🔴"
+                        
+                        response += f"{emoji} {signal_type} {symbol}: Strength {strength:.2f}/1.0\n"
+                    
+                    response += "\nDISCLAIMER: Not financial advice."
+                    
+                    self.twitter_client.reply_to_tweet(mention_id, response)
+                else:
+                    self.twitter_client.reply_to_tweet(mention_id, "Sorry, I don't have any trading signals at the moment.")
+            
+            elif command == "market":
+                market_cap = market_data.get("total_market_cap", 0) / 1e9  # Convert to billions
+                market_cap_change = market_data.get("market_cap_change_percentage_24h", 0)
+                volume = market_data.get("total_volume", 0) / 1e9  # Convert to billions
+                
+                # Get top performers
+                top_coins = sorted(
+                    market_data.get("top_coins", [])[:20],
+                    key=lambda x: x.get("price_change_percentage_24h", 0),
+                    reverse=True
+                )[:3]
+                
+                # Get worst performers
+                worst_coins = sorted(
+                    market_data.get("top_coins", [])[:20],
+                    key=lambda x: x.get("price_change_percentage_24h", 0)
+                )[:3]
+                
+                response = f"""
+📊 Crypto Market Overview:
+
+Market Cap: ${market_cap:.2f}B ({market_cap_change:.2f}% {"🟢" if market_cap_change >= 0 else "🔴"})
+24h Volume: ${volume:.2f}B
+
+Top Performers:
+"""
+                
+                for coin in top_coins:
+                    symbol = coin["symbol"].upper()
+                    change = coin["price_change_percentage_24h"]
+                    response += f"${symbol}: +{change:.2f}%\n"
+                
+                response += "\nWorst Performers:\n"
+                
+                for coin in worst_coins:
+                    symbol = coin["symbol"].upper()
+                    change = coin["price_change_percentage_24h"]
+                    response += f"${symbol}: {change:.2f}%\n"
+                
+                self.twitter_client.reply_to_tweet(mention_id, response)
+            
+            # Record interaction in history
+            history = self._load_interaction_history()
+            history["interactions"].append({
+                "mention_id": mention_id,
+                "username": username,
+                "text": mention_text,
+                "command": command,
+                "timestamp": datetime.now().isoformat()
+            })
+            self._save_interaction_history(history)
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error handling mention: {str(e)}")
+            return False
     
-    def _generate_news_response(self, prefix, coin):
-        """生成新闻回复"""
-        if not coin:
-            recent_topics = [
-                "upcoming ETF decisions",
-                "major protocol upgrades",
-                "institutional adoption",
-                "regulatory developments",
-                "DeFi innovations",
-                "NFT market trends",
-                "layer 2 scaling solutions",
-                "central bank digital currencies"
-            ]
-            
-            # 随机选择2个话题
-            selected_topics = random.sample(recent_topics, 2)
-            
-            return f"{prefix}recent market news has been dominated by {selected_topics[0]} and {selected_topics[1]}. The sentiment is generally {random.choice(['positive', 'mixed', 'cautious', 'optimistic'])}. Any specific coin you're interested in?"
+    def process_interactions(self, market_data: Dict[str, Any], social_data: Dict[str, Any]) -> int:
+        """Process all new user interactions."""
+        # Check for new mentions
+        mentions = self.check_mentions()
         
-        coin = coin.upper()
+        processed_count = 0
         
-        news_templates = [
-            f"{coin} recently announced a partnership with {random.choice(['a major payment provider', 'a technology company', 'a gaming platform', 'a DeFi protocol'])}.",
-            f"{coin} team is planning a {random.choice(['major upgrade', 'token burn', 'staking improvement', 'governance update'])} in Q{random.randint(1, 4)}.",
-            f"{coin} has seen {random.choice(['increasing', 'strong', 'growing'])} adoption with {random.choice(['rising transaction counts', 'new partnerships', 'institutional interest', 'developer activity'])}.",
-            f"{coin} ecosystem is expanding with {random.choice(['new DeFi protocols', 'NFT platforms', 'layer 2 solutions', 'cross-chain bridges'])}."
-        ]
+        # Handle each mention
+        for mention in mentions:
+            success = self.handle_mention(mention, market_data, social_data)
+            if success:
+                processed_count += 1
         
-        return f"{prefix}{random.choice(news_templates)} Community sentiment is {random.choice(['bullish', 'cautiously optimistic', 'growing more positive', 'mixed but improving'])}."
-    
-    def _generate_trend_response(self, prefix):
-        """生成趋势回复"""
-        trending_categories = [
-            "DeFi protocols",
-            "gaming tokens",
-            "metaverse projects",
-            "AI-related cryptocurrencies",
-            "layer 1 alternatives",
-            "layer 2 scaling solutions",
-            "interoperability protocols",
-            "privacy coins",
-            "meme coins",
-            "RWA tokens"
-        ]
-        
-        selected_category = random.choice(trending_categories)
-        
-        trending_coins = {
-            "DeFi protocols": ["UNI", "AAVE", "MKR", "CRV"],
-            "gaming tokens": ["AXS", "GALA", "MANA", "SAND"],
-            "metaverse projects": ["MANA", "SAND", "APE", "GALA"],
-            "AI-related cryptocurrencies": ["FET", "OCEAN", "AGIX", "RLC"],
-            "layer 1 alternatives": ["SOL", "AVAX", "ADA", "NEAR"],
-            "layer 2 scaling solutions": ["MATIC", "OP", "ARB", "IMX"],
-            "interoperability protocols": ["DOT", "ATOM", "QNT", "RUNE"],
-            "privacy coins": ["XMR", "ZEC", "SCRT", "ROSE"],
-            "meme coins": ["DOGE", "SHIB", "PEPE", "FLOKI"],
-            "RWA tokens": ["MKR", "LINK", "UNI", "AAVE"]
-        }
-        
-        coins = trending_coins.get(selected_category, ["BTC", "ETH", "SOL", "BNB"])
-        selected_coins = random.sample(coins, min(3, len(coins)))
-        
-        return f"{prefix}I'm seeing significant interest in {selected_category} right now. Top trending tokens include: {', '.join(['$' + coin for coin in selected_coins])}. Social media mentions have increased {random.randint(20, 100)}% in the last 24 hours."
-    
-    def _generate_educational_response(self, prefix, query):
-        """生成教育性回复"""
-        query_lower = query.lower()
-        
-        if 'staking' in query_lower:
-            return f"{prefix}staking is a way to earn passive income by participating in network security. It works by locking up your tokens to support blockchain operations. Benefits include earning rewards (typically {random.randint(3, 15)}% APY), while risks include lockup periods and potential slashing. It's generally considered lower risk than leveraged trading."
-        
-        elif 'defi' in query_lower:
-            return f"{prefix}DeFi (Decentralized Finance) refers to financial services built on blockchain that operate without central authorities. Common DeFi activities include lending/borrowing, yield farming, liquidity provision, and decentralized trading. While it offers higher yields than traditional finance, risks include smart contract vulnerabilities and impermanent loss."
-        
-        elif 'nft' in query_lower:
-            return f"{prefix}NFTs (Non-Fungible Tokens) are unique digital assets verified on blockchain. Unlike cryptocurrencies, each NFT has distinct value and cannot be exchanged 1:1. They're used for digital art, collectibles, gaming items, and increasingly for real-world asset representation. The market experiences cycles of high volatility."
-        
-        elif 'layer 2' in query_lower or 'l2' in query_lower:
-            return f"{prefix}Layer 2 solutions are scaling technologies built on top of blockchains like Ethereum. They process transactions off the main chain while inheriting its security, resulting in faster and cheaper transactions. Popular L2s include Optimism, Arbitrum, Polygon, and zkSync, each using different approaches like rollups or sidechains."
-        
-        else:
-            return f"{prefix}the crypto ecosystem is constantly evolving with innovations in consensus mechanisms, scaling solutions, tokenomics, and use cases. I'd be happy to explain any specific concept you're curious about - just let me know what you'd like to learn!"
-    
-    def _generate_general_response(self, prefix, query):
-        """生成通用回复"""
-        general_responses = [
-            f"{prefix}the market is showing {random.choice(['interesting patterns', 'mixed signals', 'accumulation behavior'])} right now. I'm seeing {random.choice(['increasing social interest', 'growing institutional participation', 'stronger on-chain metrics'])} for major assets. Anything specific you'd like to know?",
-            
-            f"{prefix}I'm tracking {random.randint(400, 600)} crypto KOLs and analyzing {random.randint(10, 30)}K social media posts daily. Current market sentiment is {random.choice(['cautiously optimistic', 'divided', 'improving', 'generally bullish'])}. How can I help with your crypto analysis?",
-            
-            f"I'm currently analyzing market data across {random.randint(40, 100)} exchanges and {random.randint(5, 20)} blockchains. The dominant narrative seems to be focused on {random.choice(['ETF developments', 'institutional adoption', 'regulatory clarity', 'technological advancements'])}. What aspect of the market interests you most?"
-        ]
-        
-        return random.choice(general_responses)
+        return processed_count

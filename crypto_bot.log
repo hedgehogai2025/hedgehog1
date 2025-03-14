@@ -1,0 +1,1353 @@
+2025-03-14 13:39:13,114 - __main__ - INFO - Starting crypto analysis bot...
+2025-03-14 13:39:13,349 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 13:39:13,589 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 13:39:13,591 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 13:39:13,591 - __main__ - INFO - Generating market updates...
+2025-03-14 13:39:13,591 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 13:39:14,081 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 13:39:14,436 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 13:39:14,737 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 13:39:16,200 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:40:17,423 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:43:02,773 - __main__ - INFO - Starting crypto analysis bot...
+2025-03-14 13:43:03,019 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 13:43:03,254 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 13:43:03,255 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 13:43:03,255 - __main__ - INFO - Generating market updates...
+2025-03-14 13:43:03,255 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 13:43:03,722 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 13:43:04,072 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 13:43:04,131 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 13:43:05,196 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:44:05,361 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:45:06,814 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:46:07,307 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:47:09,759 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:48:10,259 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:49:12,761 - modules.market_data - INFO - Generated 2 trading signals
+2025-03-14 13:49:12,767 - modules.market_data - INFO - Market data collected and saved to data/market_data_20250314_1349.json
+2025-03-14 13:49:12,767 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 13:49:12,936 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:12,936 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 13:49:12,936 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 13:49:13,105 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:13,106 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 13:49:13,106 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 13:49:13,275 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:13,275 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 13:49:13,275 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 13:49:13,447 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:13,447 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 13:49:13,447 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 13:49:13,615 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:13,616 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 13:49:13,616 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 13:49:13,785 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:13,785 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 13:49:13,785 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 13:49:13,955 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:13,955 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 13:49:13,955 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 13:49:14,131 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:14,131 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 13:49:14,132 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 13:49:14,300 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:14,300 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 13:49:14,300 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 13:49:14,467 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:14,468 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 13:49:14,468 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 13:49:14,636 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:14,636 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 13:49:14,636 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 13:49:14,805 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:14,806 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 13:49:14,806 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 13:49:14,977 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:14,977 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 13:49:14,977 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 13:49:15,147 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 13:49:15,147 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/CryptoCurrency
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/Bitcoin
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/ethereum
+2025-03-14 13:49:15,147 - modules.nlp_analyzer - WARNING - CoinGecko API key not provided, skipping news fetch
+2025-03-14 13:49:17,449 - modules.nlp_analyzer - INFO - Fetched 50 crypto news articles from CryptoCompare
+2025-03-14 13:49:17,452 - modules.nlp_analyzer - INFO - Social data collected and saved to data/social_data_20250314_1349.json
+2025-03-14 13:49:17,455 - modules.social_data_collector - INFO - Social data collected and saved to data/social_data_20250314_1349.json
+2025-03-14 13:49:17,926 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:50:18,055 - modules.chart_generator - ERROR - Missing required column volume in price data for BTC
+2025-03-14 13:50:18,125 - modules.chart_generator - ERROR - Missing required column volume in price data for ETH
+2025-03-14 13:50:18,178 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 13:51:18,299 - modules.chart_generator - ERROR - Missing required column volume in price data for XRP
+2025-03-14 13:51:18,363 - modules.chart_generator - ERROR - Missing required column volume in price data for BNB
+2025-03-14 13:51:18,420 - modules.chart_generator - ERROR - Missing required column volume in price data for SOL
+2025-03-14 13:51:18,428 - modules.content_generator - ERROR - Error generating market analysis: unsupported format string passed to Undefined.__format__
+2025-03-14 13:51:18,431 - modules.content_generator - ERROR - Error generating market thread: No filter named 'format_large_number'.
+2025-03-14 13:51:18,433 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1349.txt
+2025-03-14 13:51:18,433 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 13:51:18,722 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900424478741717329): 📊 Market Analysis: Error generating thread. Please...
+2025-03-14 13:51:19,222 - __main__ - INFO - Analysis thread successfully posted to Twitter
+2025-03-14 13:51:19,528 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900424482021662852): 📈 #TradingSignal Alert:
+
+🟢 BUY PI: Strength 0.6/1....
+2025-03-14 13:51:19,528 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 13:51:19,850 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900424483271565711): 📊 #Crypto Market Update (2025-03-14 13:51):
+
+BTC: ...
+2025-03-14 13:51:19,850 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 13:51:21,438 - modules.twitter_client - INFO - Posted tweet with media via v2 API (ID: 1900424489114161554): 📊 #Crypto Market Overview
+
+Swipe for more analysis...
+2025-03-14 13:51:21,438 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 13:51:21,438 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:51:21,441 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:51:21,828 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:51:21,828 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:51:21,828 - __main__ - INFO - No user interactions to process
+2025-03-14 13:56:22,111 - __main__ - INFO - Checking for user interactions...
+2025-03-14 13:56:22,114 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 13:56:22,483 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 13:56:22,483 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 13:56:22,483 - __main__ - INFO - No user interactions to process
+2025-03-14 14:01:22,760 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:01:22,763 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:01:23,141 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:01:23,141 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:01:23,141 - __main__ - INFO - No user interactions to process
+2025-03-14 14:06:23,403 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:06:23,406 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:06:23,780 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:06:23,781 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:06:23,781 - __main__ - INFO - No user interactions to process
+2025-03-14 14:11:24,037 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:11:24,040 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:11:24,417 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:11:24,417 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:11:24,417 - __main__ - INFO - No user interactions to process
+2025-03-14 14:16:24,699 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:16:24,702 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:16:25,078 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:16:25,078 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:16:25,078 - __main__ - INFO - No user interactions to process
+2025-03-14 14:19:59,802 - __main__ - INFO - Starting crypto analysis bot with OpenAI integration...
+2025-03-14 14:20:00,085 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 14:20:00,399 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 14:20:03,524 - modules.openai_analyzer - INFO - OpenAI Analyzer initialized with model: gpt-3.5-turbo
+2025-03-14 14:20:03,525 - __main__ - INFO - OpenAI integration enabled with model: gpt-3.5-turbo
+2025-03-14 14:20:03,525 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 14:20:03,525 - __main__ - INFO - Generating market updates...
+2025-03-14 14:20:03,525 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 14:20:03,968 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 14:20:04,324 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 14:20:04,382 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 14:20:05,853 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:20:28,835 - __main__ - INFO - Starting crypto analysis bot with OpenAI integration...
+2025-03-14 14:20:29,071 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 14:20:29,318 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 14:20:29,455 - modules.openai_analyzer - INFO - OpenAI Analyzer initialized with model: gpt-3.5-turbo
+2025-03-14 14:20:29,455 - __main__ - INFO - OpenAI integration enabled with model: gpt-3.5-turbo
+2025-03-14 14:20:29,455 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 14:20:29,455 - __main__ - INFO - Generating market updates...
+2025-03-14 14:20:29,456 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 14:20:29,513 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:21:30,008 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 14:21:30,375 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 14:21:30,658 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 14:21:31,530 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:22:32,529 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:23:33,990 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:24:35,581 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:25:37,118 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:26:38,658 - modules.market_data - INFO - Generated 2 trading signals
+2025-03-14 14:26:38,663 - modules.market_data - INFO - Market data collected and saved to data/market_data_20250314_1426.json
+2025-03-14 14:26:38,663 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 14:26:38,836 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:38,837 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 14:26:38,837 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 14:26:39,007 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:39,007 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 14:26:39,007 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 14:26:39,183 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:39,183 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 14:26:39,183 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 14:26:39,354 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:39,354 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 14:26:39,354 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 14:26:39,525 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:39,525 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 14:26:39,525 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 14:26:39,697 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:39,697 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 14:26:39,697 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 14:26:39,870 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:39,870 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 14:26:39,870 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 14:26:40,041 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:40,041 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 14:26:40,041 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 14:26:40,212 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:40,212 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 14:26:40,213 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 14:26:40,383 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:40,384 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 14:26:40,384 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 14:26:40,554 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:40,554 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 14:26:40,554 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 14:26:40,723 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:40,723 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 14:26:40,723 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 14:26:40,902 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:40,903 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 14:26:40,903 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 14:26:41,076 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 14:26:41,076 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/CryptoCurrency
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/Bitcoin
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/ethereum
+2025-03-14 14:26:41,076 - modules.nlp_analyzer - WARNING - CoinGecko API key not provided, skipping news fetch
+2025-03-14 14:26:43,392 - modules.nlp_analyzer - INFO - Fetched 50 crypto news articles from CryptoCompare
+2025-03-14 14:26:43,396 - modules.nlp_analyzer - INFO - Social data collected and saved to data/social_data_20250314_1426.json
+2025-03-14 14:26:43,398 - modules.social_data_collector - INFO - Social data collected and saved to data/social_data_20250314_1426.json
+2025-03-14 14:26:43,398 - __main__ - INFO - Generating AI-enhanced market analysis...
+2025-03-14 14:26:43,718 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:26:43,719 - __main__ - INFO - Skipped AI trend predictions due to insufficient historical data
+2025-03-14 14:26:44,011 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:26:44,012 - __main__ - INFO - Generated AI social sentiment analysis
+2025-03-14 14:26:44,301 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:26:44,302 - __main__ - INFO - Generated AI-enhanced market update tweet
+2025-03-14 14:26:44,302 - __main__ - INFO - AI analysis saved to data/ai_analysis_20250314_1426.json
+2025-03-14 14:26:44,779 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 14:27:44,900 - modules.chart_generator - ERROR - Missing required column volume in price data for BTC
+2025-03-14 14:27:45,210 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:45,211 - __main__ - INFO - Generated AI technical analysis for BTC
+2025-03-14 14:27:45,274 - modules.chart_generator - ERROR - Missing required column volume in price data for ETH
+2025-03-14 14:27:45,570 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:45,571 - __main__ - INFO - Generated AI technical analysis for ETH
+2025-03-14 14:27:45,629 - modules.chart_generator - ERROR - Missing required column volume in price data for XRP
+2025-03-14 14:27:45,695 - modules.chart_generator - ERROR - Missing required column volume in price data for BNB
+2025-03-14 14:27:45,758 - modules.chart_generator - ERROR - Missing required column volume in price data for SOL
+2025-03-14 14:27:45,758 - __main__ - INFO - Using AI-generated market update
+2025-03-14 14:27:45,763 - modules.content_generator - ERROR - Error generating market analysis: unsupported format string passed to Undefined.__format__
+2025-03-14 14:27:46,051 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:46,347 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:46,667 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:46,961 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:47,241 - modules.openai_analyzer - ERROR - OpenAI API error: 401 - {
+    "error": {
+        "message": "Incorrect API key provided: sk-proj-********************************************************************************************************************************************************-YYA. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+
+2025-03-14 14:27:47,242 - __main__ - INFO - Generated 5 AI trading signals
+2025-03-14 14:27:47,246 - modules.content_generator - ERROR - Error generating market thread: No filter named 'format_large_number'.
+2025-03-14 14:27:47,248 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1426.txt
+2025-03-14 14:27:47,248 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 14:27:47,464 - modules.twitter_client - ERROR - Error creating thread: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-03-14 14:27:47,464 - __main__ - ERROR - Failed to post analysis thread to Twitter
+2025-03-14 14:27:47,798 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900433660236743091): 📈 #TradingSignal Alert:
+
+🔴 NEUTRAL BTC: Strength 0...
+2025-03-14 14:27:47,798 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 14:27:48,077 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900433661566345300): Error: 401...
+2025-03-14 14:27:48,077 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 14:27:49,846 - modules.twitter_client - INFO - Posted tweet with media via v2 API (ID: 1900433667178324281): 📊 #Crypto Market Overview
+
+Swipe for more analysis...
+2025-03-14 14:27:49,846 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 14:27:49,846 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:27:50,234 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:27:50,234 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:27:50,609 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:27:50,610 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:27:50,610 - __main__ - INFO - No user interactions to process
+2025-03-14 14:32:50,802 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:32:51,187 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:32:51,187 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:32:51,563 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:32:51,564 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:32:51,564 - __main__ - INFO - No user interactions to process
+2025-03-14 14:37:51,797 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:37:52,195 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:37:52,196 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:37:52,570 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:37:52,570 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:37:52,570 - __main__ - INFO - No user interactions to process
+2025-03-14 14:42:52,854 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:42:53,392 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:42:53,392 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:42:53,776 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:42:53,776 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:42:53,776 - __main__ - INFO - No user interactions to process
+2025-03-14 14:47:54,065 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:47:54,452 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:47:54,452 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:47:54,825 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:47:54,825 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:47:54,825 - __main__ - INFO - No user interactions to process
+2025-03-14 14:52:55,097 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:52:55,485 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:52:55,485 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:52:55,868 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:52:55,869 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:52:55,869 - __main__ - INFO - No user interactions to process
+2025-03-14 14:57:56,107 - __main__ - INFO - Checking for user interactions...
+2025-03-14 14:57:56,496 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:57:56,496 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 14:57:56,872 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 14:57:56,872 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 14:57:56,872 - __main__ - INFO - No user interactions to process
+2025-03-14 15:02:57,135 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:02:57,521 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:02:57,521 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:02:57,893 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:02:57,894 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:02:57,894 - __main__ - INFO - No user interactions to process
+2025-03-14 15:07:58,172 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:07:58,564 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:07:58,564 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:07:58,943 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:07:58,944 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:07:58,944 - __main__ - INFO - No user interactions to process
+2025-03-14 15:12:59,234 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:12:59,622 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:12:59,622 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:12:59,998 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:12:59,998 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:12:59,998 - __main__ - INFO - No user interactions to process
+2025-03-14 15:18:00,238 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:18:00,693 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:18:00,693 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:18:01,075 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:18:01,075 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:18:01,076 - __main__ - INFO - No user interactions to process
+2025-03-14 15:23:01,346 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:23:01,728 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:23:01,728 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:23:02,114 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:23:02,115 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:23:02,115 - __main__ - INFO - No user interactions to process
+2025-03-14 15:24:33,780 - __main__ - INFO - Starting crypto analysis bot with OpenAI integration...
+2025-03-14 15:24:34,022 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 15:24:34,266 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 15:24:34,401 - modules.openai_analyzer - INFO - OpenAI Analyzer initialized with model: gpt-3.5-turbo
+2025-03-14 15:24:34,402 - __main__ - INFO - OpenAI integration enabled with model: gpt-3.5-turbo
+2025-03-14 15:24:34,402 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 15:24:34,402 - __main__ - INFO - Generating market updates...
+2025-03-14 15:24:34,402 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 15:24:34,820 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 15:24:35,178 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 15:24:35,455 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 15:24:36,689 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:25:38,193 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:26:39,662 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:27:41,410 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:28:43,409 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:29:44,213 - modules.market_data - INFO - Generated 2 trading signals
+2025-03-14 15:29:44,218 - modules.market_data - INFO - Market data collected and saved to data/market_data_20250314_1529.json
+2025-03-14 15:29:44,218 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 15:29:44,388 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:44,388 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 15:29:44,388 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 15:29:44,558 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:44,558 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 15:29:44,558 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 15:29:44,728 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:44,728 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 15:29:44,728 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 15:29:44,897 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:44,898 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 15:29:44,898 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 15:29:45,068 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:45,068 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 15:29:45,068 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 15:29:45,238 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:45,238 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 15:29:45,238 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 15:29:45,409 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:45,409 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 15:29:45,409 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 15:29:45,578 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:45,578 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 15:29:45,578 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 15:29:45,748 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:45,748 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 15:29:45,748 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 15:29:45,943 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:45,943 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 15:29:45,943 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 15:29:46,113 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:46,113 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 15:29:46,113 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 15:29:46,286 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:46,286 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 15:29:46,286 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 15:29:46,457 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:46,457 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 15:29:46,457 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 15:29:46,629 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:29:46,630 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/CryptoCurrency
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/Bitcoin
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/ethereum
+2025-03-14 15:29:46,630 - modules.nlp_analyzer - WARNING - CoinGecko API key not provided, skipping news fetch
+2025-03-14 15:29:48,927 - modules.nlp_analyzer - INFO - Fetched 50 crypto news articles from CryptoCompare
+2025-03-14 15:29:48,931 - modules.nlp_analyzer - INFO - Social data collected and saved to data/social_data_20250314_1529.json
+2025-03-14 15:29:48,933 - modules.social_data_collector - INFO - Social data collected and saved to data/social_data_20250314_1529.json
+2025-03-14 15:29:48,933 - __main__ - INFO - Generating AI-enhanced market analysis...
+2025-03-14 15:29:52,918 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1361 tokens
+2025-03-14 15:29:52,919 - __main__ - INFO - Skipped AI trend predictions due to insufficient historical data
+2025-03-14 15:29:54,045 - modules.openai_analyzer - INFO - OpenAI API call successful, used 215 tokens
+2025-03-14 15:29:54,046 - __main__ - INFO - Generated AI social sentiment analysis
+2025-03-14 15:29:55,683 - modules.openai_analyzer - INFO - OpenAI API call successful, used 486 tokens
+2025-03-14 15:29:55,684 - __main__ - INFO - Generated AI-enhanced market update tweet
+2025-03-14 15:29:55,685 - __main__ - INFO - AI analysis saved to data/ai_analysis_20250314_1529.json
+2025-03-14 15:29:56,172 - modules.chart_generator - ERROR - Missing required column volume in price data for BTC
+2025-03-14 15:30:00,566 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1213 tokens
+2025-03-14 15:30:00,568 - __main__ - INFO - Generated AI technical analysis for BTC
+2025-03-14 15:30:00,622 - modules.chart_generator - ERROR - Missing required column volume in price data for ETH
+2025-03-14 15:30:04,319 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1235 tokens
+2025-03-14 15:30:04,320 - __main__ - INFO - Generated AI technical analysis for ETH
+2025-03-14 15:30:04,385 - modules.chart_generator - ERROR - Missing required column volume in price data for XRP
+2025-03-14 15:30:04,447 - modules.chart_generator - ERROR - Missing required column volume in price data for BNB
+2025-03-14 15:30:04,494 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:31:04,621 - modules.chart_generator - ERROR - Missing required column volume in price data for SOL
+2025-03-14 15:31:04,622 - __main__ - INFO - Using AI-generated market update
+2025-03-14 15:31:04,627 - modules.content_generator - ERROR - Error generating market analysis: unsupported format string passed to Undefined.__format__
+2025-03-14 15:31:06,327 - modules.openai_analyzer - INFO - OpenAI API call successful, used 613 tokens
+2025-03-14 15:31:07,669 - modules.openai_analyzer - INFO - OpenAI API call successful, used 603 tokens
+2025-03-14 15:31:09,616 - modules.openai_analyzer - INFO - OpenAI API call successful, used 637 tokens
+2025-03-14 15:31:11,712 - modules.openai_analyzer - INFO - OpenAI API call successful, used 626 tokens
+2025-03-14 15:31:13,628 - modules.openai_analyzer - INFO - OpenAI API call successful, used 604 tokens
+2025-03-14 15:31:13,630 - __main__ - INFO - Generated 5 AI trading signals
+2025-03-14 15:31:13,633 - modules.content_generator - ERROR - Error generating market thread: No filter named 'format_large_number'.
+2025-03-14 15:31:13,635 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1529.txt
+2025-03-14 15:31:13,635 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 15:31:13,860 - modules.twitter_client - ERROR - Error creating thread: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-03-14 15:31:13,860 - __main__ - ERROR - Failed to post analysis thread to Twitter
+2025-03-14 15:31:14,228 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900449625481601455): 📈 #TradingSignal Alert:
+
+🔴 SELL BTC: Strength 0.8/...
+2025-03-14 15:31:14,228 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 15:31:14,570 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900449627008360493): 📊 Cryptocurrency Market Update 🌐
+🕒 As of 2025-03-1...
+2025-03-14 15:31:14,570 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 15:31:15,818 - modules.twitter_client - INFO - Posted tweet with media via v2 API (ID: 1900449631710175279): 📊 #Crypto Market Overview
+
+Swipe for more analysis...
+2025-03-14 15:31:15,819 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 15:31:15,819 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:31:16,210 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:31:16,211 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:31:16,586 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:31:16,586 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:31:16,586 - __main__ - INFO - No user interactions to process
+2025-03-14 15:36:16,848 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:36:17,238 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:36:17,238 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:36:17,624 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:36:17,624 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:36:17,624 - __main__ - INFO - No user interactions to process
+2025-03-14 15:40:37,796 - __main__ - INFO - Starting crypto analysis bot with OpenAI integration...
+2025-03-14 15:40:38,038 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 15:40:38,287 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 15:40:38,458 - modules.openai_analyzer - INFO - OpenAI Analyzer initialized with model: gpt-3.5-turbo
+2025-03-14 15:40:38,459 - __main__ - INFO - OpenAI integration enabled with model: gpt-3.5-turbo
+2025-03-14 15:40:38,459 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 15:40:38,459 - __main__ - INFO - Generating market updates...
+2025-03-14 15:40:38,459 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 15:40:38,910 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 15:40:39,254 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 15:40:39,315 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 15:40:40,822 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:41:42,391 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:42:49,014 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:43:51,045 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:44:53,073 - modules.market_data - INFO - Generated 2 trading signals
+2025-03-14 15:44:53,079 - modules.market_data - INFO - Market data collected and saved to data/market_data_20250314_1544.json
+2025-03-14 15:44:53,079 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 15:44:53,248 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:53,248 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 15:44:53,248 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 15:44:53,433 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:53,434 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 15:44:53,434 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 15:44:53,606 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:53,606 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 15:44:53,606 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 15:44:53,776 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:53,776 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 15:44:53,776 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 15:44:53,943 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:53,944 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 15:44:53,944 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 15:44:54,112 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:54,112 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 15:44:54,112 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 15:44:54,280 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:54,280 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 15:44:54,281 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 15:44:54,451 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:54,451 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 15:44:54,451 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 15:44:54,619 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:54,619 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 15:44:54,619 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 15:44:54,787 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:54,787 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 15:44:54,787 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 15:44:54,957 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:54,957 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 15:44:54,957 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 15:44:55,125 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:55,125 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 15:44:55,125 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 15:44:55,293 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:55,293 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 15:44:55,293 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 15:44:55,463 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 15:44:55,463 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/CryptoCurrency
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/Bitcoin
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/ethereum
+2025-03-14 15:44:55,463 - modules.nlp_analyzer - WARNING - CoinGecko API key not provided, skipping news fetch
+2025-03-14 15:44:57,709 - modules.nlp_analyzer - INFO - Fetched 50 crypto news articles from CryptoCompare
+2025-03-14 15:44:57,713 - modules.nlp_analyzer - INFO - Social data collected and saved to data/social_data_20250314_1544.json
+2025-03-14 15:44:57,715 - modules.social_data_collector - INFO - Social data collected and saved to data/social_data_20250314_1544.json
+2025-03-14 15:44:57,715 - __main__ - INFO - Generating AI-enhanced market analysis...
+2025-03-14 15:45:01,775 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:45:01,791 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1419 tokens
+2025-03-14 15:45:01,792 - __main__ - INFO - Skipped AI trend predictions due to insufficient historical data
+2025-03-14 15:45:01,792 - modules.openai_analyzer - INFO - Using cached response
+2025-03-14 15:45:01,792 - __main__ - INFO - Generated AI social sentiment analysis
+2025-03-14 15:45:03,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:45:03,745 - modules.openai_analyzer - INFO - OpenAI API call successful, used 487 tokens
+2025-03-14 15:45:03,745 - __main__ - INFO - Generated AI-enhanced market update tweet
+2025-03-14 15:45:03,746 - __main__ - INFO - AI analysis saved to data/ai_analysis_20250314_1544.json
+2025-03-14 15:45:04,241 - modules.chart_generator - ERROR - Missing required column volume in price data for BTC
+2025-03-14 15:45:04,242 - modules.openai_analyzer - INFO - Using cached response
+2025-03-14 15:45:04,242 - __main__ - INFO - Generated AI technical analysis for BTC
+2025-03-14 15:45:04,303 - modules.chart_generator - ERROR - Missing required column volume in price data for ETH
+2025-03-14 15:45:04,304 - modules.openai_analyzer - INFO - Using cached response
+2025-03-14 15:45:04,304 - __main__ - INFO - Generated AI technical analysis for ETH
+2025-03-14 15:45:04,348 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 15:46:04,456 - modules.chart_generator - ERROR - Missing required column volume in price data for XRP
+2025-03-14 15:46:04,519 - modules.chart_generator - ERROR - Missing required column volume in price data for BNB
+2025-03-14 15:46:04,578 - modules.chart_generator - ERROR - Missing required column volume in price data for SOL
+2025-03-14 15:46:04,578 - __main__ - INFO - Using AI-generated market update
+2025-03-14 15:46:04,583 - modules.content_generator - ERROR - Error generating market analysis: unsupported format string passed to Undefined.__format__
+2025-03-14 15:46:06,437 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:46:06,443 - modules.openai_analyzer - INFO - OpenAI API call successful, used 620 tokens
+2025-03-14 15:46:07,743 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:46:07,745 - modules.openai_analyzer - INFO - OpenAI API call successful, used 590 tokens
+2025-03-14 15:46:09,460 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:46:09,464 - modules.openai_analyzer - INFO - OpenAI API call successful, used 625 tokens
+2025-03-14 15:46:10,929 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:46:10,936 - modules.openai_analyzer - INFO - OpenAI API call successful, used 606 tokens
+2025-03-14 15:46:12,225 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:46:12,232 - modules.openai_analyzer - INFO - OpenAI API call successful, used 596 tokens
+2025-03-14 15:46:12,232 - __main__ - INFO - Generated 5 AI trading signals
+2025-03-14 15:46:12,236 - modules.content_generator - ERROR - Error generating market thread: No filter named 'format_large_number'.
+2025-03-14 15:46:12,238 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1544.txt
+2025-03-14 15:46:12,238 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 15:46:12,470 - modules.twitter_client - ERROR - Error creating thread: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+2025-03-14 15:46:12,470 - __main__ - ERROR - Failed to post analysis thread to Twitter
+2025-03-14 15:46:12,798 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900453394458042809): 📈 #TradingSignal Alert:
+
+🔴 SELL BTC: Strength 0.7/...
+2025-03-14 15:46:12,798 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 15:46:13,133 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900453395879911573): 📊 Cryptocurrency Market Update 🌐
+📅 As of 2025-03-1...
+2025-03-14 15:46:13,133 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 15:46:14,272 - modules.twitter_client - INFO - Posted tweet with media via v2 API (ID: 1900453400111964252): 📊 #Crypto Market Overview
+
+Swipe for more analysis...
+2025-03-14 15:46:14,272 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 15:46:14,273 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:46:14,655 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:46:14,655 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:46:15,027 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:46:15,027 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:46:15,027 - __main__ - INFO - No user interactions to process
+2025-03-14 15:51:15,311 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:51:15,725 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:51:15,725 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:51:16,095 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:51:16,095 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:51:16,095 - __main__ - INFO - No user interactions to process
+2025-03-14 15:56:16,387 - __main__ - INFO - Checking for user interactions...
+2025-03-14 15:56:16,767 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:56:16,768 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 15:56:17,141 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 15:56:17,141 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 15:56:17,141 - __main__ - INFO - No user interactions to process
+2025-03-14 16:01:17,379 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:01:17,765 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:01:17,765 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:01:18,140 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:01:18,140 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:01:18,140 - __main__ - INFO - No user interactions to process
+2025-03-14 16:06:18,390 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:06:18,770 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:06:18,771 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:06:19,148 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:06:19,148 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:06:19,148 - __main__ - INFO - No user interactions to process
+2025-03-14 16:11:19,420 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:11:19,791 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:11:19,791 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:11:20,162 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:11:20,162 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:11:20,162 - __main__ - INFO - No user interactions to process
+2025-03-14 16:16:20,399 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:16:20,782 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:16:20,782 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:16:21,161 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:16:21,162 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:16:21,162 - __main__ - INFO - No user interactions to process
+2025-03-14 16:21:21,424 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:21:21,799 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:21:21,799 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:21:22,170 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:21:22,170 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:21:22,170 - __main__ - INFO - No user interactions to process
+2025-03-14 16:26:22,399 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:26:22,783 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:26:22,783 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:26:23,160 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:26:23,160 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:26:23,160 - __main__ - INFO - No user interactions to process
+2025-03-14 16:31:23,415 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:31:23,787 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:31:23,788 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:31:24,157 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:31:24,157 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:31:24,157 - __main__ - INFO - No user interactions to process
+2025-03-14 16:36:24,396 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:36:24,829 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:36:24,829 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:36:25,196 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:36:25,196 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:36:25,197 - __main__ - INFO - No user interactions to process
+2025-03-14 16:41:25,423 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:41:25,801 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:41:25,801 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:41:26,173 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:41:26,173 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:41:26,173 - __main__ - INFO - No user interactions to process
+2025-03-14 16:46:26,460 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:46:26,847 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:46:26,847 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:46:27,224 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:46:27,224 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:46:27,224 - __main__ - INFO - No user interactions to process
+2025-03-14 16:51:27,515 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:51:27,889 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:51:27,889 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:51:28,265 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:51:28,265 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:51:28,265 - __main__ - INFO - No user interactions to process
+2025-03-14 16:56:28,541 - __main__ - INFO - Checking for user interactions...
+2025-03-14 16:56:28,922 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:56:28,922 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 16:56:29,289 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 16:56:29,290 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 16:56:29,290 - __main__ - INFO - No user interactions to process
+2025-03-14 17:01:29,547 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:01:29,933 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:01:29,933 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:01:30,310 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:01:30,310 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:01:30,310 - __main__ - INFO - No user interactions to process
+2025-03-14 17:06:30,597 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:06:30,976 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:06:30,976 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:06:31,343 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:06:31,343 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:06:31,343 - __main__ - INFO - No user interactions to process
+2025-03-14 17:11:31,580 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:11:31,957 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:11:31,957 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:11:32,328 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:11:32,328 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:11:32,328 - __main__ - INFO - No user interactions to process
+2025-03-14 17:16:32,615 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:16:32,998 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:16:32,999 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:16:33,369 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:16:33,369 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:16:33,369 - __main__ - INFO - No user interactions to process
+2025-03-14 17:21:33,637 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:21:34,010 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:21:34,010 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:21:34,379 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:21:34,379 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:21:34,379 - __main__ - INFO - No user interactions to process
+2025-03-14 17:26:34,651 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:26:35,033 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:26:35,033 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:26:35,407 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:26:35,407 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:26:35,408 - __main__ - INFO - No user interactions to process
+2025-03-14 17:31:35,694 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:31:36,074 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:31:36,074 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:31:36,444 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:31:36,444 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:31:36,444 - __main__ - INFO - No user interactions to process
+2025-03-14 17:36:36,699 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:36:37,079 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:36:37,079 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:36:37,452 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:36:37,452 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:36:37,452 - __main__ - INFO - No user interactions to process
+2025-03-14 17:41:37,690 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:41:38,064 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:41:38,065 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:41:38,445 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:41:38,445 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:41:38,445 - __main__ - INFO - No user interactions to process
+2025-03-14 17:46:38,698 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:46:39,124 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:46:39,124 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:46:39,495 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:46:39,496 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:46:39,496 - __main__ - INFO - No user interactions to process
+2025-03-14 17:51:39,754 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:51:40,128 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:51:40,128 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:51:40,496 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:51:40,497 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:51:40,497 - __main__ - INFO - No user interactions to process
+2025-03-14 17:56:40,742 - __main__ - INFO - Checking for user interactions...
+2025-03-14 17:56:41,127 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:56:41,128 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 17:56:41,498 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 17:56:41,499 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 17:56:41,499 - __main__ - INFO - No user interactions to process
+2025-03-14 18:01:41,784 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:01:42,156 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:01:42,156 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:01:42,526 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:01:42,526 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:01:42,526 - __main__ - INFO - No user interactions to process
+2025-03-14 18:06:42,793 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:06:43,171 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:06:43,171 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:06:43,541 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:06:43,542 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:06:43,542 - __main__ - INFO - No user interactions to process
+2025-03-14 18:11:43,813 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:11:44,188 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:11:44,189 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:11:44,562 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:11:44,562 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:11:44,562 - __main__ - INFO - No user interactions to process
+2025-03-14 18:14:38,873 - __main__ - INFO - Starting crypto analysis bot with OpenAI integration...
+2025-03-14 18:14:39,123 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 18:14:39,372 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 18:14:39,540 - modules.openai_analyzer - INFO - OpenAI Analyzer initialized with model: gpt-3.5-turbo
+2025-03-14 18:14:39,540 - __main__ - INFO - OpenAI integration enabled with model: gpt-3.5-turbo
+2025-03-14 18:14:39,540 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 18:14:39,540 - __main__ - INFO - Generating market updates...
+2025-03-14 18:14:39,540 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 18:14:39,985 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 18:14:40,768 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 18:14:40,832 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 18:14:42,375 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:15:43,832 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:16:45,654 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:17:47,573 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:18:49,416 - modules.market_data - INFO - Generated 4 trading signals
+2025-03-14 18:18:49,422 - modules.market_data - INFO - Market data collected and saved to data/market_data_20250314_1818.json
+2025-03-14 18:18:49,422 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 18:18:49,590 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:49,590 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 18:18:49,590 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 18:18:49,758 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:49,758 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 18:18:49,758 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 18:18:49,928 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:49,928 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 18:18:49,928 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 18:18:50,105 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:50,105 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 18:18:50,106 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 18:18:50,275 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:50,276 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 18:18:50,276 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 18:18:50,443 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:50,444 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 18:18:50,444 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 18:18:50,612 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:50,612 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 18:18:50,612 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 18:18:50,781 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:50,781 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 18:18:50,781 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 18:18:50,949 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:50,950 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 18:18:50,950 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 18:18:51,118 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:51,118 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 18:18:51,118 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 18:18:51,287 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:51,287 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 18:18:51,287 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 18:18:51,458 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:51,458 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 18:18:51,458 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 18:18:51,627 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:51,627 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 18:18:51,627 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 18:18:51,794 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:18:51,795 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/CryptoCurrency
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/Bitcoin
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - ERROR - Reddit client not initialized
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - INFO - Fetched 0 posts from r/ethereum
+2025-03-14 18:18:51,795 - modules.nlp_analyzer - WARNING - CoinGecko API key not provided, skipping news fetch
+2025-03-14 18:18:54,211 - modules.nlp_analyzer - INFO - Fetched 50 crypto news articles from CryptoCompare
+2025-03-14 18:18:54,695 - modules.nlp_analyzer - INFO - Fetched 20 crypto news articles from CryptoPanic
+2025-03-14 18:18:56,387 - modules.nlp_analyzer - INFO - Fetched 10 crypto news articles from Messari
+2025-03-14 18:18:57,122 - modules.nlp_analyzer - INFO - Successfully fetched blockchain statistics from Blockchair
+2025-03-14 18:18:57,129 - modules.nlp_analyzer - INFO - Social data collected and saved to data/social_data_20250314_1818.json
+2025-03-14 18:18:57,134 - modules.social_data_collector - INFO - Social data collected and saved to data/social_data_20250314_1818.json
+2025-03-14 18:18:57,134 - __main__ - INFO - Generating AI-enhanced market analysis...
+2025-03-14 18:19:02,226 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:19:02,232 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1413 tokens
+2025-03-14 18:19:02,232 - __main__ - INFO - Skipped AI trend predictions due to insufficient historical data
+2025-03-14 18:19:02,232 - modules.openai_analyzer - INFO - Using cached response
+2025-03-14 18:19:02,233 - __main__ - INFO - Generated AI social sentiment analysis
+2025-03-14 18:19:04,534 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:19:04,542 - modules.openai_analyzer - INFO - OpenAI API call successful, used 496 tokens
+2025-03-14 18:19:04,542 - __main__ - INFO - Generated AI-enhanced market update tweet
+2025-03-14 18:19:04,542 - __main__ - INFO - AI analysis saved to data/ai_analysis_20250314_1818.json
+2025-03-14 18:19:05,032 - modules.chart_generator - ERROR - Missing required column volume in price data for BTC
+2025-03-14 18:19:09,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:19:09,395 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1278 tokens
+2025-03-14 18:19:09,395 - __main__ - INFO - Generated AI technical analysis for BTC
+2025-03-14 18:19:09,440 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:20:09,559 - modules.chart_generator - ERROR - Missing required column volume in price data for ETH
+2025-03-14 18:20:13,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:20:13,624 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1252 tokens
+2025-03-14 18:20:13,624 - __main__ - INFO - Generated AI technical analysis for ETH
+2025-03-14 18:20:13,683 - modules.chart_generator - ERROR - Missing required column volume in price data for XRP
+2025-03-14 18:20:13,743 - modules.chart_generator - ERROR - Missing required column volume in price data for BNB
+2025-03-14 18:20:13,811 - modules.chart_generator - ERROR - Missing required column volume in price data for SOL
+2025-03-14 18:20:13,811 - __main__ - INFO - Using AI-generated market update
+2025-03-14 18:20:13,816 - modules.content_generator - ERROR - Error generating market analysis: unsupported format string passed to Undefined.__format__
+2025-03-14 18:20:15,465 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:20:15,472 - modules.openai_analyzer - INFO - OpenAI API call successful, used 586 tokens
+2025-03-14 18:20:16,959 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:20:16,967 - modules.openai_analyzer - INFO - OpenAI API call successful, used 604 tokens
+2025-03-14 18:20:18,525 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:20:18,530 - modules.openai_analyzer - INFO - OpenAI API call successful, used 644 tokens
+2025-03-14 18:20:19,713 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:20:19,727 - modules.openai_analyzer - INFO - OpenAI API call successful, used 602 tokens
+2025-03-14 18:20:21,041 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:20:21,046 - modules.openai_analyzer - INFO - OpenAI API call successful, used 619 tokens
+2025-03-14 18:20:21,046 - __main__ - INFO - Generated 5 AI trading signals
+2025-03-14 18:20:21,049 - modules.content_generator - ERROR - Error generating market thread: No filter named 'format_large_number'.
+2025-03-14 18:20:21,051 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1818.txt
+2025-03-14 18:20:21,051 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 18:20:21,051 - modules.twitter_client - WARNING - Skipping invalid tweet content in thread: 📊 Market Analysis: Error generating thread. Please...
+2025-03-14 18:20:21,052 - modules.twitter_client - ERROR - No valid tweets found in thread content
+2025-03-14 18:20:21,052 - __main__ - ERROR - Failed to post analysis thread to Twitter
+2025-03-14 18:20:21,533 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900492186430701952): 📈 #TradingSignal Alert:
+
+🔴 NEUTRAL BTC: Strength 0...
+2025-03-14 18:20:21,533 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 18:20:21,857 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900492187835699672): 📊 Cryptocurrency Market Update 📈
+🕒 As of 2025-03-1...
+2025-03-14 18:20:21,858 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 18:20:23,067 - modules.twitter_client - INFO - Posted tweet with media via v2 API (ID: 1900492192394961095): 📊 #Crypto Market Overview
+
+Swipe for more analysis...
+2025-03-14 18:20:23,067 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 18:20:23,067 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:20:23,441 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:20:23,442 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:20:23,815 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:20:23,816 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:20:23,816 - __main__ - INFO - No user interactions to process
+2025-03-14 18:25:24,085 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:25:24,500 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:25:24,500 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:25:24,877 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:25:24,877 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:25:24,877 - __main__ - INFO - No user interactions to process
+2025-03-14 18:30:25,113 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:30:25,490 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:30:25,490 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:30:25,860 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:30:25,860 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:30:25,860 - __main__ - INFO - No user interactions to process
+2025-03-14 18:35:26,115 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:35:26,494 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:35:26,495 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:35:26,869 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:35:26,869 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:35:26,869 - __main__ - INFO - No user interactions to process
+2025-03-14 18:40:27,864 - __main__ - INFO - Starting crypto analysis bot with OpenAI integration...
+2025-03-14 18:40:28,117 - modules.twitter_client - INFO - Twitter API v2 authentication successful
+2025-03-14 18:40:28,379 - modules.twitter_client - INFO - Twitter API v1.1 authentication successful
+2025-03-14 18:40:28,430 - modules.nlp_analyzer - INFO - Reddit client initialized successfully
+2025-03-14 18:40:28,600 - modules.openai_analyzer - INFO - OpenAI Analyzer initialized with model: gpt-3.5-turbo
+2025-03-14 18:40:28,601 - __main__ - INFO - OpenAI integration enabled with model: gpt-3.5-turbo
+2025-03-14 18:40:28,601 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 18:40:28,601 - __main__ - INFO - Generating market updates...
+2025-03-14 18:40:28,601 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 18:40:28,999 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 18:40:29,365 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 18:40:29,637 - modules.market_data - INFO - Retrieved performance data for 534 sectors
+2025-03-14 18:40:31,115 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:41:32,258 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:42:33,688 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:43:35,315 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:44:36,915 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:45:38,018 - modules.market_data - INFO - Generated 4 trading signals
+2025-03-14 18:45:38,023 - modules.market_data - INFO - Market data collected and saved to data/market_data_20250314_1845.json
+2025-03-14 18:45:38,023 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 18:45:38,192 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:38,193 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 18:45:38,193 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 18:45:38,363 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:38,364 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 18:45:38,364 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 18:45:38,532 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:38,532 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 18:45:38,532 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 18:45:38,700 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:38,700 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 18:45:38,700 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 18:45:38,868 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:38,869 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 18:45:38,869 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 18:45:39,035 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:39,035 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 18:45:39,035 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 18:45:39,206 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:39,206 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 18:45:39,206 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 18:45:39,374 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:39,374 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 18:45:39,374 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 18:45:39,551 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:39,551 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 18:45:39,551 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 18:45:39,719 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:39,719 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 18:45:39,719 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 18:45:39,888 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:39,888 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 18:45:39,888 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 18:45:40,057 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:40,057 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 18:45:40,057 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 18:45:40,225 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:40,225 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 18:45:40,225 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 18:45:40,394 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 18:45:40,394 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 18:45:42,644 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 18:45:42,645 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 18:45:43,458 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/Bitcoin
+2025-03-14 18:45:43,458 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/Bitcoin
+2025-03-14 18:45:44,512 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/ethereum
+2025-03-14 18:45:44,513 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/ethereum
+2025-03-14 18:45:44,513 - modules.nlp_analyzer - WARNING - CoinGecko API key not provided, skipping news fetch
+2025-03-14 18:45:45,946 - modules.nlp_analyzer - INFO - Fetched 50 crypto news articles from CryptoCompare
+2025-03-14 18:45:46,435 - modules.nlp_analyzer - INFO - Fetched 20 crypto news articles from CryptoPanic
+2025-03-14 18:45:48,079 - modules.nlp_analyzer - INFO - Fetched 10 crypto news articles from Messari
+2025-03-14 18:45:48,827 - modules.nlp_analyzer - INFO - Successfully fetched blockchain statistics from Blockchair
+2025-03-14 18:45:48,835 - modules.nlp_analyzer - INFO - Social data collected and saved to data/social_data_20250314_1845.json
+2025-03-14 18:45:48,842 - modules.social_data_collector - INFO - Social data collected and saved to data/social_data_20250314_1845.json
+2025-03-14 18:45:48,842 - __main__ - INFO - Generating AI-enhanced market analysis...
+2025-03-14 18:45:52,927 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:45:52,940 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1400 tokens
+2025-03-14 18:45:52,940 - __main__ - INFO - Skipped AI trend predictions due to insufficient historical data
+2025-03-14 18:45:56,098 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:45:56,111 - modules.openai_analyzer - INFO - OpenAI API call successful, used 2329 tokens
+2025-03-14 18:45:56,112 - __main__ - INFO - Generated AI social sentiment analysis
+2025-03-14 18:45:57,880 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:45:57,886 - modules.openai_analyzer - INFO - OpenAI API call successful, used 478 tokens
+2025-03-14 18:45:57,886 - __main__ - INFO - Generated AI-enhanced market update tweet
+2025-03-14 18:45:57,887 - __main__ - INFO - AI analysis saved to data/ai_analysis_20250314_1845.json
+2025-03-14 18:45:58,389 - modules.chart_generator - WARNING - Volume data missing for BTC, creating synthetic volume
+2025-03-14 18:46:03,590 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:46:03,600 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1286 tokens
+2025-03-14 18:46:03,600 - __main__ - INFO - Generated AI technical analysis for BTC
+2025-03-14 18:46:03,659 - modules.chart_generator - WARNING - Volume data missing for ETH, creating synthetic volume
+2025-03-14 18:46:07,635 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:46:07,640 - modules.openai_analyzer - INFO - OpenAI API call successful, used 1305 tokens
+2025-03-14 18:46:07,640 - __main__ - INFO - Generated AI technical analysis for ETH
+2025-03-14 18:46:07,705 - modules.chart_generator - WARNING - Volume data missing for XRP, creating synthetic volume
+2025-03-14 18:46:08,053 - modules.market_data - WARNING - Rate limited by API. Sleeping for 60 seconds.
+2025-03-14 18:47:08,168 - modules.chart_generator - WARNING - Volume data missing for BNB, creating synthetic volume
+2025-03-14 18:47:08,516 - modules.chart_generator - WARNING - Volume data missing for SOL, creating synthetic volume
+2025-03-14 18:47:08,806 - __main__ - INFO - Using AI-generated market update
+2025-03-14 18:47:08,811 - modules.content_generator - ERROR - Error generating market analysis: unsupported format string passed to Undefined.__format__
+2025-03-14 18:47:10,680 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:47:10,697 - modules.openai_analyzer - INFO - OpenAI API call successful, used 597 tokens
+2025-03-14 18:47:11,974 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:47:11,989 - modules.openai_analyzer - INFO - OpenAI API call successful, used 618 tokens
+2025-03-14 18:47:14,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:47:14,101 - modules.openai_analyzer - INFO - OpenAI API call successful, used 646 tokens
+2025-03-14 18:47:15,329 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:47:15,334 - modules.openai_analyzer - INFO - OpenAI API call successful, used 616 tokens
+2025-03-14 18:47:16,629 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 18:47:16,634 - modules.openai_analyzer - INFO - OpenAI API call successful, used 601 tokens
+2025-03-14 18:47:16,634 - __main__ - INFO - Generated 5 AI trading signals
+2025-03-14 18:47:16,643 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1845.txt
+2025-03-14 18:47:16,644 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 18:47:16,927 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498962047803703): 📊 #Crypto Market Analysis - 2025-03-14...
+2025-03-14 18:47:17,719 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498965315080214): Overall Market:
+Total Cap: $2,795B (-2.39% 🔴)
+24h ...
+2025-03-14 18:47:18,511 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498968653783125): #Bitcoin #Crypto
+🧵👇...
+2025-03-14 18:47:19,294 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498971963076982): 📈 Sector Rotation: Capital flowing from Major caps...
+2025-03-14 18:47:20,087 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498975247245789): Top Performers:
+
+#link +4.50%
+
+#xrp +2.94%
+
+#xlm +...
+2025-03-14 18:47:20,921 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498978577457426): Worst Performers:
+
+#doge -0.97%
+
+#trx -1.45%
+
+#ava...
+2025-03-14 18:47:21,704 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498982042042724): 🔍 Technical Overview:...
+2025-03-14 18:47:22,491 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498985321971750): #BTC: Moderately bullish
+#ETH: Moderately bullish
+...
+2025-03-14 18:47:23,274 - modules.twitter_client - INFO - Posted tweet in thread (ID: 1900498988622848314): Key levels to watch:
+BTC: Support $79,000 / Resist...
+2025-03-14 18:47:23,774 - __main__ - INFO - Analysis thread successfully posted to Twitter
+2025-03-14 18:47:24,094 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900498991953183122): 📈 #TradingSignal Alert:
+
+🔴 NEUTRAL BTC: Strength 0...
+2025-03-14 18:47:24,094 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 18:47:24,438 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900498993362489829): 📊 Cryptocurrency Market Update 📈
+🕒 As of 2025-03-1...
+2025-03-14 18:47:24,438 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 18:47:25,735 - modules.twitter_client - INFO - Posted tweet with media via v2 API (ID: 1900498998231978320): 📊 #Crypto Market Overview
+
+Swipe for more analysis...
+2025-03-14 18:47:25,735 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 18:47:25,735 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:47:26,114 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:47:26,114 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:47:26,481 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:47:26,481 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:47:26,481 - __main__ - INFO - No user interactions to process
+2025-03-14 18:52:26,742 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:52:27,119 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:52:27,119 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:52:27,492 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:52:27,492 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:52:27,492 - __main__ - INFO - No user interactions to process
+2025-03-14 18:57:27,752 - __main__ - INFO - Checking for user interactions...
+2025-03-14 18:57:28,386 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:57:28,386 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 18:57:28,758 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 18:57:28,758 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 18:57:28,758 - __main__ - INFO - No user interactions to process
+2025-03-14 19:02:29,000 - __main__ - INFO - Checking for user interactions...
+2025-03-14 19:02:29,373 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 19:02:29,374 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 19:02:29,743 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 19:02:29,743 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 19:02:29,744 - __main__ - INFO - No user interactions to process

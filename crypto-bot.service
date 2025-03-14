@@ -1,0 +1,16 @@
+[Unit]
+Description=Crypto Analysis Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/crypto_analysis_bot
+ExecStart=/home/ubuntu/crypto_analysis_bot/venv/bin/python /home/ubuntu/crypto_analysis_bot/src/main.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

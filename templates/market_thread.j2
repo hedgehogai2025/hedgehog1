@@ -1,0 +1,32 @@
+📊 #Crypto Market Analysis - {{ current_date }}
+
+Overall Market:
+Total Cap: ${{ total_market_cap | format_large_number }}B ({{ market_cap_change | format_percent }}% {{ "🟢" if market_cap_change >= 0 else "🔴" }})
+24h Vol: ${{ total_volume | format_large_number }}B
+BTC Dominance: {{ btc_dominance }}%
+
+#Bitcoin #Crypto
+🧵👇
+
+📈 Sector Rotation: Capital flowing from {{ declining_sector }} into {{ rising_sector }}
+
+Top Performers:
+{% for coin in top_performers[:3] %}
+#{{ coin.symbol }} +{{ coin.price_change_percentage_24h | format_percent }}%
+{% endfor %}
+
+Worst Performers:
+{% for coin in worst_performers[:3] %}
+#{{ coin.symbol }} {{ coin.price_change_percentage_24h | format_percent }}%
+{% endfor %}
+
+🔍 Technical Overview:
+
+#BTC: {{ btc_analysis }}
+#ETH: {{ eth_analysis }}
+{% if additional_analysis %}
+{{ additional_analysis }}
+{% endif %}
+
+Key levels to watch:
+{{ key_levels }}

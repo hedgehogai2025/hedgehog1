@@ -1,305 +1,440 @@
-# src/main.py
+#!/usr/bin/env python3
+
 import os
-import json
+import sys
 import time
 import logging
+import json
 import schedule
-from datetime import datetime, timedelta
+import argparse
+from datetime import datetime
+import threading
+from dotenv import load_dotenv
 
-# 修改导入方式以匹配现有结构
-from modules.market_data import MarketData
-from modules.nlp_analyzer import NLPAnalyzer
+# Import custom modules
 from modules.twitter_client import TwitterClient
-from modules.technical_analysis import TechnicalAnalysis
-from modules.chart_generator import ChartGenerator
-
-# 导入新模块
+from modules.market_data import MarketDataCollector
+from modules.nlp_analyzer import NLPAnalyzer
 from modules.social_data_collector import SocialDataCollector
-from modules.user_interaction import UserInteractionHandler
 from modules.content_generator import ContentGenerator
+from modules.chart_generator import ChartGenerator
+from modules.user_interaction import UserInteractionHandler
+from modules.openai_analyzer import OpenAIAnalyzer  # New import for OpenAI integration
 
-# 配置日志
+# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("logs/bot.log"),
-        logging.StreamHandler()
+        logging.StreamHandler(),
+        logging.FileHandler('crypto_bot.log')
     ]
 )
 logger = logging.getLogger(__name__)
 
-# 确保必要的目录存在
-os.makedirs('data/charts', exist_ok=True)
-os.makedirs('data/signals', exist_ok=True)
-os.makedirs('data/social', exist_ok=True)
-os.makedirs('logs', exist_ok=True)
+# Load environment variables
+load_dotenv()
+
+def parse_args():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(description='Crypto Analysis Bot')
+    parser.add_argument('--no-post', action='store_true', help='Do not post to Twitter')
+    parser.add_argument('--data-dir', default='data', help='Directory to store data files')
+    parser.add_argument('--charts-dir', default='charts', help='Directory to store chart images')
+    parser.add_argument('--templates-dir', default='templates', help='Directory for templates')
+    parser.add_argument('--cache-dir', default='cache', help='Directory for OpenAI cache')
+    parser.add_argument('--openai-model', default='gpt-3.5-turbo', help='OpenAI model to use')
+    return parser.parse_args()
+
+def check_directories(args):
+    """Ensure necessary directories exist."""
+    os.makedirs(args.data_dir, exist_ok=True)
+    os.makedirs(args.charts_dir, exist_ok=True)
+    os.makedirs(args.templates_dir, exist_ok=True)
+    os.makedirs(args.cache_dir, exist_ok=True)
+    os.makedirs('logs', exist_ok=True)
+
+def initialize_clients(args):
+    """Initialize API clients and components."""
+    # Twitter client
+    twitter_client = TwitterClient(
+        consumer_key=os.getenv('TWITTER_CONSUMER_KEY'),
+        consumer_secret=os.getenv('TWITTER_CONSUMER_SECRET'),
+        access_token=os.getenv('TWITTER_ACCESS_TOKEN'),
+        access_token_secret=os.getenv('TWITTER_ACCESS_TOKEN_SECRET'),
+        bearer_token=os.getenv('TWITTER_BEARER_TOKEN')
+    )
+    
+    # Market data collector
+    market_data_collector = MarketDataCollector(
+        coingecko_api_key=os.getenv('COINGECKO_API_KEY'),
+        cryptocompare_api_key=os.getenv('CRYPTOCOMPARE_API_KEY'),
+        data_dir=args.data_dir
+    )
+    
+    # NLP analyzer
+    nlp_analyzer = NLPAnalyzer(
+        reddit_client_id=os.getenv('REDDIT_CLIENT_ID'),
+        reddit_client_secret=os.getenv('REDDIT_CLIENT_SECRET'),
+        reddit_user_agent='CryptoAnalysisBot/1.0 (by /u/hedgehogai2025)',
+        cryptocompare_api_key=os.getenv('CRYPTOCOMPARE_API_KEY'),
+        coingecko_api_key=os.getenv('COINGECKO_API_KEY'),
+        data_dir=args.data_dir
+    )
+    
+    # OpenAI analyzer
+    openai_analyzer = OpenAIAnalyzer(
+        api_key=os.getenv('OPENAI_API_KEY'),
+        model=args.openai_model,
+        cache_dir=args.cache_dir
+    )
+    
+    # Social data collector
+    social_data_collector = SocialDataCollector(
+        twitter_client=twitter_client,
+        data_dir=args.data_dir
+    )
+    
+    # Content generator
+    content_generator = ContentGenerator(
+        templates_dir=args.templates_dir
+    )
+    
+    # Chart generator
+    chart_generator = ChartGenerator(
+        output_dir=args.charts_dir
+    )
+    
+    # User interaction handler
+    user_interaction_handler = UserInteractionHandler(
+        twitter_client=twitter_client,
+        data_dir=args.data_dir
+    )
+    
+    return {
+        'twitter_client': twitter_client,
+        'market_data_collector': market_data_collector,
+        'nlp_analyzer': nlp_analyzer,
+        'social_data_collector': social_data_collector,
+        'content_generator': content_generator,
+        'chart_generator': chart_generator,
+        'user_interaction_handler': user_interaction_handler,
+        'openai_analyzer': openai_analyzer  # Added OpenAI analyzer
+    }
+
+def generate_market_updates(components, args):
+    """Generate market updates and post to Twitter."""
+    logger.info("Generating market updates...")
+    
+    try:
+        # Collect market and social data
+        logger.info("Collecting expanded social and market data...")
+        market_data = components['market_data_collector'].collect_market_data()
+        social_data = components['social_data_collector'].collect_social_data(components['nlp_analyzer'])
+        
+        # Save analysis to file
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+        analysis_file = os.path.join(args.data_dir, f"analysis_{timestamp}.txt")
+        
+        # Use OpenAI for enhanced analysis
+        try:
+            # Get AI market analysis
+            logger.info("Generating AI-enhanced market analysis...")
+            ai_market_analysis = components['openai_analyzer'].analyze_market_data(market_data)
+            
+            # Get AI trend predictions
+            if 'price_history' in market_data:
+                ai_trend_predictions = components['openai_analyzer'].predict_trends(market_data, social_data)
+                logger.info("Generated AI trend predictions")
+            else:
+                ai_trend_predictions = {"full_analysis": "Insufficient historical data for trend prediction"}
+                logger.info("Skipped AI trend predictions due to insufficient historical data")
+            
+            # Get AI social sentiment analysis
+            ai_sentiment_analysis = components['openai_analyzer'].analyze_social_sentiment(social_data)
+            logger.info("Generated AI social sentiment analysis")
+            
+            # Generate AI-enhanced market update tweet
+            ai_market_update = components['openai_analyzer'].generate_market_update(market_data)
+            logger.info("Generated AI-enhanced market update tweet")
+            
+            # Save AI analysis to file
+            ai_analysis_file = os.path.join(args.data_dir, f"ai_analysis_{timestamp}.json")
+            with open(ai_analysis_file, 'w') as f:
+                json.dump({
+                    "market_analysis": ai_market_analysis,
+                    "trend_predictions": ai_trend_predictions,
+                    "sentiment_analysis": ai_sentiment_analysis
+                }, f, indent=2, default=str)
+            logger.info(f"AI analysis saved to {ai_analysis_file}")
+        except Exception as e:
+            logger.error(f"Error generating AI analysis: {str(e)}")
+            ai_market_update = None
+            ai_market_analysis = None
+        
+        # Generate charts if market data is available
+        if market_data and market_data.get('top_coins'):
+            try:
+                # Generate market overview chart
+                market_chart = components['chart_generator'].generate_market_overview(market_data)
+                
+                # Generate technical charts for top coins
+                btc_data = None
+                eth_data = None
+                bnb_data = None
+                sol_data = None
+                xrp_data = None
+                
+                for coin in market_data.get('top_coins', []):
+                    if coin['symbol'].upper() == 'BTC':
+                        ohlc_data = components['market_data_collector'].get_ohlc_data(coin['id'])
+                        if not ohlc_data.empty:
+                            btc_chart = components['chart_generator'].generate_technical_chart(
+                                'BTC', ohlc_data, {'sma': [20, 50], 'ema': [12, 26], 'rsi': True}
+                            )
+                            
+                            # Generate AI technical analysis
+                            if ai_market_analysis:
+                                btc_technical = components['openai_analyzer'].generate_technical_analysis('BTC', ohlc_data)
+                                logger.info("Generated AI technical analysis for BTC")
+                    
+                    elif coin['symbol'].upper() == 'ETH':
+                        ohlc_data = components['market_data_collector'].get_ohlc_data(coin['id'])
+                        if not ohlc_data.empty:
+                            eth_chart = components['chart_generator'].generate_technical_chart(
+                                'ETH', ohlc_data, {'sma': [20, 50], 'ema': [12, 26], 'rsi': True}
+                            )
+                            
+                            # Generate AI technical analysis
+                            if ai_market_analysis:
+                                eth_technical = components['openai_analyzer'].generate_technical_analysis('ETH', ohlc_data)
+                                logger.info("Generated AI technical analysis for ETH")
+                    
+                    elif coin['symbol'].upper() == 'BNB':
+                        ohlc_data = components['market_data_collector'].get_ohlc_data(coin['id'])
+                        if not ohlc_data.empty:
+                            bnb_chart = components['chart_generator'].generate_technical_chart(
+                                'BNB', ohlc_data, {'sma': [20, 50], 'ema': [12, 26], 'rsi': True}
+                            )
+                    
+                    elif coin['symbol'].upper() == 'SOL':
+                        ohlc_data = components['market_data_collector'].get_ohlc_data(coin['id'])
+                        if not ohlc_data.empty:
+                            sol_chart = components['chart_generator'].generate_technical_chart(
+                                'SOL', ohlc_data, {'sma': [20, 50], 'ema': [12, 26], 'rsi': True}
+                            )
+                    
+                    elif coin['symbol'].upper() == 'XRP':
+                        ohlc_data = components['market_data_collector'].get_ohlc_data(coin['id'])
+                        if not ohlc_data.empty:
+                            xrp_chart = components['chart_generator'].generate_technical_chart(
+                                'XRP', ohlc_data, {'sma': [20, 50], 'ema': [12, 26], 'rsi': True}
+                            )
+            except Exception as e:
+                logger.error(f"Error generating chart: {str(e)}")
+        
+        # Generate content
+        try:
+            # Generate market update (use AI version if available)
+            if ai_market_update:
+                market_update = ai_market_update
+                logger.info("Using AI-generated market update")
+            else:
+                market_update = components['content_generator'].generate_market_update(market_data)
+                logger.info("Using template-based market update")
+            
+            # Generate market analysis
+            market_analysis = components['content_generator'].generate_market_analysis(market_data, social_data)
+            
+            # Generate trading signals
+            if ai_market_analysis:
+                # Generate AI-enhanced trading signals for top coins
+                ai_signals = []
+                for coin in market_data.get('top_coins', [])[:5]:  # Top 5 coins
+                    try:
+                        symbol = coin['symbol'].upper()
+                        signal = components['openai_analyzer'].generate_trading_signal(
+                            symbol, 
+                            market_data, 
+                            market_data.get('technical_data', {})
+                        )
+                        ai_signals.append(signal)
+                    except Exception as e:
+                        logger.error(f"Error generating AI trading signal for {coin['symbol']}: {str(e)}")
+                
+                if ai_signals:
+                    # Use AI signals if available
+                    market_data['trading_signals'] = ai_signals
+                    logger.info(f"Generated {len(ai_signals)} AI trading signals")
+            
+            trading_signals = components['content_generator'].generate_trading_signals(
+                market_data.get('trading_signals', [])[:5]  # Top 5 signals
+            )
+            
+            # Generate detailed market thread
+            market_thread = components['content_generator'].generate_market_thread(
+                market_data, 
+                market_data.get('technical_data', {})
+            )
+            
+            # Generate sentiment analysis
+            sentiment_analysis = components['content_generator'].generate_sentiment_analysis(social_data)
+            
+            # Write analysis to file
+            with open(analysis_file, 'w') as f:
+                f.write("=== Market Update ===\n\n")
+                f.write(market_update)
+                f.write("\n\n=== Market Analysis ===\n\n")
+                f.write(market_analysis)
+                f.write("\n\n=== Trading Signals ===\n\n")
+                f.write(trading_signals)
+                f.write("\n\n=== Market Thread ===\n\n")
+                f.write('\n\n'.join(market_thread))
+                f.write("\n\n=== Sentiment Analysis ===\n\n")
+                f.write(sentiment_analysis)
+                
+                # Add AI analysis if available
+                if ai_market_analysis:
+                    f.write("\n\n=== AI Market Analysis ===\n\n")
+                    f.write(ai_market_analysis.get("analysis_text", "No AI analysis available"))
+                
+                if 'btc_technical' in locals():
+                    f.write("\n\n=== AI BTC Technical Analysis ===\n\n")
+                    f.write(btc_technical)
+                
+                if 'eth_technical' in locals():
+                    f.write("\n\n=== AI ETH Technical Analysis ===\n\n")
+                    f.write(eth_technical)
+            
+            logger.info(f"Market analysis saved to {analysis_file}")
+            
+            # Post to Twitter if enabled
+            if not args.no_post:
+                logger.info("Posting market analysis to Twitter...")
+                
+                # Post market thread
+                success, thread_ids = components['twitter_client'].create_thread(market_thread)
+                if success:
+                    logger.info("Analysis thread successfully posted to Twitter")
+                else:
+                    logger.error("Failed to post analysis thread to Twitter")
+                
+                # Post trading signals
+                signals_tweet_id = components['twitter_client'].post_tweet(trading_signals)
+                if signals_tweet_id:
+                    logger.info("Trading signals posted to Twitter")
+                
+                # Post simple market update
+                update_tweet_id = components['twitter_client'].post_tweet(market_update)
+                if update_tweet_id:
+                    logger.info("Simple market update posted to Twitter")
+                
+                # Post charts with commentary if available
+                if 'market_chart' in locals() and market_chart:
+                    chart_tweet = "📊 #Crypto Market Overview\n\nSwipe for more analysis and charts. $BTC $ETH #Bitcoin"
+                    chart_tweet_id = components['twitter_client'].post_tweet_with_media(chart_tweet, market_chart)
+                
+                logger.info("Market analysis successfully generated")
+        
+        except Exception as e:
+            logger.error(f"Error generating content: {str(e)}")
+    
+    except Exception as e:
+        logger.error(f"Error in market update process: {str(e)}")
+
+def check_user_interactions(components, args):
+    """Check for user interactions and respond."""
+    logger.info("Checking for user interactions...")
+    
+    try:
+        # Get latest market and social data files
+        market_data_files = sorted([f for f in os.listdir(args.data_dir) if f.startswith('market_data_')])
+        social_data_files = sorted([f for f in os.listdir(args.data_dir) if f.startswith('social_data_')])
+        
+        market_data = {}
+        social_data = {}
+        
+        if market_data_files:
+            with open(os.path.join(args.data_dir, market_data_files[-1]), 'r') as f:
+                market_data = json.load(f)
+        
+        if social_data_files:
+            with open(os.path.join(args.data_dir, social_data_files[-1]), 'r') as f:
+                social_data = json.load(f)
+        
+        # Check for new mentions directly
+        mentions = components['twitter_client'].get_mentions()
+        
+        if mentions:
+            logger.info(f"Found {len(mentions)} new mentions")
+            
+            # Process each mention with AI-enhanced responses
+            for mention in mentions:
+                try:
+                    mention_id = mention["id"]
+                    mention_text = mention["text"]
+                    username = mention["username"]
+                    
+                    logger.info(f"Processing mention from @{username}: {mention_text}")
+                    
+                    # Generate AI response
+                    ai_response = components['openai_analyzer'].generate_response_to_mention(
+                        mention_text, username, market_data
+                    )
+                    
+                    # Reply with AI response
+                    reply_id = components['twitter_client'].reply_to_tweet(mention_id, ai_response)
+                    if reply_id:
+                        logger.info(f"Replied to @{username} with AI-generated response")
+                    else:
+                        logger.error(f"Failed to reply to @{username}")
+                        
+                except Exception as e:
+                    logger.error(f"Error processing mention: {str(e)}")
+        else:
+            # Fallback to user interaction handler if direct mention access fails
+            processed = components['user_interaction_handler'].process_interactions(market_data, social_data)
+            
+            if processed > 0:
+                logger.info(f"Processed {processed} user interactions")
+            else:
+                logger.info("No user interactions to process")
+    
+    except Exception as e:
+        logger.error(f"Error checking user interactions: {str(e)}")
 
 def main():
-    """主程序入口"""
-    logger.info("Starting Cryptocurrency Analysis Bot...")
+    """Main function to run the crypto analysis bot."""
+    args = parse_args()
+    check_directories(args)
     
-    # 初始化各个模块
-    twitter_client = TwitterClient()
-    nlp_analyzer = NLPAnalyzer()
-    tech_analyzer = TechnicalAnalysis()
-    chart_gen = ChartGenerator()
-    market_data_client = MarketData()  # 使用您的MarketData类
+    logger.info("Starting crypto analysis bot with OpenAI integration...")
     
-    # 初始化新模块
-    social_collector = SocialDataCollector(twitter_client)
-    user_handler = UserInteractionHandler(twitter_client, nlp_analyzer, market_data_client)
-    content_generator = ContentGenerator(openai_client=None, nlp_analyzer=nlp_analyzer)
+    # Initialize components
+    components = initialize_clients(args)
     
-    # 定义任务
-    def collect_expanded_data():
-        """收集扩展的市场和社交数据"""
-        logger.info("Collecting expanded social and market data...")
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M')
-        
-        # 收集市场数据 - 使用MarketData类的方法
-        try:
-            # 获取顶级加密货币数据
-            top_coins_df = market_data_client.get_top_coins(limit=100)
-            
-            # 计算市场指标
-            market_indicators = market_data_client.calculate_market_indicators(top_coins_df)
-            
-            # 获取趋势币种
-            trending_coins = market_data_client.get_trending_coins()
-            
-            # 构建完整的市场数据对象
-            market_data_result = {
-                'btc_price': float(top_coins_df[top_coins_df['id'] == 'bitcoin']['current_price'].values[0]) if 'bitcoin' in top_coins_df['id'].values else 65000,
-                'eth_price': float(top_coins_df[top_coins_df['id'] == 'ethereum']['current_price'].values[0]) if 'ethereum' in top_coins_df['id'].values else 3500,
-                'total_market_cap': market_indicators.get('total_market_cap', '$2.5T'),
-                'btc_dominance': market_indicators.get('bitcoin_dominance', 48),
-                'total_volume_24h': top_coins_df['total_volume'].sum() if not top_coins_df.empty else 100000000000,
-                'market_indicators': market_indicators,
-                'top_coins': top_coins_df.head(20).to_dict('records') if not top_coins_df.empty else [],
-                'trending_coins': trending_coins,
-                'timestamp': datetime.now().isoformat()
-            }
-            
-            # 添加交易信号和异常
-            market_data_result['signals'] = {}
-            market_data_result['anomalies'] = []
-            
-            # 提取顶级赢家和输家作为趋势和异常
-            if 'top_gainers' in market_indicators and market_indicators['top_gainers']:
-                for gainer in market_indicators['top_gainers'][:2]:
-                    market_data_result['signals'][gainer['symbol'].upper()] = {
-                        'direction': 'buy',
-                        'strength': min(abs(gainer['price_change_percentage_24h']) / 10, 1.0),
-                        'timestamp': datetime.now().isoformat()
-                    }
-            
-            if 'top_losers' in market_indicators and market_indicators['top_losers']:
-                for loser in market_indicators['top_losers'][:2]:
-                    # 超过10%的损失添加为异常
-                    if abs(loser['price_change_percentage_24h']) > 10:
-                        market_data_result['anomalies'].append({
-                            'asset': loser['symbol'].upper(),
-                            'description': f"abnormal drop of {abs(loser['price_change_percentage_24h']):.1f}%",
-                            'confidence': min(abs(loser['price_change_percentage_24h']) * 2, 90),
-                            'timestamp': datetime.now().isoformat()
-                        })
-                    # 否则添加为卖出信号
-                    else:
-                        market_data_result['signals'][loser['symbol'].upper()] = {
-                            'direction': 'sell',
-                            'strength': min(abs(loser['price_change_percentage_24h']) / 10, 1.0),
-                            'timestamp': datetime.now().isoformat()
-                        }
-        except Exception as e:
-            logger.error(f"Error collecting market data: {str(e)}")
-            market_data_result = {
-                'btc_price': 65000,
-                'eth_price': 3500,
-                'timestamp': datetime.now().isoformat()
-            }
-        
-        with open(f"data/market_data_{timestamp}.json", 'w') as f:
-            json.dump(market_data_result, f)
-        logger.info(f"Market data collected and saved to data/market_data_{timestamp}.json")
-        
-        # 收集社交数据
-        reddit_data = nlp_analyzer.fetch_reddit_sentiment()
-        kol_tweets = social_collector.collect_kol_tweets(hours=6)  # 获取最近6小时的KOL推文
-        community_tweets = social_collector.collect_community_sentiment()
-        
-        # 合并所有社交数据
-        all_social_data = {
-            'reddit': reddit_data,
-            'kol_tweets': kol_tweets,
-            'community': community_tweets
-        }
-        
-        # 分析社交数据
-        try:
-            if hasattr(nlp_analyzer, 'analyze_alternative_sources'):
-                social_analysis = nlp_analyzer.analyze_alternative_sources()
-            else:
-                # 使用默认的社交分析方法
-                social_analysis = {'sentiment': 0.2, 'topics': [('bitcoin', 5), ('ethereum', 4), ('defi', 3)]}
-                
-                # 准备趋势币种
-                trending_tokens = []
-                if trending_coins:
-                    trending_tokens = [coin['symbol'].upper() for coin in trending_coins[:5]]
-                
-                # 添加到社交分析结果
-                social_analysis['mentioned_tokens'] = trending_tokens
-        except Exception as e:
-            logger.error(f"Error analyzing social data: {str(e)}")
-            social_analysis = {'sentiment': 'neutral'}
-        
-        # 保存社交数据和分析结果
-        social_data_file = f"data/social_data_{timestamp}.json"
-        with open(social_data_file, 'w') as f:
-            json.dump({
-                'data': all_social_data,
-                'analysis': social_analysis
-            }, f)
-        logger.info(f"Social data collected and saved to {social_data_file}")
-        
-        return market_data_result, social_analysis
+    # Schedule tasks
+    schedule.every(6).hours.do(generate_market_updates, components=components, args=args)
+    schedule.every(5).minutes.do(check_user_interactions, components=components, args=args)
     
-    def generate_and_post_market_update():
-        """生成并发布市场更新"""
-        logger.info("Generating market updates...")
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M')
-        
-        # 收集数据
-        market_data_result, social_analysis = collect_expanded_data()
-        
-        # 生成市场概览图表
-        chart_path = f"data/charts/market_overview_{timestamp}.png"
-        try:
-            # 尝试使用chart_gen对象
-            chart_gen.generate_market_overview(market_data_result, output_path=chart_path)
-            logger.info(f"Market overview chart saved to {chart_path}")
-        except Exception as e:
-            logger.error(f"Error generating market overview chart: {str(e)}")
-            chart_path = None
-        
-        # 生成技术分析图表
-        chart_paths = {}
-        for symbol in ['BTC', 'ETH', 'BNB', 'SOL', 'XRP']:
-            ta_chart_path = f"data/charts/{symbol}_analysis_{timestamp}.png"
-            try:
-                chart_gen.generate_technical_chart(symbol, output_path=ta_chart_path)
-                chart_paths[symbol] = ta_chart_path
-                logger.info(f"{symbol} technical analysis chart saved to {ta_chart_path}")
-            except Exception as e:
-                logger.error(f"Error generating {symbol} technical chart: {str(e)}")
-        
-        # 生成市场分析文本
-        market_update = content_generator.generate_market_update(market_data_result, social_analysis)
-        trend_analysis = content_generator.generate_trend_analysis(market_data_result, social_analysis)
-        
-        # 保存分析到文件
-        analysis_file = f"data/analysis_{timestamp}.txt"
-        with open(analysis_file, 'w') as f:
-            f.write(f"{market_update}\n\n{trend_analysis}")
-        logger.info(f"Market analysis saved to {analysis_file}")
-        
-        # 发布到Twitter
-        logger.info("Posting market analysis to Twitter...")
-        
-        # 发布市场更新
-        tweet_id = None
-        if chart_path and os.path.exists(chart_path):
-            tweet_id = twitter_client.post_tweet_with_media(
-                text=market_update,
-                media_path=chart_path
-            )
-        else:
-            # 如果没有图表，只发布文本
-            tweet_id = twitter_client.post_tweet(market_update)
-        
-        # 如果有趋势分析，作为回复发布
-        if trend_analysis and tweet_id:
-            twitter_client.reply_to_tweet(
-                tweet_id=tweet_id,
-                text=trend_analysis
-            )
-            logger.info("Analysis thread successfully posted to Twitter")
-            
-        # 发布交易信号
-        if 'signals' in market_data_result and market_data_result['signals']:
-            signals_text = "📈 #TradingSignal Alert:\n"
-            for symbol, signal in list(market_data_result['signals'].items())[:3]:  # 限制为前3个信号
-                direction = "🟢 BUY" if signal.get('direction') == 'buy' else "🔴 SELL"
-                strength = signal.get('strength', 0.5)
-                signals_text += f"{direction} {symbol}: Strength {strength:.1f}/1.0\n"
-                
-            twitter_client.post_tweet(signals_text)
-            logger.info("Trading signals posted to Twitter")
-            
-        # 发布异常警报
-        if 'anomalies' in market_data_result and market_data_result['anomalies']:
-            anomaly_text = "🚨 #MarketAnomaly Alert:\n"
-            for anomaly in market_data_result['anomalies'][:2]:  # 限制为前2个异常
-                asset = anomaly.get('asset', 'Unknown')
-                description = anomaly.get('description', 'unusual activity')
-                confidence = anomaly.get('confidence', 50)
-                anomaly_text += f"{asset}: {description} ({confidence:.1f}% confidence)\n"
-                
-            twitter_client.post_tweet(anomaly_text)
-            logger.info("Anomaly alerts posted to Twitter")
-            
-        # 发布简单的市场更新
-        btc_price = market_data_result.get('btc_price', '?')
-        market_cap = market_data_result.get('total_market_cap', '?')
-        volume_24h = market_data_result.get('total_volume_24h', '?')
-        btc_dominance = market_data_result.get('btc_dominance', '?')
-        
-        summary = f"📊 #Crypto Market Update ({datetime.now().strftime('%Y-%m-%d %H:%M')}):\n"
-        summary += f"BTC: ${btc_price}\n"
-        summary += f"Total Market Cap: ${market_cap:,.0f}\n" if isinstance(market_cap, (int, float)) else f"Total Market Cap: {market_cap}\n"
-        summary += f"24h Volume: ${volume_24h:,.0f}\n" if isinstance(volume_24h, (int, float)) else f"24h Volume: {volume_24h}\n"
-        summary += f"BTC Dominance: {btc_dominance:.1f}%" if isinstance(btc_dominance, (int, float)) else f"BTC Dominance: {btc_dominance}"
-        
-        if chart_path and os.path.exists(chart_path):
-            twitter_client.post_tweet_with_media(
-                text=summary,
-                media_path=chart_path
-            )
-        else:
-            twitter_client.post_tweet(summary)
-            
-        logger.info("Simple market update posted to Twitter")
-        logger.info("Market analysis successfully generated")
-        
-        return True
+    # Log OpenAI configuration
+    logger.info(f"OpenAI integration enabled with model: {args.openai_model}")
     
-    def check_user_interactions():
-        """检查用户互动并回复"""
-        logger.info("Checking for user interactions...")
-        user_handler.check_and_respond_mentions()
-    
-    # 设置定时任务
-    schedule.every(30).minutes.do(collect_expanded_data)
-    schedule.every(1).hours.do(generate_and_post_market_update)
-    schedule.every(5).minutes.do(check_user_interactions)
-    
-    # 主循环
+    # Run initial market update
     logger.info("All tasks scheduled, starting main loop")
+    generate_market_updates(components, args)
     
-    # 启动时先运行一次数据收集和市场更新
-    try:
-        generate_and_post_market_update()
-    except Exception as e:
-        logger.error(f"Error during initial market update: {str(e)}")
-    
+    # Main loop
     while True:
         try:
             schedule.run_pending()
-            time.sleep(60)  # 每分钟检查一次定时任务
+            time.sleep(60)  # Check every minute
+        except KeyboardInterrupt:
+            logger.info("Bot stopped by user")
+            break
         except Exception as e:
             logger.error(f"Error in main loop: {str(e)}")
-            time.sleep(300)  # 如果出错，等待5分钟再继续
+            time.sleep(300)  # Wait 5 minutes before retrying
 
 if __name__ == "__main__":
     main()
