@@ -1,0 +1,5 @@
+[
+  "\ud83d\udd25 Market Alert: {trend_direction} momentum building in #{main_coin}! {sentiment_description}. Key support at ${support_level}, resistance at ${resistance_level}. #{trending_topic1} #{trending_topic2}",
+  "\ud83d\udcca {timeframe} Update:\n#{main_coin}: {price_change}% ({sentiment_emoji})\nVolume: ${volume}M\nTop Gainers: #{top_gainer1} {top_gainer1_change}%, #{top_gainer2} {top_gainer2_change}%\nTrending: #{trending_topic1}",
+  "\ud83d\udc40 Watching #{main_coin} closely as it {price_action} ${price_level}. {volume_description}. Community sentiment: {sentiment_label}. Stay tuned for more updates!"
+]

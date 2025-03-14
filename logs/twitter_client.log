@@ -3513,3 +3513,48 @@ Unauthorized
 2025-03-14 11:09:05,177 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
 Unauthorized
 2025-03-14 11:09:05,177 - __main__ - INFO - No new mentions found
+2025-03-14 11:19:05,735 - __main__ - INFO - Checking mentions...
+2025-03-14 11:19:06,148 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 11:19:06,149 - __main__ - INFO - No new mentions found
+2025-03-14 11:29:06,657 - __main__ - INFO - Checking mentions...
+2025-03-14 11:29:07,073 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 11:29:07,073 - __main__ - INFO - No new mentions found
+2025-03-14 11:39:07,625 - __main__ - INFO - Checking mentions...
+2025-03-14 11:39:08,048 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 11:39:08,048 - __main__ - INFO - No new mentions found
+2025-03-14 11:49:08,592 - __main__ - INFO - Collecting market data...
+2025-03-14 11:49:08,912 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 11:49:08,916 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-14 11:49:08,966 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 11:49:08,967 - __main__ - INFO - New trending tokens discovered: NEIRO, DOGINME, VIRTUAL, BMT, SEI, KAITO
+2025-03-14 11:49:09,812 - modules.blockchain_data - ERROR - Failed to get gas prices: 404
+2025-03-14 11:49:09,813 - modules.blockchain_data - INFO - Retrieved 2 whale transactions
+2025-03-14 11:49:13,286 - modules.trading_signals - INFO - Trading signals saved to data/signals/trading_signals_20250314_1149.json
+2025-03-14 11:49:13,295 - __main__ - INFO - Market data collected and saved to data/market_data_20250314_1149.json
+2025-03-14 11:49:13,295 - __main__ - INFO - Generating market charts...
+2025-03-14 11:49:13,323 - __main__ - INFO - Collecting social media and news data...
+2025-03-14 11:49:13,704 - modules.nlp_analyzer - ERROR - Failed to fetch crypto news from CoinGecko Pro API: 400
+2025-03-14 11:49:13,865 - __main__ - INFO - Market overview chart saved to data/charts/market_overview_20250314_1149.png
+2025-03-14 11:49:14,028 - modules.nlp_analyzer - ERROR - Failed to fetch coin data from CoinGecko: 422
+2025-03-14 11:49:14,566 - modules.nlp_analyzer - INFO - Fetched 0 crypto news articles from CryptoCompare
+2025-03-14 11:49:14,914 - __main__ - INFO - BTC technical analysis chart saved to data/charts/BTC_analysis_20250314_1149.png
+2025-03-14 11:49:16,009 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 11:49:16,114 - __main__ - INFO - ETH technical analysis chart saved to data/charts/ETH_analysis_20250314_1149.png
+2025-03-14 11:49:18,161 - modules.nlp_analyzer - INFO - Fetched 56 posts from r/Bitcoin
+2025-03-14 11:49:18,495 - __main__ - INFO - BNB technical analysis chart saved to data/charts/BNB_analysis_20250314_1149.png
+2025-03-14 11:49:19,537 - __main__ - INFO - SOL technical analysis chart saved to data/charts/SOL_analysis_20250314_1149.png
+2025-03-14 11:49:20,151 - modules.nlp_analyzer - INFO - Fetched 84 posts from r/ethereum
+2025-03-14 11:49:20,584 - __main__ - INFO - XRP technical analysis chart saved to data/charts/XRP_analysis_20250314_1149.png
+2025-03-14 11:49:21,153 - modules.nlp_analyzer - INFO - Fetched 84 posts from Reddit
+2025-03-14 11:49:21,224 - __main__ - INFO - Social data collected and saved to data/social_data_20250314_1149.json
+2025-03-14 11:49:21,225 - __main__ - INFO - Checking mentions...
+2025-03-14 11:49:21,644 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 11:49:21,644 - __main__ - INFO - No new mentions found
+2025-03-14 11:59:22,105 - __main__ - INFO - Checking mentions...
+2025-03-14 11:59:22,543 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 11:59:22,543 - __main__ - INFO - No new mentions found

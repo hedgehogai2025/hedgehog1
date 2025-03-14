@@ -1,0 +1,5 @@
+[
+  "\u26a1 Technical Alert: #{symbol} {pattern_type} pattern formed on the {timeframe} chart. Target: ${target_price}. Stop: ${stop_price}. {confidence_level} confidence",
+  "\ud83d\udcc9 #{symbol} Technical Analysis:\nTrend: {trend_direction}\nKey Levels: Support ${support}, Resistance ${resistance}\nIndicators: RSI {rsi_value}, MACD {macd_status}\nOutlook: {outlook}",
+  "\ud83d\udd11 Key Level Alert: #{symbol} approaching critical {level_type} at ${price_level}. {historical_context}. Watching for {expected_reaction}"
+]

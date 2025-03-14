@@ -1,33 +1,33 @@
 {
   "HYPE": {
     "name": "Hyperliquid",
-    "price_btc": 0.0001551549772037035,
+    "price_btc": 0.0001558522162285493,
     "market_cap_rank": 32,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "PI": {
     "name": "Pi Network",
-    "price_btc": 2.0499119341782795e-05,
+    "price_btc": 2.0176808113474895e-05,
     "market_cap_rank": 12,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "SOL": {
     "name": "Solana",
-    "price_btc": 0.0015272070274413975,
+    "price_btc": 0.0015177744714590068,
     "market_cap_rank": 6,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "PEPE": {
     "name": "Pepe",
-    "price_btc": 8.163004165557755e-11,
+    "price_btc": 8.27187176838859e-11,
     "market_cap_rank": 41,
-    "updated_at": "2025-03-14T05:47:25.540964"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "S": {
     "name": "Sonic (prev. FTM)",
-    "price_btc": 6.0033961600159314e-06,
+    "price_btc": 6.124420824051977e-06,
     "market_cap_rank": 64,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "STRK": {
     "name": "Starknet",
@@ -37,15 +37,15 @@
   },
   "NEIRO": {
     "name": "Neiro",
-    "price_btc": 3.17924574966684e-09,
-    "market_cap_rank": 389,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "price_btc": 3.213814208262709e-09,
+    "market_cap_rank": 384,
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "SUI": {
     "name": "Sui",
-    "price_btc": 2.6862956450886053e-05,
-    "market_cap_rank": 22,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "price_btc": 2.6432896385754296e-05,
+    "market_cap_rank": 23,
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "ETH": {
     "name": "Ethereum",
@@ -57,7 +57,7 @@
     "name": "Bitcoin",
     "price_btc": 1.0,
     "market_cap_rank": 1,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "TRUMP": {
     "name": "Official Trump",
@@ -97,9 +97,9 @@
   },
   "LAYER": {
     "name": "Solayer",
-    "price_btc": 1.4840436175460376e-05,
-    "market_cap_rank": 217,
-    "updated_at": "2025-03-14T03:46:48.244819"
+    "price_btc": 1.4361948978342817e-05,
+    "market_cap_rank": 221,
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "POPCAT": {
     "name": "Popcat",
@@ -127,9 +127,9 @@
   },
   "XRP": {
     "name": "XRP",
-    "price_btc": 2.761402819115168e-05,
+    "price_btc": 2.7871189718329694e-05,
     "market_cap_rank": 4,
-    "updated_at": "2025-03-14T05:47:25.540964"
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "SYRUP": {
     "name": "Maple Finance",
@@ -157,9 +157,9 @@
   },
   "VIRTUAL": {
     "name": "Virtuals Protocol",
-    "price_btc": 7.135961686341192e-06,
-    "market_cap_rank": 169,
-    "updated_at": "2025-03-14T07:47:57.731528"
+    "price_btc": 7.460595467332298e-06,
+    "market_cap_rank": 164,
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "MOVE": {
     "name": "Movement",
@@ -187,9 +187,9 @@
   },
   "SEI": {
     "name": "Sei",
-    "price_btc": 2.349222010570548e-06,
-    "market_cap_rank": 90,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "price_btc": 2.3938200559762434e-06,
+    "market_cap_rank": 89,
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "LINK": {
     "name": "Chainlink",
@@ -211,14 +211,26 @@
   },
   "DOGINME": {
     "name": "doginme",
-    "price_btc": 9.523328482337309e-09,
-    "market_cap_rank": 953,
-    "updated_at": "2025-03-14T09:48:36.264053"
+    "price_btc": 1.255253002211661e-08,
+    "market_cap_rank": 523,
+    "updated_at": "2025-03-14T11:49:08.967346"
   },
   "ATH": {
     "name": "Aethir",
     "price_btc": 4.381785471287554e-07,
     "market_cap_rank": 223,
     "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "BMT": {
+    "name": "Bubblemaps",
+    "price_btc": 1.354443563968376e-06,
+    "market_cap_rank": 899,
+    "updated_at": "2025-03-14T11:49:08.967346"
+  },
+  "KAITO": {
+    "name": "KAITO",
+    "price_btc": 1.7475522342614886e-05,
+    "market_cap_rank": 178,
+    "updated_at": "2025-03-14T11:49:08.967346"
   }
 }

@@ -1,0 +1,5 @@
+[
+  "\u26a0\ufe0f Risk Assessment: #{token} currently shows {risk_level} risk profile. Metrics: Volatility {volatility_score}/10, Liquidity {liquidity_score}/10, Sentiment {sentiment_score}/10",
+  "\ud83d\udee1\ufe0f Market Risk Update: Overall crypto market risk is {market_risk_level}. Key factors: {risk_factor1}, {risk_factor2}, {risk_factor3}. Suggested approach: {risk_strategy}",
+  "\ud83d\udd2e #{token} Risk Scorecard:\nTechnical: {technical_risk}/10\nFundamental: {fundamental_risk}/10\nSocial: {social_risk}/10\nOverall: {overall_risk}/10\nVerdict: {risk_verdict}"
+]

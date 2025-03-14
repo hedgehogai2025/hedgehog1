@@ -1,0 +1,7 @@
+📊 Weekly Update:
+#BTC: -0.6420329566416605% (🟢)
+Volume: $46000.0M
+Top Gainers: #DOT 6.724548967299339%, #ARB 5.738194139119752%
+Trending: #Crypto
+
+📈 Sector Rotation: Capital flowing from {declining_sector} into {rising_sector}. This pattern typically {pattern_outcome}. Tokens to watch: ${token1}, ${token2}

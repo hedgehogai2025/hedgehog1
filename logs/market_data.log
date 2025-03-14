@@ -1,0 +1,419 @@
+2025-03-14 12:13:42,526 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:13:42,769 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:13:42,769 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:13:42,890 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:13:42,891 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:13:42,892 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:13:42,892 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:13:44,413 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:13:44,656 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:13:44,656 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:13:45,034 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:13:45,034 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:13:45,034 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:13:45,034 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:13:45,103 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:13:45,103 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:13:57,084 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:13:57,337 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:13:57,338 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:13:57,433 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:13:57,433 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:13:57,434 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:13:57,434 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:13:57,442 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:13:57,442 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:14:09,303 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:14:09,547 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:14:09,547 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:14:09,926 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:14:09,926 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:14:09,927 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:14:09,927 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:14:09,935 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:14:09,935 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:14:21,803 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:14:22,055 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:14:22,055 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:14:22,158 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:14:22,158 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:14:22,159 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:14:22,159 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:14:22,167 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:14:22,167 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:14:34,029 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:14:34,274 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:14:34,274 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:14:34,373 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:14:34,374 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:14:34,374 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:14:34,374 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:14:34,383 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:14:34,383 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:14:46,330 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:14:46,578 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:14:46,579 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:14:46,618 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:14:46,618 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:14:46,618 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:14:46,618 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:14:46,627 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:14:46,627 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:14:58,534 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:14:58,791 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:14:58,791 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:14:58,886 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:14:58,886 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:14:58,887 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:14:58,887 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:14:58,895 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:14:58,895 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:15:10,774 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:15:11,015 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:15:11,015 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:15:11,381 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:15:11,382 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:15:11,382 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:15:11,382 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:15:11,391 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:15:11,391 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:15:23,297 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:15:23,543 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:15:23,543 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:15:23,638 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:15:23,639 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:15:23,639 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:15:23,639 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:15:23,647 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:15:23,647 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:15:35,540 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:15:35,784 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:15:35,784 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:15:35,822 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:15:35,823 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:15:35,823 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:15:35,823 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:15:35,832 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:15:35,832 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:15:47,821 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:15:48,077 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:15:48,077 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:15:48,178 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:15:48,180 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:15:48,180 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:15:48,180 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:15:48,192 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:15:48,192 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:16:00,049 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:16:00,293 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:16:00,293 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:16:00,685 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:16:00,686 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:16:00,686 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:16:00,686 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:16:00,694 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:16:00,695 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:16:12,570 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:16:12,811 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:16:12,811 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:16:12,849 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:16:12,849 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:16:12,850 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:16:12,850 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:16:12,858 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:16:12,858 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:16:24,793 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:16:25,034 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:16:25,034 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:16:25,134 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:16:25,134 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:16:25,135 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:16:25,135 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:16:25,143 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:16:25,143 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:16:37,059 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:16:37,311 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:16:37,311 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:16:37,644 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:16:37,644 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:16:37,644 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:16:37,644 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:16:37,653 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:16:37,653 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:16:49,568 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:16:49,817 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:16:49,817 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:16:49,857 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:16:49,857 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:16:49,858 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:16:49,858 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:16:49,866 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:16:49,866 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:17:01,820 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:17:02,059 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:17:02,060 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:17:02,168 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:17:02,169 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:17:02,169 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:17:02,169 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:17:02,178 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:17:02,178 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:17:14,060 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:17:14,306 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:17:14,306 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:17:14,689 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:17:14,690 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:17:14,690 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:17:14,690 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:17:14,699 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:17:14,699 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:17:26,576 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:17:26,824 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:17:26,824 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:17:26,864 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:17:26,865 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:17:26,865 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:17:26,865 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:17:26,873 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:17:26,873 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:17:38,787 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:17:39,029 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:17:39,029 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:17:39,128 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:17:39,128 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:17:39,128 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:17:39,128 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:17:39,137 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:17:39,137 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:17:51,042 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:17:51,281 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:17:51,281 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:17:51,319 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:17:51,320 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:17:51,320 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:17:51,320 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:17:51,328 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:17:51,328 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:18:03,294 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:18:03,545 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:18:03,545 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:18:03,583 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:18:03,584 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:18:03,584 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:18:03,584 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:18:03,593 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:18:03,593 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:18:15,528 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:18:15,773 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:18:15,773 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:18:15,873 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:18:15,874 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:18:15,874 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:18:15,874 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:18:15,882 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:18:15,883 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:18:27,787 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:18:28,040 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:18:28,040 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:18:28,082 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:18:28,083 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:18:28,083 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:18:28,083 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:18:28,091 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:18:28,092 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:18:40,022 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:18:40,280 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:18:40,280 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:18:40,321 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:18:40,322 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:18:40,322 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:18:40,322 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:18:40,331 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:18:40,331 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:18:52,313 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:18:52,552 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:18:52,552 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:18:52,591 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:18:52,591 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:18:52,591 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:18:52,592 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:18:52,600 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:18:52,600 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:19:04,562 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:19:04,805 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:19:04,805 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:19:05,185 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:19:05,186 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:19:05,186 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:19:05,186 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:19:05,195 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:19:05,195 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:19:17,080 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:19:17,325 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:19:17,326 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:19:17,366 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:19:17,366 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:19:17,367 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:19:17,367 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:19:17,375 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:19:17,375 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:19:29,302 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:19:29,559 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:19:29,560 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:19:29,886 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:19:29,886 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:19:29,886 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:19:29,887 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:19:29,895 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:19:29,895 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:19:29,897 - modules.social_data_collector - INFO - Created default KOL list at data/config/crypto_kol_list.csv
+2025-03-14 12:19:29,898 - modules.user_interaction - INFO - No previous interaction state found, starting fresh
+2025-03-14 12:19:29,898 - modules.content_generator - INFO - Created default market_update templates
+2025-03-14 12:19:29,898 - modules.content_generator - INFO - Created default trend_analysis templates
+2025-03-14 12:19:29,898 - modules.content_generator - INFO - Created default technical_analysis templates
+2025-03-14 12:19:29,898 - modules.content_generator - INFO - Created default risk_assessment templates
+2025-03-14 12:19:29,898 - modules.content_generator - INFO - Created default news_summary templates
+2025-03-14 12:19:29,899 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 12:19:29,899 - __main__ - INFO - Generating market updates...
+2025-03-14 12:19:29,899 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 12:19:30,334 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 12:19:30,340 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-14 12:19:30,400 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 12:19:30,405 - __main__ - INFO - Market data collected and saved to data/market_data_20250314_1219.json
+2025-03-14 12:19:31,628 - modules.nlp_analyzer - INFO - Fetched 23 posts from r/CryptoCurrency
+2025-03-14 12:19:33,434 - modules.nlp_analyzer - INFO - Fetched 46 posts from r/Bitcoin
+2025-03-14 12:19:35,539 - modules.nlp_analyzer - INFO - Fetched 69 posts from r/ethereum
+2025-03-14 12:19:37,811 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-14 12:19:38,051 - modules.twitter_client - INFO - Twitter API v1.1 initialized
+2025-03-14 12:19:38,051 - modules.twitter_client - INFO - Twitter API v2 initialized
+2025-03-14 12:19:38,095 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-14 12:19:38,096 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-14 12:19:38,096 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-14 12:19:38,096 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-14 12:19:38,105 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-14 12:19:38,105 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-14 12:19:38,107 - modules.social_data_collector - INFO - Loaded 10 KOLs from configuration
+2025-03-14 12:19:38,107 - modules.user_interaction - INFO - No previous interaction state found, starting fresh
+2025-03-14 12:19:38,108 - modules.content_generator - INFO - Loaded 3 market_update templates
+2025-03-14 12:19:38,108 - modules.content_generator - INFO - Loaded 3 trend_analysis templates
+2025-03-14 12:19:38,108 - modules.content_generator - INFO - Loaded 3 technical_analysis templates
+2025-03-14 12:19:38,108 - modules.content_generator - INFO - Loaded 3 risk_assessment templates
+2025-03-14 12:19:38,108 - modules.content_generator - INFO - Loaded 3 news_summary templates
+2025-03-14 12:19:38,108 - __main__ - INFO - All tasks scheduled, starting main loop
+2025-03-14 12:19:38,108 - __main__ - INFO - Generating market updates...
+2025-03-14 12:19:38,108 - __main__ - INFO - Collecting expanded social and market data...
+2025-03-14 12:19:38,174 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-14 12:19:38,179 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-14 12:19:38,230 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-14 12:19:38,235 - __main__ - INFO - Market data collected and saved to data/market_data_20250314_1219.json
+2025-03-14 12:19:39,887 - modules.nlp_analyzer - INFO - Fetched 23 posts from r/CryptoCurrency
+2025-03-14 12:19:41,994 - modules.nlp_analyzer - INFO - Fetched 46 posts from r/Bitcoin
+2025-03-14 12:19:44,030 - modules.nlp_analyzer - INFO - Fetched 69 posts from r/ethereum
+2025-03-14 12:19:45,032 - modules.nlp_analyzer - INFO - Fetched 69 posts from Reddit
+2025-03-14 12:19:45,032 - modules.social_data_collector - INFO - Collecting tweets from VitalikButerin
+2025-03-14 12:19:45,237 - modules.twitter_client - ERROR - Error fetching tweets from VitalikButerin: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:45,238 - modules.social_data_collector - INFO - No tweets found for VitalikButerin
+2025-03-14 12:19:45,238 - modules.social_data_collector - INFO - Collecting tweets from cz_binance
+2025-03-14 12:19:45,407 - modules.twitter_client - ERROR - Error fetching tweets from cz_binance: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:45,407 - modules.social_data_collector - INFO - No tweets found for cz_binance
+2025-03-14 12:19:45,407 - modules.social_data_collector - INFO - Collecting tweets from SBF_FTX
+2025-03-14 12:19:45,578 - modules.twitter_client - ERROR - Error fetching tweets from SBF_FTX: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:45,578 - modules.social_data_collector - INFO - No tweets found for SBF_FTX
+2025-03-14 12:19:45,578 - modules.social_data_collector - INFO - Collecting tweets from elonmusk
+2025-03-14 12:19:45,748 - modules.twitter_client - ERROR - Error fetching tweets from elonmusk: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:45,748 - modules.social_data_collector - INFO - No tweets found for elonmusk
+2025-03-14 12:19:45,749 - modules.social_data_collector - INFO - Collecting tweets from aantonop
+2025-03-14 12:19:45,917 - modules.twitter_client - ERROR - Error fetching tweets from aantonop: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:45,917 - modules.social_data_collector - INFO - No tweets found for aantonop
+2025-03-14 12:19:45,918 - modules.social_data_collector - INFO - Collecting tweets from CryptoCapo_
+2025-03-14 12:19:46,089 - modules.twitter_client - ERROR - Error fetching tweets from CryptoCapo_: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:46,089 - modules.social_data_collector - INFO - No tweets found for CryptoCapo_
+2025-03-14 12:19:46,089 - modules.social_data_collector - INFO - Collecting tweets from PeterLBrandt
+2025-03-14 12:19:46,259 - modules.twitter_client - ERROR - Error fetching tweets from PeterLBrandt: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:46,259 - modules.social_data_collector - INFO - No tweets found for PeterLBrandt
+2025-03-14 12:19:46,259 - modules.social_data_collector - INFO - Collecting tweets from saylor
+2025-03-14 12:19:46,429 - modules.twitter_client - ERROR - Error fetching tweets from saylor: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:46,429 - modules.social_data_collector - INFO - No tweets found for saylor
+2025-03-14 12:19:46,429 - modules.social_data_collector - INFO - Collecting tweets from zhusu
+2025-03-14 12:19:46,606 - modules.twitter_client - ERROR - Error fetching tweets from zhusu: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:46,606 - modules.social_data_collector - INFO - No tweets found for zhusu
+2025-03-14 12:19:46,606 - modules.social_data_collector - INFO - Collecting tweets from SolanaStatus
+2025-03-14 12:19:46,776 - modules.twitter_client - ERROR - Error fetching tweets from SolanaStatus: 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:46,776 - modules.social_data_collector - INFO - No tweets found for SolanaStatus
+2025-03-14 12:19:46,776 - modules.social_data_collector - INFO - Collecting community tweets about Bitcoin
+2025-03-14 12:19:46,776 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:19:46,776 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:19:46,946 - modules.twitter_client - ERROR - Error searching tweets for 'Bitcoin -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:46,946 - modules.social_data_collector - INFO - No community tweets found for Bitcoin
+2025-03-14 12:19:46,946 - modules.social_data_collector - INFO - Collecting community tweets about Ethereum
+2025-03-14 12:19:46,946 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:19:46,946 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:19:47,119 - modules.twitter_client - ERROR - Error searching tweets for 'Ethereum -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:47,119 - modules.social_data_collector - INFO - No community tweets found for Ethereum
+2025-03-14 12:19:47,119 - modules.social_data_collector - INFO - Collecting community tweets about Solana
+2025-03-14 12:19:47,119 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:19:47,119 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:19:47,293 - modules.twitter_client - ERROR - Error searching tweets for 'Solana -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:47,293 - modules.social_data_collector - INFO - No community tweets found for Solana
+2025-03-14 12:19:47,293 - modules.social_data_collector - INFO - Collecting community tweets about Crypto
+2025-03-14 12:19:47,293 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:19:47,294 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:19:47,463 - modules.twitter_client - ERROR - Error searching tweets for 'Crypto -is:retweet': 401 Unauthorized
+Unauthorized
+2025-03-14 12:19:47,463 - modules.social_data_collector - INFO - No community tweets found for Crypto
+2025-03-14 12:19:47,764 - modules.nlp_analyzer - ERROR - Failed to fetch crypto news from CoinGecko Pro API: 400
+2025-03-14 12:19:48,330 - modules.nlp_analyzer - ERROR - Failed to fetch coin data from CoinGecko: 422
+2025-03-14 12:19:49,003 - modules.nlp_analyzer - INFO - Fetched 0 crypto news articles from CryptoCompare
+2025-03-14 12:19:49,703 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-14 12:19:51,818 - modules.nlp_analyzer - INFO - Fetched 56 posts from r/Bitcoin
+2025-03-14 12:19:53,892 - modules.nlp_analyzer - INFO - Fetched 84 posts from r/ethereum
+2025-03-14 12:19:54,893 - modules.nlp_analyzer - INFO - Fetched 84 posts from Reddit
+2025-03-14 12:19:54,981 - __main__ - INFO - Social data collected and saved to data/social_data_20250314_1219.json
+2025-03-14 12:19:54,981 - __main__ - ERROR - Error generating market overview chart: 'ChartGenerator' object has no attribute 'generate_market_overview'
+2025-03-14 12:19:54,981 - __main__ - ERROR - Error generating BTC technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 12:19:54,981 - __main__ - ERROR - Error generating ETH technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 12:19:54,981 - __main__ - ERROR - Error generating BNB technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 12:19:54,981 - __main__ - ERROR - Error generating SOL technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 12:19:54,981 - __main__ - ERROR - Error generating XRP technical chart: 'ChartGenerator' object has no attribute 'generate_technical_chart'
+2025-03-14 12:19:54,981 - modules.content_generator - ERROR - Missing template variable: 'rising_sector'
+2025-03-14 12:19:54,982 - __main__ - INFO - Market analysis saved to data/analysis_20250314_1219.txt
+2025-03-14 12:19:54,982 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-14 12:19:55,286 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900401479456034912): 📊 Weekly Update:
+#BTC: -0.6420329566416605% (🟢)
+Vo...
+2025-03-14 12:19:55,581 - modules.twitter_client - INFO - Replied to tweet 1900401479456034912 via v2 API (ID: 1900401480697520637): 📈 Sector Rotation: Capital flowing from {declining...
+2025-03-14 12:19:55,582 - __main__ - INFO - Analysis thread successfully posted to Twitter
+2025-03-14 12:19:55,908 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900401481922339120): 📈 #TradingSignal Alert:
+🟢 BUY TRUMP: Strength 1.0/...
+2025-03-14 12:19:55,908 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-14 12:19:56,205 - modules.twitter_client - INFO - Posted tweet via v2 API (ID: 1900401483331604985): 📊 #Crypto Market Update (2025-03-14 12:19):
+BTC: $...
+2025-03-14 12:19:56,205 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-14 12:19:56,205 - __main__ - INFO - Market analysis successfully generated
+2025-03-14 12:24:56,499 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:24:56,499 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:24:56,710 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:24:56,710 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:24:56,879 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:24:56,880 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 12:29:57,157 - __main__ - INFO - Checking for user interactions...
+2025-03-14 12:29:57,157 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 12:29:57,368 - tweepy.client - WARNING - Unexpected parameter: tweet.fields
+2025-03-14 12:29:57,368 - tweepy.client - WARNING - Unexpected parameter: user.fields
+2025-03-14 12:29:57,538 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 12:29:57,538 - modules.user_interaction - INFO - No new mentions found

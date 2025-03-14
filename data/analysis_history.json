@@ -44,7 +44,7 @@
   "2025-03-14T01:46:20.765229": {
     "btc_dominance": 60.19711012418507,
     "total_market_cap": 2639129734156,
-    "avg_sentiment": 0.1744214285714286,
+    "avg_sentiment": 0.17320238095238097,
     "top_gainers": [
       "xlm",
       "s",
@@ -65,7 +65,7 @@
   "2025-03-14T03:46:53.030242": {
     "btc_dominance": 60.25465593538354,
     "total_market_cap": 2646933072205,
-    "avg_sentiment": 0.1744214285714286,
+    "avg_sentiment": 0.17320238095238097,
     "top_gainers": [
       "s",
       "xlm",
@@ -86,7 +86,7 @@
   "2025-03-14T05:47:31.623177": {
     "btc_dominance": 60.346734841932495,
     "total_market_cap": 2654626866080,
-    "avg_sentiment": 0.1744214285714286,
+    "avg_sentiment": 0.17320238095238097,
     "top_gainers": [
       "s",
       "xlm",
@@ -107,7 +107,7 @@
   "2025-03-14T07:48:02.475130": {
     "btc_dominance": 60.27999860780303,
     "total_market_cap": 2667245251467,
-    "avg_sentiment": 0.1744214285714286,
+    "avg_sentiment": 0.17320238095238097,
     "top_gainers": [
       "s",
       "xlm",
@@ -128,7 +128,7 @@
   "2025-03-14T09:48:41.059129": {
     "btc_dominance": 60.2938216147596,
     "total_market_cap": 2692395099684,
-    "avg_sentiment": 0,
+    "avg_sentiment": 0.17320238095238097,
     "top_gainers": [
       "s",
       "trump",
@@ -138,6 +138,27 @@
       "ip",
       "ena",
       "bch"
+    ],
+    "trending": [
+      "NEIRO",
+      "DOGINME",
+      "PI"
+    ],
+    "whale_activity": 2
+  },
+  "2025-03-14T11:49:13.301085": {
+    "btc_dominance": 60.289515078378045,
+    "total_market_cap": 2691981302550,
+    "avg_sentiment": 0,
+    "top_gainers": [
+      "trump",
+      "s",
+      "sei"
+    ],
+    "top_losers": [
+      "ena",
+      "ip",
+      "tao"
     ],
     "trending": [
       "NEIRO",

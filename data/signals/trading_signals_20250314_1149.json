@@ -1,0 +1,58 @@
+{
+  "ETH": {
+    "asset": "ETH",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 1884.1717982371683,
+    "stop_loss": 2309.073915189274,
+    "take_profit": 1844.1669872825485,
+    "timestamp": "2025-03-14T11:49:13.286427",
+    "indicators": {
+      "rsi": 32.401436001772126,
+      "macd": -213.0981716288111,
+      "trend": -2.0
+    }
+  },
+  "DOGE": {
+    "asset": "DOGE",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 0.16761766499116357,
+    "stop_loss": 0.21090814427532414,
+    "take_profit": 0.15319064317749825,
+    "timestamp": "2025-03-14T11:49:13.286450",
+    "indicators": {
+      "rsi": 34.48614939770751,
+      "macd": -0.02403624433903448,
+      "trend": -2.0
+    }
+  },
+  "DOT": {
+    "asset": "DOT",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 4.024591007092978,
+    "stop_loss": 4.665449619104556,
+    "take_profit": 3.8472297590587496,
+    "timestamp": "2025-03-14T11:49:13.286456",
+    "indicators": {
+      "rsi": 38.1432840725276,
+      "macd": -0.29944528716565255,
+      "trend": -2.0
+    }
+  },
+  "MATIC": {
+    "asset": "MATIC",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 0.21277944296659895,
+    "stop_loss": 0.2636501792977464,
+    "take_profit": 0.20445748094462635,
+    "timestamp": "2025-03-14T11:49:13.286461",
+    "indicators": {
+      "rsi": 31.27615633596834,
+      "macd": -0.028567709646724143,
+      "trend": -2.0
+    }
+  }
+}

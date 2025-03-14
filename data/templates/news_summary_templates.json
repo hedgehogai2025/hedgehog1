@@ -1,0 +1,5 @@
+[
+  "\ud83d\udcf0 Latest Crypto News:\n1. {headline1}\n2. {headline2}\n3. {headline3}\nMarket reaction: {market_reaction}",
+  "\ud83d\uddde\ufe0f {timeframe} News Roundup: {major_headline} dominates discussions. Also trending: {other_headline1}, {other_headline2}. Impact on market: {market_impact}",
+  "\ud83d\udce3 Breaking: {breaking_news_headline}. Early analysis suggests this could {potential_impact}. #{related_token1} #{related_token2}"
+]

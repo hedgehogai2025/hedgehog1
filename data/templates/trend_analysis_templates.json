@@ -1,0 +1,5 @@
+[
+  "\ud83d\udd0d Trend Analysis: {trending_sector} sector showing {momentum_description}. Key players: ${token1}, ${token2}, ${token3}. {reason_for_trend}",
+  "\ud83d\udcc8 Sector Rotation: Capital flowing from {declining_sector} into {rising_sector}. This pattern typically {pattern_outcome}. Tokens to watch: ${token1}, ${token2}",
+  "\ud83c\udf0a Market Cycle Update: We're currently in the {cycle_phase} phase for #{main_coin}. Historical patterns suggest {expected_outcome}. Key indicators: {indicator1}, {indicator2}"
+]

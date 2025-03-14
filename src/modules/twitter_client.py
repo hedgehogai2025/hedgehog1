@@ -1,371 +1,479 @@
+# modules/twitter_client.py
 import os
-import tweepy
-from dotenv import load_dotenv
-import time
 import logging
+import time
+import tweepy
+from datetime import datetime, timedelta
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("logs/twitter_client.log"),
-        logging.StreamHandler()
-    ]
-)
+# 配置日志
 logger = logging.getLogger(__name__)
-
-# Load environment variables
-load_dotenv()
 
 class TwitterClient:
     def __init__(self):
+        # Twitter API认证凭据
         self.consumer_key = os.getenv('TWITTER_CONSUMER_KEY')
         self.consumer_secret = os.getenv('TWITTER_CONSUMER_SECRET')
         self.access_token = os.getenv('TWITTER_ACCESS_TOKEN')
         self.access_token_secret = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
+        self.bearer_token = os.getenv('TWITTER_BEARER_TOKEN')
         
-        # Use both v1 and v2 clients
-        self.api_v1 = self._initialize_api_v1()
-        self.client_v2 = self._initialize_client_v2()
+        # 初始化API
+        # 初始化API
+        self.v1_api = None
+        self.v2_api = None
         
-    def _initialize_api_v1(self):
-        """Initialize and return the Twitter API v1.1 client."""
+        # 初始化API客户端
+        self._init_v1_api()
+        self._init_v2_api()
+        
+    def _init_v1_api(self):
+        """初始化Twitter API v1.1客户端"""
         try:
+            # 设置OAuth 1.0a认证
             auth = tweepy.OAuth1UserHandler(
-                self.consumer_key, 
+                self.consumer_key,
                 self.consumer_secret,
-                self.access_token, 
+                self.access_token,
                 self.access_token_secret
             )
-            api = tweepy.API(auth, wait_on_rate_limit=True)
+            
+            # 创建API对象
+            self.v1_api = tweepy.API(auth)
+            
+            # 验证凭据
+            self.v1_api.verify_credentials()
             logger.info("Twitter API v1.1 initialized")
-            return api
+            
         except Exception as e:
             logger.error(f"Error initializing Twitter API v1.1: {str(e)}")
-            return None
+            self.v1_api = None
             
-    def _initialize_client_v2(self):
-        """Initialize and return the Twitter API v2 client."""
+    def _init_v2_api(self):
+        """初始化Twitter API v2客户端"""
         try:
-            client = tweepy.Client(
-                consumer_key=self.consumer_key, 
+            # 设置OAuth 2.0认证
+            self.v2_api = tweepy.Client(
+                bearer_token=self.bearer_token,
+                consumer_key=self.consumer_key,
                 consumer_secret=self.consumer_secret,
-                access_token=self.access_token, 
-                access_token_secret=self.access_token_secret,
-                wait_on_rate_limit=True
+                access_token=self.access_token,
+                access_token_secret=self.access_token_secret
             )
+            
             logger.info("Twitter API v2 initialized")
-            return client
+            
         except Exception as e:
             logger.error(f"Error initializing Twitter API v2: {str(e)}")
+            self.v2_api = None
+    
+    def post_tweet(self, text, media_paths=None):
+        """发布推文，支持媒体附件"""
+        if not text:
+            logger.error("Cannot post empty tweet")
             return None
-    
-    def get_kol_tweets(self, kol_usernames, count=100):
-        """Fetch recent tweets from a list of KOL usernames."""
-        all_tweets = []
-        
-        for username in kol_usernames:
-            try:
-                if self.api_v1:
-                    tweets = self.api_v1.user_timeline(screen_name=username, count=count, tweet_mode='extended')
-                    logger.info(f"Fetched {len(tweets)} tweets from {username}")
-                    
-                    for tweet in tweets:
-                        tweet_data = {
-                            'id': tweet.id,
-                            'username': username,
-                            'text': tweet.full_text,
-                            'created_at': tweet.created_at,
-                            'retweet_count': tweet.retweet_count,
-                            'favorite_count': tweet.favorite_count
-                        }
-                        all_tweets.append(tweet_data)
-                elif self.client_v2:
-                    # First get user ID from username
-                    user = self.client_v2.get_user(username=username)
-                    if user.data:
-                        user_id = user.data.id
-                        tweets = self.client_v2.get_users_tweets(
-                            id=user_id, 
-                            max_results=count,
-                            tweet_fields=['created_at', 'public_metrics']
-                        )
-                        
-                        if tweets.data:
-                            logger.info(f"Fetched {len(tweets.data)} tweets from {username}")
-                            
-                            for tweet in tweets.data:
-                                tweet_data = {
-                                    'id': tweet.id,
-                                    'username': username,
-                                    'text': tweet.text,
-                                    'created_at': tweet.created_at,
-                                    'retweet_count': tweet.public_metrics.get('retweet_count', 0),
-                                    'favorite_count': tweet.public_metrics.get('like_count', 0)
-                                }
-                                all_tweets.append(tweet_data)
-                    else:
-                        logger.error(f"Could not find user with username {username}")
-                else:
-                    logger.error("No Twitter API client available")
-                    
-            except Exception as e:
-                logger.error(f"Error fetching tweets from {username}: {str(e)}")
             
-            # Sleep to avoid rate limiting
-            time.sleep(2)
-            
-        return all_tweets
-    
-    def post_tweet(self, text):
-        """Post a tweet with the given text."""
         try:
-            # Try v2 API first
-            if self.client_v2:
-                response = self.client_v2.create_tweet(text=text)
-                if response and hasattr(response, 'data'):
-                    tweet_id = response.data.get('id')
-                    logger.info(f"Posted tweet via v2 API (ID: {tweet_id}): {text[:50]}...")
-                    return response
+            # 优先使用v2 API (更新的)
+            if self.v2_api:
+                # 处理媒体文件 (如果有)
+                media_ids = []
+                if media_paths and self.v1_api:
+                    for media_path in media_paths:
+                        try:
+                            if os.path.exists(media_path):
+                                media = self.v1_api.media_upload(media_path)
+                                media_ids.append(media.media_id)
+                                logger.info(f"Media uploaded: {media_path}")
+                        except Exception as e:
+                            logger.error(f"Error uploading media {media_path}: {str(e)}")
+                
+                # 发布推文
+                if media_ids:
+                    response = self.v2_api.create_tweet(
+                        text=text,
+                        media_ids=media_ids
+                    )
                 else:
-                    logger.error(f"Unexpected response from v2 API: {response}")
+                    response = self.v2_api.create_tweet(
+                        text=text
+                    )
+                
+                tweet_id = response.data['id']
+                logger.info(f"Posted tweet via v2 API (ID: {tweet_id}): {text[:50]}...")
+                return tweet_id
             
-            # Fall back to v1 if v2 fails or isn't available
-            if self.api_v1 and (not self.client_v2 or not response):
-                tweet = self.api_v1.update_status(text)
-                logger.info(f"Posted tweet via v1 API: {text[:50]}...")
-                return tweet
+            # 回退到v1 API
+            elif self.v1_api:
+                # 处理媒体文件 (如果有)
+                media_ids = []
+                if media_paths:
+                    for media_path in media_paths:
+                        try:
+                            if os.path.exists(media_path):
+                                media = self.v1_api.media_upload(media_path)
+                                media_ids.append(media.media_id)
+                                logger.info(f"Media uploaded: {media_path}")
+                        except Exception as e:
+                            logger.error(f"Error uploading media {media_path}: {str(e)}")
+                
+                # 发布推文
+                if media_ids:
+                    status = self.v1_api.update_status(
+                        status=text,
+                        media_ids=media_ids
+                    )
+                else:
+                    status = self.v1_api.update_status(
+                        status=text
+                    )
+                
+                tweet_id = status.id
+                logger.info(f"Posted tweet via v1 API (ID: {tweet_id}): {text[:50]}...")
+                return tweet_id
             
-            if not self.client_v2 and not self.api_v1:
-                logger.error("No Twitter API client available")
+            else:
+                logger.error("No Twitter API client is available")
                 return None
                 
         except Exception as e:
             logger.error(f"Error posting tweet: {str(e)}")
             return None
-    
+            
     def post_tweet_with_media(self, text, media_path):
-        """Post a tweet with media attachment."""
+        """使用媒体发布推文"""
         try:
-            # Try using v1 API first as it handles media better
-            if self.api_v1:
+            # 优先尝试v1 API上传媒体
+            if self.v1_api:
                 try:
-                    # Upload media
-                    media = self.api_v1.media_upload(media_path)
-                    
-                    # Post tweet with media
-                    tweet = self.api_v1.update_status(
-                        status=text,
+                    media = self.v1_api.media_upload(media_path)
+                    status = self.v1_api.update_status(
+                        status=text, 
                         media_ids=[media.media_id]
                     )
-                    
-                    logger.info(f"Posted tweet with media via v1 API: {text[:50]}...")
-                    return tweet
+                    tweet_id = status.id
+                    logger.info(f"Posted tweet with media via v1 API (ID: {tweet_id}): {text[:50]}...")
+                    return tweet_id
                 except Exception as e:
                     logger.error(f"Error posting tweet with media via v1 API: {str(e)}")
             
-            # Fall back to v2 API (though media handling is more complex)
-            if self.client_v2:
+            # 如果v1 API失败，尝试v2 API (但需要首先上传媒体)
+            if self.v2_api and self.v1_api:
                 try:
-                    # For v2, we first need to upload media via v1.1 endpoint
-                    if not self.api_v1:
-                        # Create a temporary v1 client just for media upload
-                        auth = tweepy.OAuth1UserHandler(
-                            self.consumer_key, 
-                            self.consumer_secret,
-                            self.access_token, 
-                            self.access_token_secret
-                        )
-                        temp_api = tweepy.API(auth)
-                        media = temp_api.media_upload(media_path)
-                    else:
-                        media = self.api_v1.media_upload(media_path)
-                    
-                    # Then post the tweet with media_id via v2
-                    response = self.client_v2.create_tweet(
+                    media = self.v1_api.media_upload(media_path)
+                    response = self.v2_api.create_tweet(
                         text=text,
-                        media_ids=[media.media_id_string]
+                        media_ids=[media.media_id]
                     )
-                    
-                    if response and hasattr(response, 'data'):
-                        tweet_id = response.data.get('id')
-                        logger.info(f"Posted tweet with media via v2 API (ID: {tweet_id}): {text[:50]}...")
-                        return response
-                    else:
-                        logger.error(f"Unexpected response from v2 API: {response}")
-                        
+                    tweet_id = response.data['id']
+                    logger.info(f"Posted tweet with media via v2 API (ID: {tweet_id}): {text[:50]}...")
+                    return tweet_id
                 except Exception as e:
                     logger.error(f"Error posting tweet with media via v2 API: {str(e)}")
+                    
+            # 如果都失败了，尝试不带媒体发布
+            return self.post_tweet(text)
             
-            if not self.client_v2 and not self.api_v1:
-                logger.error("No Twitter API client available")
-                return None
-                
         except Exception as e:
-            logger.error(f"Error posting tweet with media: {str(e)}")
+            logger.error(f"Error in post_tweet_with_media: {str(e)}")
+            # 尝试不带媒体发布
+            return self.post_tweet(text)
+            
+    def reply_to_tweet(self, tweet_id, text, media_paths=None):
+        """回复推文"""
+        if not tweet_id or not text:
+            logger.error("Cannot reply with empty tweet_id or text")
             return None
-    
-    def reply_to_tweet(self, tweet_id, text):
-        """Reply to a specific tweet."""
+            
         try:
-            # Try v2 API first
-            if self.client_v2:
-                response = self.client_v2.create_tweet(
-                    text=text,
-                    in_reply_to_tweet_id=tweet_id
-                )
-                if response and hasattr(response, 'data'):
-                    reply_id = response.data.get('id')
-                    logger.info(f"Replied to tweet {tweet_id} via v2 API (ID: {reply_id}): {text[:50]}...")
-                    return response
+            # 优先使用v2 API
+            if self.v2_api:
+                # 处理媒体文件 (如果有)
+                media_ids = []
+                if media_paths and self.v1_api:
+                    for media_path in media_paths:
+                        try:
+                            if os.path.exists(media_path):
+                                media = self.v1_api.media_upload(media_path)
+                                media_ids.append(media.media_id)
+                        except Exception as e:
+                            logger.error(f"Error uploading media {media_path}: {str(e)}")
+                
+                # 发布回复
+                if media_ids:
+                    response = self.v2_api.create_tweet(
+                        text=text,
+                        media_ids=media_ids,
+                        in_reply_to_tweet_id=tweet_id
+                    )
                 else:
-                    logger.error(f"Unexpected response from v2 API: {response}")
-            
-            # Fall back to v1 if v2 fails or isn't available
-            if self.api_v1 and (not self.client_v2 or not response):
-                tweet = self.api_v1.update_status(
-                    status=text,
-                    in_reply_to_status_id=tweet_id,
-                    auto_populate_reply_metadata=True
-                )
-                logger.info(f"Replied to tweet {tweet_id} via v1 API: {text[:50]}...")
-                return tweet
-            
-            if not self.client_v2 and not self.api_v1:
-                logger.error("No Twitter API client available")
+                    response = self.v2_api.create_tweet(
+                        text=text,
+                        in_reply_to_tweet_id=tweet_id
+                    )
+                
+                reply_id = response.data['id']
+                logger.info(f"Replied to tweet {tweet_id} via v2 API (ID: {reply_id}): {text[:50]}...")
+                return reply_id
+                
+            # 回退到v1 API
+            elif self.v1_api:
+                # 处理媒体文件 (如果有)
+                media_ids = []
+                if media_paths:
+                    for media_path in media_paths:
+                        try:
+                            if os.path.exists(media_path):
+                                media = self.v1_api.media_upload(media_path)
+                                media_ids.append(media.media_id)
+                        except Exception as e:
+                            logger.error(f"Error uploading media {media_path}: {str(e)}")
+                
+                # 发布回复
+                if media_ids:
+                    status = self.v1_api.update_status(
+                        status=text,
+                        in_reply_to_status_id=tweet_id,
+                        auto_populate_reply_metadata=True,
+                        media_ids=media_ids
+                    )
+                else:
+                    status = self.v1_api.update_status(
+                        status=text,
+                        in_reply_to_status_id=tweet_id,
+                        auto_populate_reply_metadata=True
+                    )
+                
+                reply_id = status.id
+                logger.info(f"Replied to tweet {tweet_id} via v1 API (ID: {reply_id}): {text[:50]}...")
+                return reply_id
+                
+            else:
+                logger.error("No Twitter API client is available")
                 return None
                 
         except Exception as e:
             logger.error(f"Error replying to tweet: {str(e)}")
             return None
-    
-    def reply_with_media(self, tweet_id, text, media_path):
-        """Reply to a tweet with media attachment."""
-        try:
-            # Try using v1 API first as it handles media better
-            if self.api_v1:
-                try:
-                    # Upload media
-                    media = self.api_v1.media_upload(media_path)
-                    
-                    # Post reply with media
-                    tweet = self.api_v1.update_status(
-                        status=text,
-                        in_reply_to_status_id=tweet_id,
-                        media_ids=[media.media_id],
-                        auto_populate_reply_metadata=True
-                    )
-                    
-                    logger.info(f"Replied to tweet {tweet_id} with media via v1 API: {text[:50]}...")
-                    return tweet
-                except Exception as e:
-                    logger.error(f"Error replying with media via v1 API: {str(e)}")
             
-            # Fall back to v2 API
-            if self.client_v2:
-                try:
-                    # For v2, we first need to upload media via v1.1 endpoint
-                    if not self.api_v1:
-                        # Create a temporary v1 client just for media upload
-                        auth = tweepy.OAuth1UserHandler(
-                            self.consumer_key, 
-                            self.consumer_secret,
-                            self.access_token, 
-                            self.access_token_secret
-                        )
-                        temp_api = tweepy.API(auth)
-                        media = temp_api.media_upload(media_path)
-                    else:
-                        media = self.api_v1.media_upload(media_path)
-                    
-                    # Then post the reply with media_id via v2
-                    response = self.client_v2.create_tweet(
-                        text=text,
-                        media_ids=[media.media_id_string],
-                        in_reply_to_tweet_id=tweet_id
-                    )
-                    
-                    if response and hasattr(response, 'data'):
-                        reply_id = response.data.get('id')
-                        logger.info(f"Replied to tweet {tweet_id} with media via v2 API (ID: {reply_id}): {text[:50]}...")
-                        return response
-                    else:
-                        logger.error(f"Unexpected response from v2 API: {response}")
-                        
-                except Exception as e:
-                    logger.error(f"Error replying with media via v2 API: {str(e)}")
+    def create_thread(self, tweets):
+        """创建推文线程"""
+        if not tweets or len(tweets) == 0:
+            logger.error("Cannot create thread with empty tweets")
+            return []
             
-            if not self.client_v2 and not self.api_v1:
-                logger.error("No Twitter API client available")
-                return None
+        thread_ids = []
+        previous_tweet_id = None
+        
+        for i, tweet in enumerate(tweets):
+            try:
+                # 第一条推文
+                if i == 0:
+                    tweet_id = self.post_tweet(tweet)
+                    if tweet_id:
+                        thread_ids.append(tweet_id)
+                        previous_tweet_id = tweet_id
+                # 回复前一条推文
+                else:
+                    if previous_tweet_id:
+                        reply_id = self.reply_to_tweet(previous_tweet_id, tweet)
+                        if reply_id:
+                            thread_ids.append(reply_id)
+                            previous_tweet_id = reply_id
                 
-        except Exception as e:
-            logger.error(f"Error replying to tweet with media: {str(e)}")
-            return None
-    
-    def get_mentions(self, since_id=None):
-        """Get mentions of the bot's username."""
+                # 添加短暂延迟避免频率限制
+                time.sleep(1)
+                
+            except Exception as e:
+                logger.error(f"Error creating thread at tweet {i}: {str(e)}")
+                
+        logger.info(f"Created thread with {len(thread_ids)} tweets")
+        return thread_ids
+        
+    def get_mentions(self, since_id=None, count=20):
+        """获取提及"""
+        mentions = []
+        
         try:
-            if self.client_v2:
-                # Get user ID first
-                me = self.client_v2.get_me()
-                user_id = me.data.id
+            # 尝试使用v2 API
+            if self.v2_api:
+                # 默认查询参数
+                params = {
+                    "expansions": "author_id,referenced_tweets.id",
+                    "tweet.fields": "created_at,public_metrics,conversation_id",
+                    "user.fields": "username",
+                    "max_results": min(count, 100)  # v2 API最多100条
+                }
                 
-                # Get mentions
-                mentions_response = self.client_v2.get_users_mentions(
-                    id=user_id,
-                    since_id=since_id,
-                    max_results=100,
-                    expansions=["author_id", "referenced_tweets.id"],
-                    tweet_fields=["created_at", "text"]
+                if since_id:
+                    params["since_id"] = since_id
+                
+                response = self.v2_api.get_users_mentions(
+                    id=self.v2_api.get_me()[0].data["id"],
+                    **params
                 )
                 
-                if mentions_response.data:
-                    logger.info(f"Fetched {len(mentions_response.data)} mentions via v2 API")
-                    return mentions_response.data
-                else:
-                    logger.info("No mentions found via v2 API")
-                    return []
-            
-            # Fall back to v1 API
-            if self.api_v1:
-                mentions = self.api_v1.mentions_timeline(since_id=since_id, tweet_mode='extended')
-                logger.info(f"Fetched {len(mentions)} mentions via v1 API")
-                return mentions
+                if response and response.data:
+                    mentions = response.data
+                    logger.info(f"Fetched {len(mentions)} mentions via v2 API")
+                    return mentions
                     
-            if not self.client_v2 and not self.api_v1:
-                logger.error("No Twitter API client available")
-                return []
+            # 回退到v1 API
+            if self.v1_api:
+                params = {
+                    "count": count,
+                    "tweet_mode": "extended"
+                }
                 
+                if since_id:
+                    params["since_id"] = since_id
+                
+                v1_mentions = self.v1_api.mentions_timeline(**params)
+                
+                if v1_mentions:
+                    mentions = v1_mentions
+                    logger.info(f"Fetched {len(mentions)} mentions via v1 API")
+                    return mentions
+                    
+            return mentions
+            
         except Exception as e:
             logger.error(f"Error fetching mentions: {str(e)}")
             return []
-    
-    def send_direct_message(self, user_id_or_screen_name, text):
-        """Send a direct message to a user."""
-        try:
-            # Try v1 API as it's simpler for DMs
-            if self.api_v1:
-                try:
-                    # If screen_name is provided instead of ID
-                    if isinstance(user_id_or_screen_name, str) and not user_id_or_screen_name.isdigit():
-                        # Get user ID from screen name
-                        user = self.api_v1.get_user(screen_name=user_id_or_screen_name)
-                        user_id = user.id
-                    else:
-                        user_id = user_id_or_screen_name
-                        
-                    self.api_v1.send_direct_message(recipient_id=user_id, text=text)
-                    logger.info(f"Sent DM to user {user_id_or_screen_name}: {text[:50]}...")
-                    return True
-                except Exception as e:
-                    logger.error(f"Error sending DM via v1 API: {str(e)}")
             
-            # Fall back to v2 API if needed (more complex for DMs)
-            logger.warning("Sending DMs via v2 API is not implemented yet")
-            return False
+    def get_user_tweets(self, username, max_results=10, start_time=None):
+        """获取用户的推文"""
+        tweets = []
+        
+        try:
+            # 尝试使用v2 API
+            if self.v2_api:
+                # 先获取用户ID
+                user_response = self.v2_api.get_user(username=username)
+                if not user_response or not user_response.data:
+                    logger.error(f"User {username} not found")
+                    return []
+                    
+                user_id = user_response.data.id
+                
+                # 设置查询参数
+                params = {
+                    "max_results": max_results,
+                    "tweet.fields": "created_at,public_metrics,text",
+                    "expansions": "author_id",
+                    "exclude": "retweets,replies"
+                }
+                
+                if start_time:
+                    params["start_time"] = start_time.strftime("%Y-%m-%dT%H:%M:%SZ")
+                
+                # 获取用户推文
+                tweets_response = self.v2_api.get_users_tweets(
+                    id=user_id,
+                    **params
+                )
+                
+                if tweets_response and tweets_response.data:
+                    tweets = tweets_response.data
+                    logger.info(f"Fetched {len(tweets)} tweets from {username} via v2 API")
+                    return tweets
+                    
+            # 回退到v1 API
+            if self.v1_api:
+                params = {
+                    "screen_name": username,
+                    "count": max_results,
+                    "exclude_replies": True,
+                    "include_rts": False,
+                    "tweet_mode": "extended"
+                }
+                
+                v1_tweets = self.v1_api.user_timeline(**params)
+                
+                if v1_tweets:
+                    # 过滤掉旧的推文
+                    if start_time:
+                        v1_tweets = [t for t in v1_tweets if t.created_at >= start_time]
+                        
+                    tweets = v1_tweets
+                    logger.info(f"Fetched {len(tweets)} tweets from {username} via v1 API")
+                    return tweets
+                    
+            return tweets
             
         except Exception as e:
-            logger.error(f"Error sending direct message: {str(e)}")
-            return False
+            logger.error(f"Error fetching tweets from {username}: {str(e)}")
+            return []
+            
+    def search_recent_tweets(self, query, max_results=100, start_time=None):
+        """搜索最近的推文"""
+        tweets = []
+        
+        try:
+            # 尝试使用v2 API (更适合搜索)
+            if self.v2_api:
+                # 设置查询参数
+                params = {
+                    "query": query,
+                    "max_results": min(max_results, 100),  # v2 API每页最多100条
+                    "tweet.fields": "created_at,public_metrics,author_id,text",
+                    "expansions": "author_id",
+                    "user.fields": "username"
+                }
+                
+                if start_time:
+                    params["start_time"] = start_time.strftime("%Y-%m-%dT%H:%M:%SZ")
+                
+                # 执行搜索
+                search_response = self.v2_api.search_recent_tweets(**params)
+                
+                if search_response and search_response.data:
+                    tweets = search_response.data
+                    logger.info(f"Found {len(tweets)} tweets matching '{query}' via v2 API")
+                    return tweets
+                    
+            # 回退到v1 API
+            if self.v1_api:
+                params = {
+                    "q": query,
+                    "count": min(max_results, 100),
+                    "lang": "en",
+                    "result_type": "recent",
+                    "tweet_mode": "extended"
+                }
+                
+                v1_search = self.v1_api.search_tweets(**params)
+                
+                if v1_search:
+                    # 过滤掉旧的推文
+                    if start_time:
+                        v1_search = [t for t in v1_search if t.created_at >= start_time]
+                        
+                    tweets = v1_search
+                    logger.info(f"Found {len(tweets)} tweets matching '{query}' via v1 API")
+                    return tweets
+                    
+            return tweets
+            
+        except Exception as e:
+            logger.error(f"Error searching tweets for '{query}': {str(e)}")
+            return []
+            
+    def get_trends(self, woeid=1):
+        """获取Twitter趋势"""
+        trends = []
+        
+        try:
+            # 使用v1 API获取趋势 (v2 API尚不支持)
+            if self.v1_api:
+                trends_data = self.v1_api.get_place_trends(woeid)
+                
+                if trends_data and len(trends_data) > 0:
+                    trends = trends_data[0]["trends"]
+                    logger.info(f"Fetched {len(trends)} trends via v1 API")
+                    return trends
+                    
+            return trends
+            
+        except Exception as e:
+            logger.error(f"Error fetching trends: {str(e)}")
+            return []
