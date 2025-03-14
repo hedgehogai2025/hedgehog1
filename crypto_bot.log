@@ -1351,3 +1351,11 @@ Unauthorized
 Unauthorized
 2025-03-14 19:02:29,743 - modules.user_interaction - INFO - No new mentions found
 2025-03-14 19:02:29,744 - __main__ - INFO - No user interactions to process
+2025-03-14 19:07:29,987 - __main__ - INFO - Checking for user interactions...
+2025-03-14 19:07:30,364 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 19:07:30,365 - modules.user_interaction - INFO - Checking for new mentions...
+2025-03-14 19:07:30,736 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 19:07:30,736 - modules.user_interaction - INFO - No new mentions found
+2025-03-14 19:07:30,736 - __main__ - INFO - No user interactions to process
