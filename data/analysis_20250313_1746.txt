@@ -1,0 +1,8 @@
+Market sentiment is bullish as ethereum breaks key resistance levels. Traders should watch the $60,000 level for Bitcoin as it remains crucial for the overall market direction. bitcoin projects are seeing increased adoption, potentially offering good entry points for medium-term positions. Notable trading signals include ETH (sell), SOL (sell). Market anomalies detected in PEPE warrant caution.
+
+🚨 **Market Anomaly Alerts:**
+- PEPE: abnormal surge of 14.1% in 24h (confidence: 94.6%)
+- IP: abnormal surge of 9.6% in 24h (confidence: 61.7%)
+- BTC: abnormal volume increase ($36247.3M) (confidence: 75.3%)
+- ETH: abnormal volume increase ($20075.2M) (confidence: 40.2%)
+- USDT: abnormal volume increase ($55684.4M) (confidence: 95.0%)

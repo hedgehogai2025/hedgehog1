@@ -1,0 +1,72 @@
+{
+  "ETH": {
+    "asset": "ETH",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 1882.9802017945287,
+    "stop_loss": 2309.073915189274,
+    "take_profit": 1860.331874444112,
+    "timestamp": "2025-03-13T18:36:30.244720",
+    "indicators": {
+      "rsi": 35.13519065840333,
+      "macd": -212.03792595778896,
+      "trend": -2.0
+    }
+  },
+  "SOL": {
+    "asset": "SOL",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 126.13246846087344,
+    "stop_loss": 150.5962710977246,
+    "take_profit": 117.59857922423276,
+    "timestamp": "2025-03-13T18:36:30.244737",
+    "indicators": {
+      "rsi": 45.412264977296026,
+      "macd": -15.143400645329677,
+      "trend": -2.0
+    }
+  },
+  "DOT": {
+    "asset": "DOT",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 3.995489704199982,
+    "stop_loss": 4.665449619104556,
+    "take_profit": 3.8472297590587496,
+    "timestamp": "2025-03-13T18:36:30.244743",
+    "indicators": {
+      "rsi": 32.99033192426961,
+      "macd": -0.3035065247162647,
+      "trend": -2.0
+    }
+  },
+  "AVAX": {
+    "asset": "AVAX",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 19.060939781309774,
+    "stop_loss": 22.410846477519268,
+    "take_profit": 16.22478892366215,
+    "timestamp": "2025-03-13T18:36:30.244747",
+    "indicators": {
+      "rsi": 40.9706321608757,
+      "macd": -2.1246702022763486,
+      "trend": -2.0
+    }
+  },
+  "MATIC": {
+    "asset": "MATIC",
+    "direction": "sell",
+    "strength": 0.5714285714285714,
+    "entry_price": 0.2166888982378386,
+    "stop_loss": 0.26365017929774637,
+    "take_profit": 0.2044574809446263,
+    "timestamp": "2025-03-13T18:36:30.244751",
+    "indicators": {
+      "rsi": 31.941513379141995,
+      "macd": -0.02842281515627082,
+      "trend": -2.0
+    }
+  }
+}

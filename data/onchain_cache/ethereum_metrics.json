@@ -1,0 +1,17 @@
+{
+  "active_addresses": 650000,
+  "transaction_count_24h": 1150000,
+  "transaction_volume": 8700000000,
+  "average_transaction_value": 7800,
+  "gas_used_24h": 78000000000,
+  "average_gas_price": 25,
+  "total_value_locked": 32500000000,
+  "staked_eth": 25000000,
+  "whale_count": 1420,
+  "supply_last_active": {
+    "24h": 2.5,
+    "1w": 6.2,
+    "1m": 18.7,
+    "1y": 72.1
+  }
+}

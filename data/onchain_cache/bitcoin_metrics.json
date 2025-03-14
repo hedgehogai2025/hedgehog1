@@ -1,0 +1,16 @@
+{
+  "active_addresses": 950000,
+  "transaction_count_24h": 285000,
+  "transaction_volume": 14500000000,
+  "average_transaction_value": 52000,
+  "mempool_size": 15000,
+  "hash_rate": 350000000000000000000,
+  "difficulty": 55000000000000,
+  "whale_count": 2150,
+  "supply_last_active": {
+    "24h": 1.2,
+    "1w": 3.8,
+    "1m": 12.5,
+    "1y": 65.3
+  }
+}

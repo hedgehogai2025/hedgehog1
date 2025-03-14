@@ -1,0 +1,737 @@
+{
+  "timestamp": "2025-03-14T05:47:39.147440",
+  "news_count": 0,
+  "reddit_count": 84,
+  "average_sentiment": 0.17633214285714288,
+  "topics": [
+    [
+      "ethereum",
+      48
+    ],
+    [
+      "bitcoin",
+      29
+    ],
+    [
+      "crypto",
+      14
+    ],
+    [
+      "eth",
+      12
+    ],
+    [
+      "wallet",
+      10
+    ],
+    [
+      "btc",
+      8
+    ],
+    [
+      "blockchain",
+      6
+    ],
+    [
+      "exchange",
+      6
+    ],
+    [
+      "binance",
+      4
+    ],
+    [
+      "link",
+      3
+    ]
+  ],
+  "sources": {
+    "news": [],
+    "reddit": [
+      {
+        "title": "Probably unrelated",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 1708,
+        "num_comments": 220,
+        "created_utc": 1741874621.0
+      },
+      {
+        "title": "Wake up at 3am checking to see if I'm already rich yet",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 669,
+        "num_comments": 35,
+        "created_utc": 1741880649.0
+      },
+      {
+        "title": "Ethereum down 33% since Eric Trump suggested it was a 'great time' to buy",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 1833,
+        "num_comments": 256,
+        "created_utc": 1741851143.0
+      },
+      {
+        "title": "The bags shall choose the meal",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 91,
+        "num_comments": 8,
+        "created_utc": 1741890197.0
+      },
+      {
+        "title": "India arrests Russian resident wanted by US over $152 billion cryptocurrency money-laundering scheme",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 421,
+        "num_comments": 15,
+        "created_utc": 1741859437.0
+      },
+      {
+        "title": "US Head Of State to acquire a stake in Binance",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 168,
+        "num_comments": 31,
+        "created_utc": 1741871847.0
+      },
+      {
+        "title": "Sen. Lummis Reintroduces Bitcoin Act, Which Would Allow US to Buy $80 Billion in BTC",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 136,
+        "num_comments": 86,
+        "created_utc": 1741871058.0
+      },
+      {
+        "title": "LIBRA co-creator Hayden Davis caught cashing out millions, report",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 46,
+        "num_comments": 9,
+        "created_utc": 1741880928.0
+      },
+      {
+        "title": "Argentina Files for Interpol Red Notice for LIBRA Token Creator Amid Political Scandal",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 98,
+        "num_comments": 17,
+        "created_utc": 1741865652.0
+      },
+      {
+        "title": "North Korea's $1.5 Billion Crypto Heist: How They Pulled It Off - and Could It Happen to YOU?",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 24,
+        "num_comments": 27,
+        "created_utc": 1741888593.0
+      },
+      {
+        "title": "Fast Food Giant Steak 'n Shake Posted This Picture of a Bitcoin Space Ship - Embracing BTC?",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 10,
+        "num_comments": 11,
+        "created_utc": 1741901753.0
+      },
+      {
+        "title": "Losing up and Down? \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f\ud83e\udd23",
+        "text": "So, im testing some things with futures contracts because it seems like if I choose long.. it goes down.\n\nIf i choose short, it goes up.\n\nDue to this, i decided to fuck with the markets head. I bought two contracts long of one asset, then 2 contracts short on two other assets who were following the 1st asset identically.\n\nAnd now im literally negative profit on all 4 contracts. \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f \n\nHow in the &%*# are both of my shorts going up but my 2 longs are going down when they were all doing the same thing minutes before \ud83e\udd23\ud83e\udd23\n\nNot a serious question though, Just one of those verbal \" Bro howwww\" moments \ud83d\ude05 stuff is weak though thats for sure. ",
+        "subreddit": "CryptoCurrency",
+        "score": 19,
+        "num_comments": 39,
+        "created_utc": 1741888261.0
+      },
+      {
+        "title": "Cryptocurrency Market Experiences $179 Million Liquidation in 24 Hours",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 20,
+        "num_comments": 15,
+        "created_utc": 1741883998.0
+      },
+      {
+        "title": "4 years ago today, someone bought this JPEG for $69 million \ud83d\udc80",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 5438,
+        "num_comments": 520,
+        "created_utc": 1741774445.0
+      },
+      {
+        "title": "Crypto trader swaps $733,000 for just $19,000 in large sandwich attack",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 611,
+        "num_comments": 173,
+        "created_utc": 1741811578.0
+      },
+      {
+        "title": "New Research from Fidelity\u2019s Director of Global Macro Shows Bitcoin\u2019s Risk-to-Return is Nearly Off the Chart! (Check the Top Right)",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 11,
+        "num_comments": 3,
+        "created_utc": 1741888643.0
+      },
+      {
+        "title": "Apple Just Announced The New iPhone, Exclusive For ETH Holders",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 815,
+        "num_comments": 54,
+        "created_utc": 1741797465.0
+      },
+      {
+        "title": "Senate Stablecoin Bill Passes Out of Committee With Strong Bi-Partisan Support - Decrypt",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 6,
+        "num_comments": 8,
+        "created_utc": 1741891789.0
+      },
+      {
+        "title": "Treasury Met With Three Crypto Firms to Decide Custody of Bitcoin Reserve",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 4,
+        "num_comments": 2,
+        "created_utc": 1741890930.0
+      },
+      {
+        "title": "No risk, no rari. All in on Bitcoin",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 803,
+        "num_comments": 28,
+        "created_utc": 1741785124.0
+      },
+      {
+        "title": "Crypto criminals and convicted politicians line up for Trump\u2019s pardon",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 444,
+        "num_comments": 87,
+        "created_utc": 1741796225.0
+      },
+      {
+        "title": "Garantex co-founder to be extradited to US on priority | Thiruvananthapuram News - The Times of India",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 3,
+        "num_comments": 5,
+        "created_utc": 1741892730.0
+      },
+      {
+        "title": "Crypto Stocks Continue to Bleed Despite Improved Market Sentiment",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 3,
+        "num_comments": 5,
+        "created_utc": 1741888553.0
+      },
+      {
+        "title": "Regulated Crypto Payments in the UAE",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 8,
+        "num_comments": 3,
+        "created_utc": 1741863983.0
+      },
+      {
+        "title": "Coinbase to Halt Trading of Meme Coins Floki, Turbo, and Giga in New York",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 19,
+        "num_comments": 2,
+        "created_utc": 1741847571.0
+      },
+      {
+        "title": "Riot Platforms Pierre Richard explains why there won\u2019t be \u201ca better Bitcoin\u201d",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 2,
+        "num_comments": 6,
+        "created_utc": 1741889837.0
+      },
+      {
+        "title": "Ethereum devs launch new testnet to finish Pectra upgrade amid struggles",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 0,
+        "num_comments": 2,
+        "created_utc": 1741902039.0
+      },
+      {
+        "title": "CZ bashes mainstream media for making up stories about him and Binance",
+        "text": "",
+        "subreddit": "CryptoCurrency",
+        "score": 0,
+        "num_comments": 3,
+        "created_utc": 1741901169.0
+      },
+      {
+        "title": "Spotter in Germany",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 587,
+        "num_comments": 44,
+        "created_utc": 1741888273.0
+      },
+      {
+        "title": "Just a reminder of where all FIAT is headed.",
+        "text": "Would you say it went to the moon?",
+        "subreddit": "Bitcoin",
+        "score": 600,
+        "num_comments": 48,
+        "created_utc": 1741883979.0
+      },
+      {
+        "title": "This month is your last chance to buy as much as you can before Bitcoin starts to catch up with the Global M2 Money Supply.",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 422,
+        "num_comments": 157,
+        "created_utc": 1741887914.0
+      },
+      {
+        "title": "\ud83d\udc80\ud83d\udc80\ud83d\udc80",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 117,
+        "num_comments": 10,
+        "created_utc": 1741886256.0
+      },
+      {
+        "title": "Is 80k a good entrance?",
+        "text": "Hi! Super newbie and I just bought $200 worth of bitcoin to test run (money that I'm ready to lose and I'm ofc holding forever bla bla).\n\nI meant to get in at 70k but I was scared and ended up regretting it. Decided to just do it!\n\nAny tips or suggestions you guys can give a fraction of bitcoin owner?",
+        "subreddit": "Bitcoin",
+        "score": 63,
+        "num_comments": 134,
+        "created_utc": 1741893184.0
+      },
+      {
+        "title": "Bitcoin and Bitcoin ATMs in March 2014 VS Today...",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 83,
+        "num_comments": 10,
+        "created_utc": 1741881568.0
+      },
+      {
+        "title": "Another Normal Day In Bitcoin Market",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 417,
+        "num_comments": 10,
+        "created_utc": 1741848473.0
+      },
+      {
+        "title": "I see it everywhere",
+        "text": "This is your friendly reminder to stack some sats today! And don\u2019t forget to drink water and enjoy life \ud83e\udd73",
+        "subreddit": "Bitcoin",
+        "score": 204,
+        "num_comments": 28,
+        "created_utc": 1741862405.0
+      },
+      {
+        "title": "Russia Opens Door to Major Bitcoin Investments Through New Legal Framework",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 220,
+        "num_comments": 37,
+        "created_utc": 1741857094.0
+      },
+      {
+        "title": "\ud83c\udde7\ud83c\uddf4 NEW: Bolivia\u2019s state energy firm YPFB to use cryptocurrency to pay for energy imports amid fuel crisis and dollar shortage.",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 79,
+        "num_comments": 11,
+        "created_utc": 1741873358.0
+      },
+      {
+        "title": "Bolivia Authorizes State Oil Company To Tap Crypto for Fuel Trade",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 23,
+        "num_comments": 1,
+        "created_utc": 1741892256.0
+      },
+      {
+        "title": "I've been building a Bitcoin wallet from scratch as a solo dev for 2 months - here's what I've learned [Progress Update]",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 18,
+        "num_comments": 0,
+        "created_utc": 1741896869.0
+      },
+      {
+        "title": "I started a cumulative DCA strategy for 30 years. Wish me luck!",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 11,
+        "num_comments": 5,
+        "created_utc": 1741901514.0
+      },
+      {
+        "title": "Is there anyone way to get into bitcoin without thousands?",
+        "text": "Nubby here , maybe a dumb question but is there any way for me to invest in bitcoin/ make profits off it without thousands? \n\nedit: I know I just posted but y\u2019all\u2019s comments are helping allot! ",
+        "subreddit": "Bitcoin",
+        "score": 10,
+        "num_comments": 63,
+        "created_utc": 1741899515.0
+      },
+      {
+        "title": "Bolivia turns to crypto for energy imports amid dollar, fuel shortages",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 17,
+        "num_comments": 0,
+        "created_utc": 1741892137.0
+      },
+      {
+        "title": "PSA:",
+        "text": "Quick tip of the day\u2014It\u2019s better to buy some bitcoin at 81k than 1m. And as of right now it\u2019s priced in at 92% off this fabulous price.",
+        "subreddit": "Bitcoin",
+        "score": 10,
+        "num_comments": 2,
+        "created_utc": 1741899122.0
+      },
+      {
+        "title": "Bitcoin ETF outflow question",
+        "text": "Please excuse my ignorance but this question is to learn. \n\nHow exactly does an outflow happen? \n\nI own IBIT and if I want to sell, I sell it to someone else who\u2019s buying. In this event, doesn\u2019t the bitcoin that blackrock holds remain constant? and we are just buying and selling our IBIT stock? \n\nIn the same sphere, how is bitcoin added to the fund? Since when I\u2019m buying, aren\u2019t I just buying from someone who sold and not forcing black rock to buy more bitcoin? \n\n\nThanks in advance.",
+        "subreddit": "Bitcoin",
+        "score": 11,
+        "num_comments": 6,
+        "created_utc": 1741890512.0
+      },
+      {
+        "title": "Slowly then suddenly",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 824,
+        "num_comments": 58,
+        "created_utc": 1741803360.0
+      },
+      {
+        "title": "\ud83c\uddfa\ud83c\uddf8 U.S. INFLATION IS DOWN TO 2.8% LOWER THAN EXPECTED. YOU KNOW WHAT HAPPENS NEXT.",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 1644,
+        "num_comments": 151,
+        "created_utc": 1741789528.0
+      },
+      {
+        "title": "Keep calm and always remember",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 85,
+        "num_comments": 3,
+        "created_utc": 1741845735.0
+      },
+      {
+        "title": "It's really hard to tell which one of us this could be.",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 1071,
+        "num_comments": 476,
+        "created_utc": 1741792903.0
+      },
+      {
+        "title": "This sub every time bitcon falls by 0.0000000001%",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 443,
+        "num_comments": 21,
+        "created_utc": 1741807299.0
+      },
+      {
+        "title": "So I see a lot of posts about \"How much Bitcoin is enough?\". My question: Those who ask that, are they truly early to the financial freedom they seek?",
+        "text": "With all factors considered, the limited supply, the point that it could actually be considered deflationary, how rare it will be for someone to own any before it's too late...\n\nMy question is this:\nPeople use a common bench mark of 0.1 BTC as (is this enough?). Yes I know, \"Keep stacking, keep doing what you can.\" \n\nPeople are asking this question, at least in my opinion, because they want to dream that they are just in time for complete financial freedom. \n\nOf course BTC will, if all trajectories are true it will definitely make life a little easier. Despite all the scarcity and inflation protection, I think people get caught up with multipliers. I'm guilty of it. The 4k Bitcoin days are long gone, but it gave those who invested a 25x gain, from 4k to 100K. If someone does own 0.1 BTC now that same multiplier would (assuming BTC had a current value of 100K) turn ~10K to 250K. \n\nThis is if Bitcoin is at 2.5mil per coin. For anyone dreaming of complete financial freedom, say randomly a 5mil goal, the price of 1 BTC would need to go up 500x to 50mil. \n\nSo my question again, those who own ~0.1 BTC, are they actually early enough for financial freedom? ",
+        "subreddit": "Bitcoin",
+        "score": 6,
+        "num_comments": 24,
+        "created_utc": 1741885360.0
+      },
+      {
+        "title": "I\u2019m going to buy this much y\u2019all",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 510,
+        "num_comments": 145,
+        "created_utc": 1741800905.0
+      },
+      {
+        "title": "I can\u2019t believe my luck",
+        "text": "I just hit for a substantial amount of money (I won\u2019t say exactly how much tho) for my state lottery and I\u2019ve been dabbling here and there with crypto even before this happened and I need some advice on what I should do with some of it to make a profit with the less likely chance of losing anything. Any advice would be greatly appreciated",
+        "subreddit": "Bitcoin",
+        "score": 116,
+        "num_comments": 232,
+        "created_utc": 1741829561.0
+      },
+      {
+        "title": "MtGOX distribution! Finally!!",
+        "text": "Because of the state I live in and legislation created after I filed my claim, Kraken wasn't allowed to receive the payout from the Mt. Gox Trustee and I had to sign up with Bitstamp and wait longer.\n\nToday, I finally got notice that the asset distribution from the Mt. Gox Trustee is processing and I can see a pending balance. My forced HODL is paying me back... but 1/10 what it should have been of course. \ud83e\udd37\u200d\u2642\ufe0f At least the value is a LOT more than it was when I was dabbling in $12 coins! Those were the days!\n\nTime to create another separate self-custody wallet! Probably a 3/5 multisig. This is certainly KYC coins now. \ud83d\ude10\n\nAnyone else have to go to Bitstamp?",
+        "subreddit": "Bitcoin",
+        "score": 7,
+        "num_comments": 12,
+        "created_utc": 1741879693.0
+      },
+      {
+        "title": "Dollar cost averaging frees the soul",
+        "text": "That's what any of you freaking out about the price need to do.  Trust me, I don't check the price anxiously or care, legit if anything I would rather it go down so when I next buy it is cheaper.\n\nAnd I only started buying bitcoin maybe a year ago, I consider it a great accomplishment that I have this level of detachment, similar to how I treat my stock market investments, keep DCAing and then in 30 years, seems extremely likely it is a lot more valuable.",
+        "subreddit": "Bitcoin",
+        "score": 210,
+        "num_comments": 40,
+        "created_utc": 1741811375.0
+      },
+      {
+        "title": "How fast can a chain of 10 people send some bitcoin to and from each other over the lightning network?",
+        "text": "",
+        "subreddit": "Bitcoin",
+        "score": 237,
+        "num_comments": 52,
+        "created_utc": 1741807407.0
+      },
+      {
+        "title": "Execution Layer Meeting 207 audio podcast is LIVE!",
+        "text": " \\- Dive into the latest ACDE 207 podcast!  \n \\- Updates on Ethereum\u2019s Pectra upgrade  \n  \n Listen here: [https://open.spotify.com/episode/3u6Hh5gDBxmSNqVe8KC4Kd?si=GaYzL6m2Ta-ZiKkY4IACWw](https://open.spotify.com/episode/3u6Hh5gDBxmSNqVe8KC4Kd?si=GaYzL6m2Ta-ZiKkY4IACWw)\n\n\\#ETHEREUM #PECTRA #EthCatHerders",
+        "subreddit": "ethereum",
+        "score": 10,
+        "num_comments": 0,
+        "created_utc": 1741888572.0
+      },
+      {
+        "title": "Fileverse now with DarkMode",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 7,
+        "num_comments": 1,
+        "created_utc": 1741880876.0
+      },
+      {
+        "title": "All Core Devs - Execution (ACDE) #207 - Protocol Call",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 2,
+        "num_comments": 0,
+        "created_utc": 1741898937.0
+      },
+      {
+        "title": "We're thrilled to release Solidity v0.8.29!",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 29,
+        "num_comments": 1,
+        "created_utc": 1741805992.0
+      },
+      {
+        "title": "Ethereum Pectra upgrade scope",
+        "text": "The largest Ethereum upgrade, in terms of EIPs included, is approaching despite some challenges faced on testnets.  \n  \nI've put together a concise thread covering the core changes that will be implemented during the Pectra upgrade.  \n  \nThis overview of the key EIPs should give you a clear understanding of the main concepts driving the upcoming changes to Ethereum.  \n  \nHere\u2019s what to expect in Ethereum Pectra  \ud83d\udc47\n\nhttps://preview.redd.it/it6o8swg98oe1.png?width=1200&format=png&auto=webp&s=1ed29b743b436c92820cf3d7c73efbce9485cbb4\n\n1/ **EIP-2537: Precompile for BLS12-381 curve operations**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-2537](https://eips.ethereum.org/EIPS/eip-2537)\n\n\ud83d\udc65 Authors: Alex Vlasov, Kelly Olson, Alex Stokes, Antonio Sanso\n\n\ud83d\udcd1 The current cryptographic tools in Ethereum, particularly the BN254 precompile, are not robust enough for applications that require enhanced security. The BLS12-381 curve provides stronger cryptographic features and is being more widely adopted across blockchain platforms for improved security.\n\n\n\n2/ **EIP-2935: Save historical block hashes in state**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-2935](https://eips.ethereum.org/EIPS/eip-2935)\n\n\ud83d\udc65 Authors: Vitalik Buterin, Tomasz Stanczak, Guillaume Ballet, Gajinder Singh, Tanishq Jasoria, Ignacio Hagopian, Jochem Brouwer, Sina Mahmoodi\n\n\ud83d\udcd1 Ethereum currently depends on clients for recent block hashes, which is not a future-proof approach. This proposal addresses the limitation by embedding block hashes in the state, enhancing accessibility and enabling features like extended proof validation and rollup interaction.\n\n\n\n3/ **EIP-6110: Supply validator deposits on chain**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-6110](https://eips.ethereum.org/EIPS/eip-6110)\n\n\ud83d\udc65 Authors: Mikhail Kalinin, Danny Ryan, Peter Davies\n\n\ud83d\udcd1 The current mechanism relies on the complex deposit voting process in the Consensus Layer. This proposal removes deposit voting from the Consensus Layer, shifting the responsibility for deposit inclusion and validation to the Execution Layer. The goal is to improve security, simplify client design, and reduce validator deposit processing delays\n\n\n\n4/ **EIP-7002: Execution layer triggerable exits**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7002](https://eips.ethereum.org/EIPS/eip-7002)\n\n\ud83d\udc65 Authors: Danny Ryan, Mikhail Kalinin, Ansgar Dietrichs, Hsiao-Wei Wang, lightclients\n\n\ud83d\udcd1 Currently, validators need their active \"hot\" keys to initiate exits. The proposal addresses the restriction where only the active validator key could trigger withdrawals, ensuring that withdrawal credential holders have full control over their staked ETH securely and independently.\n\n\n\n5/ **EIP-7251: Increase the MAX\\_EFFECTIVE\\_BALANCE**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7251](https://eips.ethereum.org/EIPS/eip-7251)\n\n\ud83d\udc65 Authors: Mike Neuder, Francesco, dapplion, Mikhail Kalinin, Aditya, Justin\u00a0Drake, lightclients\u00a0\n\n\ud83d\udcd1 Currently, validators are limited to 32 ETH, which forces large stakers to operate many redundant validators, and that increases network overhead and inefficiencies. This proposal would reduce the validator count, optimize resource use, and improve efficiency for both solo and large-scale stakers.\n\n\n\n6/ **EIP-7549: Move committee index outside Attestation**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7549](https://eips.ethereum.org/EIPS/eip-7549)\n\n\ud83d\udc65 Authors: dapplion, Mikhail Kalinin\n\n\ud83d\udcd1 The current mechanism of attestations in Ethereum's Beacon Chain leads to increased computational and storage requirements for validators and ZK circuits.\n\nThe proposal's goal is to optimize Casper FFG (Friendly Finality Gadget) mechanisms that will enhance gas efficiency, scalability, and cryptographic verification.\n\n\n\n7/ **EIP-7623: Increase calldata cost**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7623](https://eips.ethereum.org/EIPS/eip-7623)\n\n\ud83d\udc65 Authors: Toni Wahrst\u00e4tter, Vitalik Buterin\u00a0\n\n\ud83d\udcd1 Ethereum\u2019s calldata costs have remained unchanged since EIP-2028, leading to inefficiencies as rollups generate large, data-heavy blocks. This proposal adjusts calldata costs to reduce inefficiencies and align with EIP-4844's data availability changes.\n\n\n\n8/ **EIP-7685: General purpose execution layer requests**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7685](https://eips.ethereum.org/EIPS/eip-7685)\n\n\ud83d\udc65 Authors: lightclients\n\n\ud83d\udcd1 Smart contract-controlled validators often rely on external intermediaries for administrative actions, introducing inefficiencies and risks. This proposal allows direct requests from smart contracts to the CL, streamlining operations and improving safety, scalability, and cross-layer communication for governance automation.\n\n\n\n9/ **EIP-7691: Blob throughput increase**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7691](https://eips.ethereum.org/EIPS/eip-7691)\n\n\ud83d\udc65 Authors: Parithosh Jayanthi, Toni Wahrst\u00e4tter, Sam Calder-Mason, Andrew Davis, Ansgar Dietrichs\n\n\ud83d\udcd1 This proposal addresses current data availability limitations, offering a short-term scalability improvement for Layer 2 rollups while long-term solutions like peerDAS are being developed.\n\n\n\n10/ **EIP-7702: Set EOA account code**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7702](https://eips.ethereum.org/EIPS/eip-7702)\n\n\ud83d\udc65 Authors: Vitalik Buterin, Sam Wilson, Ansgar Dietrichs, lightclients\n\n\ud83d\udcd1 EOAs are less programmable than smart contracts, limiting their efficiency and flexibility. This proposal introduces a mechanism to extend EOAs' functionality, improving gas optimization, security, and interoperability by bridging the gap between EOAs and contract accounts.\n\n\n\n11/ **EIP-7840: Add blob schedule to EL config files**\n\n\ud83d\udd17 [https://eips.ethereum.org/EIPS/eip-7840](https://eips.ethereum.org/EIPS/eip-7840)\n\n\ud83d\udc65 Authors: lightclients\n\n\ud83d\udcd1 Currently, execution clients depend on blob configuration data for some features. Storing this data only in the consensus client leads to inefficiencies and extra API calls between clients for each block. This proposal improves performance by offloading the need for execution and consensus layers to perform excessive data handshakes.",
+        "subreddit": "ethereum",
+        "score": 98,
+        "num_comments": 12,
+        "created_utc": 1741772658.0
+      },
+      {
+        "title": "Daily General Discussion - March 12, 2025",
+        "text": "**Welcome to the Ethereum Daily General Discussion on** r/ethereum \n\n[https://imgur.com/3y7vezP](https://imgur.com/3y7vezP)\n\nBookmarking this link will always bring you to the current daily:  [https://old.reddit.com/r/ethereum/about/sticky/?num=2](https://old.reddit.com/r/ethereum/about/sticky/?num=2) \n\nPlease use this thread to discuss Ethereum topics, news, events, and even *price*!\n\nPrice discussion posted elsewhere in the subreddit will **continue to be removed.**\n\nAs always, be constructive. - [Subreddit Rules](https://www.reddit.com/r/ethereum/about/rules/)\n\nWant to stake?  Learn more at r/ethstaker\n\n**EthFinance Ethereum Community Links**\n\n* [Ethereum Jobs](https://ethereum.org/en/community/get-involved/#ethereum-jobs), [Twitter](https://x.com/ethereum)\n* [EVMavericks YouTube](https://www.youtube.com/@evmavericks),  [Discord](https://discord.gg/evmavericks), [Doots Podcast](https://evmavericks.libsyn.com/)\n* [Doots Website](https://dailydoots.com/), Old Reddit [Doots Extension](https://github.com/etheralpha/ethfinance-extension) by u/hanniabu\n\nCalendar:\n\n* Feb 23 - Mar 2 \u2013 [ETHDenver](https://www.ethdenver.com/)\n* Mar 28-30 \u2013 [ETH Pondy](https://www.ethpondy.xyz/) (Puducherry) hackathon\n* Apr 1-3 EY Global Blockchain Summit (in person + virtual)",
+        "subreddit": "ethereum",
+        "score": 168,
+        "num_comments": 513,
+        "created_utc": 1741759279.0
+      },
+      {
+        "title": "Using Crypto to Receive My Salary",
+        "text": "Hello,\n\nIn a [recent post](https://www.reddit.com/r/digitalnomad/comments/1j47e12/my_employer_cant_send_me_my_salary/) I made in [r/digitalnomad](https://www.reddit.com/r/digitalnomad/) I outlined the issues I was facing receiving my salary as a software developer working remotely for a US-based startup from Iraq.\n\nMost of the comments suggested that I use crypto, and I already had that plan and it was the one which reasonated the most with me.\n\nIn Iraq, there are 2 popular exchange platforms, **OKX** and **Binance**, both of which have the P2P trading feature, which is an essential part of what I'm trying to do.\n\nMy employer deposits my salary to their **Coinbase Wallet**, and then they send **ETH** over to my **Coinbase Wallet**. Once I receive the funds in my wallet, I transfer them over either to OKX or Binance, and then I sell them using the P2P trading feature to potential buyers in exchange for local currency.\n\nI want to get your opinion on my approach, do you have any tips that I should be aware of before actually going through with this?\n\n*Thanks in advance!*",
+        "subreddit": "ethereum",
+        "score": 12,
+        "num_comments": 23,
+        "created_utc": 1741796843.0
+      },
+      {
+        "title": "Bankrbot ends Grok's unintentional token creation spree by disabling interactions on X",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 0,
+        "num_comments": 1,
+        "created_utc": 1741850217.0
+      },
+      {
+        "title": "Ethereum Observer #10 - A Weekly R&D and Ecosystem News Roundup",
+        "text": "Welcome to the weekly news roundup! A few options below. And remember -- if you're looking to get involved, please comment/DM!\n\n[https://x.com/JBSchweitzer/status/1899842415655104949](https://x.com/JBSchweitzer/status/1899842415655104949)\n\n[https://xcancel.com/JBSchweitzer/status/1899842415655104949](https://xcancel.com/JBSchweitzer/status/1899842415655104949)\n\n[https://paragraph.xyz/@observer/10](https://paragraph.xyz/@observer/10)",
+        "subreddit": "ethereum",
+        "score": 8,
+        "num_comments": 0,
+        "created_utc": 1741793846.0
+      },
+      {
+        "title": "EIP-7623: Increase calldata cost - audio podcast is LIVE! \ud83d\ude3a | \ud83c\udf99 New #PEEPanEIP 140",
+        "text": "Join Toni Wahrst\u00e4tter ([@nero\\_eth](https://x.com/nero_eth)) and [@poojaranjan19](https://x.com/poojaranjan19) as we break down **EIP-7623: Increase calldata cost**!   \n  \n \\- Learn how increasing calldata costs helps reduce the maximum block size. This proposal is authored by Toni Wahrst\u00e4tter and Vitalik Buterin.  \n  \n\\- Tune in now: [https://open.spotify.com/episode/2oBW6edgzaeJl13hajRuFf?si=FRwoik6ETf2zMJrc891JhQ\u2026](https://t.co/cc53x16r0T)  \n  \nPodcast edited by Akash Kshirsagar ([@oceansofmilk](https://x.com/oceansofmilk))   \n  \n\\#eucational #EIP7623 #Podcast #EIP #Pectra #toni #vitalik",
+        "subreddit": "ethereum",
+        "score": 4,
+        "num_comments": 0,
+        "created_utc": 1741793232.0
+      },
+      {
+        "title": "scammed by moonpay?",
+        "text": "I created a sell order on Moonpay for some ETH I had left over from previous endeavors, I didn't want to run it through an exchange as it can get troublesome in the country I'm from and I need the quick cash.\n\nMoonpay didn't specify which network I should sent my ETH via so when I sent it on the wrong network they said it was sent on the wrong network and that they'll issue me a refund, alright, no worries.\n\nThen I get an email back saying that seeing as the BSC network isn't supported by them currently I have to wait until they integrate it to get my funds back, which I thought is just weird? You want a customer to wait for possibly years(idk when the hell they're gonna integrate this shit) to get a 180$ refund? I provided them with a normal ETH address, asking them to send the money back via the normal ETH network and they've refused. \n\nDoes this seem strange to anyone else too or? I'll be filing a case with the UK FCA and the American FCEN.",
+        "subreddit": "ethereum",
+        "score": 0,
+        "num_comments": 15,
+        "created_utc": 1741851192.0
+      },
+      {
+        "title": "How do I check if a wallet is connect to scammers",
+        "text": "I recently heard about almbot, and how it is used to rank how risky a wallet is.\n\nQuick google shows the likes of that and Eyeblock . io as all being behind a paywall.\n\nWant to be able to check a wallet before I accept transactions with the user, anyone know of any non-paywayll solutions, ideally without sign up but I doubt that is an option.",
+        "subreddit": "ethereum",
+        "score": 0,
+        "num_comments": 4,
+        "created_utc": 1741811031.0
+      },
+      {
+        "title": "Yesterday in Ethereum, Tuesday, March 11, 2025",
+        "text": "The Holesky testnet [finalized](https://x.com/ethPandaOps/status/1899470898979049878) much sooner than expected, after almost two weeks of non-finalization, so we may yet see the Pectra upgrade in April. There was an estimate that it would take till at least March 28 to finalize. \n\n[Ether Guild](https://x.com/ethismoneyHQ/status/1899104142897086854) sounds like a great new community effort to promote Ethereum, focused on its value as money.  I like their graphic of Ethereum-promoting organizations in the [7th tweet](https://x.com/ethismoneyHQ/status/1899105464501326251) of that thread. The treasury is managed by, among others, Antony Sassano (The Daily Gwei) and Ryan Sean Adams (Bankless). Their first project is the [ETH is Money website](https://www.ethismoney.xyz/). \n\nThe Ethereum Foundation [added](https://blog.ethereum.org/en/2025/03/09/board-update) new Co-Executive Director Hsiao-Wei Wang to their board.  \n\nCoinbase [will be launching](https://www.coinbase.com/blog/coming-soon-24/7-and-perpetual-style-futures-in-the-us) perpetual (no expiration date) Bitcoin and Ethereum futures contracts in the US. \n\nThe SEC is abandoning Gary Gensler's effort to expand the term \u201cexchange\u201d to include \u201ccommunications protocols,\u201d which would have picked up various protocols used with respect to crypto assets (see the \"Trading Venues\" section of [this speech](https://www.sec.gov/newsroom/speeches-statements/uyeda-remarks-institute-international-bankers-031025)).\n\nThe FDIC still isn't being transparent about Operation Chokepoint 2.0 (debanking of crypto), [according to](https://x.com/iampaulgrewal/status/1898246068795851001) Coinbase Chief Legal Officer Paul Grewal. \n\nIf you use the Safe wallet, there's a new tool, [SafeWatcher](https://x.com/0xmikko_eth/status/1897558518821237241), that could prevent losses like Bybit suffered recently. \n\nAnother new L2: [Movement](https://x.com/movementfdn/status/1899113385909944756), using the Move language that Facebook created for their abortive attempt to get into crypto.\n\n[Previous](https://old.reddit.com/r/ethereum/comments/1j7yc5b/yesterday_in_ethereum_monday_march_10_2025/) Yesterday in Ethereum.",
+        "subreddit": "ethereum",
+        "score": 33,
+        "num_comments": 5,
+        "created_utc": 1741723500.0
+      },
+      {
+        "title": "Web 3 Hackathon as a beginner",
+        "text": "Web 3 Hackathon\n\nSo our college is going to be one of the nodal centre of this national hackathon called HackIndia and it is going to happen in April . I have only 20 days or less than 20 to learn and then to think something out of the box related to web 3 or Blockchains  . I am a complete beginner in Blockchain despite of this fact I want to participate as I have heard that the winner of previous hackIndia from our college was a complete beginner and he won the regional hackathon . Also when I asked him about the ideas  , he said me and my team did lot of discussions and brain storming to achieve success in that idea . But I think he is lying because one of my close friends said he copied the idea from GitHub .I am thinking to try to implement an already built project which I have found in GitHub . Is this a very bad idea ? I am doing this because I want to participate and it's not possible for me to think and learn something that I am not much aware of but still I am trying to gain knowledge rn about those things . Please suggest me what should I do ",
+        "subreddit": "ethereum",
+        "score": 7,
+        "num_comments": 3,
+        "created_utc": 1741756463.0
+      },
+      {
+        "title": "Why is it so expensive to send money from exchange to cold storage for ethereum?!! 20% am I an idiot or do people pay this?",
+        "text": "$100 sent from Coinbase exchange to my cold wallet turned into $79 lol any advice ? ",
+        "subreddit": "ethereum",
+        "score": 0,
+        "num_comments": 24,
+        "created_utc": 1741830000.0
+      },
+      {
+        "title": "Obol raises $4.2M for Continued Development of Ethereum Distributed Validators",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 22,
+        "num_comments": 4,
+        "created_utc": 1741717399.0
+      },
+      {
+        "title": "Daily General Discussion - March 11, 2025",
+        "text": "**Welcome to the Ethereum Daily General Discussion on** r/ethereum \n\n[https://imgur.com/3y7vezP](https://imgur.com/3y7vezP)\n\nBookmarking this link will always bring you to the current daily:  [https://old.reddit.com/r/ethereum/about/sticky/?num=2](https://old.reddit.com/r/ethereum/about/sticky/?num=2) \n\nPlease use this thread to discuss Ethereum topics, news, events, and even *price*!\n\nPrice discussion posted elsewhere in the subreddit will **continue to be removed.**\n\nAs always, be constructive. - [Subreddit Rules](https://www.reddit.com/r/ethereum/about/rules/)\n\nWant to stake?  Learn more at r/ethstaker\n\n**EthFinance Ethereum Community Links**\n\n* [Ethereum Jobs](https://ethereum.org/en/community/get-involved/#ethereum-jobs), [Twitter](https://x.com/ethereum)\n* [EVMavericks YouTube](https://www.youtube.com/@evmavericks),  [Discord](https://discord.gg/evmavericks), [Doots Podcast](https://evmavericks.libsyn.com/)\n* [Doots Website](https://dailydoots.com/), Old Reddit [Doots Extension](https://github.com/etheralpha/ethfinance-extension) by u/hanniabu\n\nCalendar:\n\n* Feb 23 - Mar 2 \u2013 [ETHDenver](https://www.ethdenver.com/)\n* Mar 28-30 \u2013 [ETH Pondy](https://www.ethpondy.xyz/) (Puducherry) hackathon\n* Apr 1-3 EY Global Blockchain Summit (in person + virtual)",
+        "subreddit": "ethereum",
+        "score": 167,
+        "num_comments": 485,
+        "created_utc": 1741672872.0
+      },
+      {
+        "title": "How Holesky Finally Reached Stability",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 28,
+        "num_comments": 2,
+        "created_utc": 1741684647.0
+      },
+      {
+        "title": "Introducing Shutter API: Threshold Encryption Service for Dapps",
+        "text": "We are thrilled to announce the launch of Shutter API, a threshold encryption service designed to simplify the integration of privacy features into decentralized applications (dApps)!\n\nShutter API is now live and already powering several early-stage applications while collaborating with partners to explore new use cases.\n\nUnlike the encrypted mempool on Gnosis Chain, OP Stack, or Ethereum L1, which addresses censorship and malicious MEV at the protocol level, Shutter API focuses on the application layer, enhancing encryption accessibility for dApp developers.\n\nThis service supports commit-reveal workflows, encrypted time-locked transactions, and improves transaction privacy for various applications, including gaming, governance, and finance.\n\nEncryption is essential for Web3 adoption as it protects sensitive information and fosters fair markets. Shutter API ensures temporary privacy, allowing information to be disclosed at the right moment\u2014like a sealed envelope that only opens under specific conditions.\n\nKey use cases include:\n\n- Governance & Voting\n- Sealed-Bid Auctions\n- Fair Gaming\n- Smart Account Encryption\n- Time-Locked Gifts\n\n**How It Works:**\n\n1. **Register an Identity**\n2. **Encrypt Data**\n3. **Submit Action**\n4. **Decrypt at the Right Time**\n\nShutter API simplifies encryption integration, requiring no cryptographic expertise and minimizing trust. This is just the beginning, with more applications in development. Join our livestream tomorrow to see how encryption is shaping the future of Web3!\n\nLearn more at the Shutter Blog: [https://blog.shutter.network/introducing-shutter-api-threshold-encryption-service/](https://blog.shutter.network/introducing-shutter-api-threshold-encryption-service/)",
+        "subreddit": "ethereum",
+        "score": 5,
+        "num_comments": 1,
+        "created_utc": 1741700773.0
+      },
+      {
+        "title": "Hole\u0161ky testnet finalized",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 55,
+        "num_comments": 3,
+        "created_utc": 1741644728.0
+      },
+      {
+        "title": "\ud83c\udf99 Ethereum\u2019s Fast Confirmation Rule audio podcast is LIVE! | PEEPanEIP 139\u26a1",
+        "text": "Join [Roberto Saltini](https://x.com/robsaltini) and [Pooja Ranjan](https://x.com/poojaranjan19) as we break down **Ethereum\u2019s Fast Confirmation Rule!**  \n  \nDiscover how this proposal achieves 12-second block confirmations, greatly improving the latency of the FFG Finalization Rule. Full episode available on ECH Spotify.  \n  \nTune in now: [https://open.spotify.com/episode/3vwnFgg6LLUKicktPAcsP3?si=BrBSq0WGTdu5cC2143PFrQ\u2026](https://t.co/H4rATv1E9q)  \n  \nPodcast edited by [Akash Kshirsagar](https://x.com/oceansofmilk)\n\n\\#Education #Ethereum #Blockchain #Podcast",
+        "subreddit": "ethereum",
+        "score": 1,
+        "num_comments": 0,
+        "created_utc": 1741706207.0
+      },
+      {
+        "title": "Daily General Discussion - March 10, 2025",
+        "text": "**Welcome to the Ethereum Daily General Discussion on** r/ethereum \n\n[https://imgur.com/3y7vezP](https://imgur.com/3y7vezP)\n\nBookmarking this link will always bring you to the current daily:  [https://old.reddit.com/r/ethereum/about/sticky/?num=2](https://old.reddit.com/r/ethereum/about/sticky/?num=2) \n\nPlease use this thread to discuss Ethereum topics, news, events, and even *price*!\n\nPrice discussion posted elsewhere in the subreddit will **continue to be removed.**\n\nAs always, be constructive. - [Subreddit Rules](https://www.reddit.com/r/ethereum/about/rules/)\n\nWant to stake?  Learn more at r/ethstaker\n\n**EthFinance Ethereum Community Links**\n\n* [Ethereum Jobs](https://ethereum.org/en/community/get-involved/#ethereum-jobs), [Twitter](https://x.com/ethereum)\n* [EVMavericks YouTube](https://www.youtube.com/@evmavericks),  [Discord](https://discord.gg/evmavericks), [Doots Podcast](https://evmavericks.libsyn.com/)\n* [Doots Website](https://dailydoots.com/), Old Reddit [Doots Extension](https://github.com/etheralpha/ethfinance-extension) by u/hanniabu\n\nCalendar:\n\n* Feb 23 - Mar 2 \u2013 [ETHDenver](https://www.ethdenver.com/)\n* Mar 28-30 \u2013 [ETH Pondy](https://www.ethpondy.xyz/) (Puducherry) hackathon\n* Apr 1-3 EY Global Blockchain Summit (in person + virtual)",
+        "subreddit": "ethereum",
+        "score": 182,
+        "num_comments": 950,
+        "created_utc": 1741586492.0
+      },
+      {
+        "title": "Some Ethereum-related content I've found interesting last week",
+        "text": "gm as always, 7 highest signal Ethereum links you might've missed last week:\n\n\\[1\\] Takens Theorem visualize the 2015\u00a0[Ethereum sybil attack](https://xcancel.com/takenstheorem/status/1897133979792556090#m)\n\n\\[2\\] Kerman Kohli shows what\u2019s\u00a0[**problematic with the RPC market**](https://kermankohli.substack.com/p/rpc-market-competitive-landscape?isFreemail=true&post_id=158374026&publication_id=5402&r=3rq3o&triedRedirect=true)\n\n\\[3\\] Jacob Horne says that content should be\u00a0[**free and valuable**](https://jacob.energy/free-valuable.html)\n\n\\[4\\] I explain why Ethereum is like\u00a0[**building castles without kings**](https://kanfa.macbudkowski.com/building-castles-without-kings)\u00a0\n\n\\[5\\] WSJ reports on\u00a0[**Tether and Circle fighting for the US regulatory support**](https://www.wsj.com/finance/currencies/who-is-giancarlo-devasini-tether-jeremy-allaire-circle-90a408b9?reflink=desktopwebshare_permalink&st=aPTzuo)\n\n\\[6\\] Evan van Ness shares\u00a0[**brief bios of each of the members of the Silviculture Society**](https://xcancel.com/evan_van_ness/status/1897463423606092215)\u00a0\n\n\\[7\\] Discussion: What do you\u00a0[**work on in Ethereum?**](https://news.kiwistand.com/stories/Daily-discussion-thread-2025-03-05?index=0x67c7f39ebdca79f196b860a576b726ea3a644b3b411cfadb8cfc61a3be5aaa799201f804)\u00a0(9 comments) - feel free to join and tell us about your project!\n\n  \n\\*\\*\\*\n\nAll links have been handpicked by the Kiwi community. If you are looking for more content, you can find other\u00a0[top-rated links here](https://news.kiwistand.com/best?utm_source=reddit&utm_medium=social&utm_campaign=episode_85).",
+        "subreddit": "ethereum",
+        "score": 14,
+        "num_comments": 4,
+        "created_utc": 1741622841.0
+      },
+      {
+        "title": "Yesterday in Ethereum, Monday, March 10, 2025",
+        "text": "Coinbase's rollup Base is pushing hard to improve the Ethereum ecosystem: see their post [Building for the long-term: making Base faster, simpler, and more powerful](https://base.mirror.xyz/HwG1GQ5hoxz0OTOF_nQhNcVTk4Ae9cRIrcqVQ14N4-c). They're moving to faster block times (200 ms) and adding sub-accounts which can have different permissions (e.g. not having to approve small transactions every time) and layer 3s for individual apps (appchains). Base has become one of the top rollups: according to [L2 Beat](https://l2beat.com/scaling/summary) it's #1 in transactions and #2 in value secured, but it's still a stage 0 rollup (centralized, so it doesn't yet inherit all the security of Ethereum; see the [rollup stage definitions](https://medium.com/l2beat/introducing-stages-a-framework-to-evaluate-rollups-maturity-d290bb22befe)). Kraken also recently started an Ethereum rollup, Ink. \n\nThe developers of [Gossipsub v2.0](https://ethresear.ch/t/doubling-the-blob-count-with-gossipsub-v2-0/21893), an efficient messaging protocol, say they should be able to double the number of blobs (the Ethereum data storage that rollups depend on) Ethereum can handle. \n\nphysalisx and Logris are [earning good yields](https://old.reddit.com/r/ethereum/comments/1j6blzq/daily_general_discussion_march_08_2025/mgqlut4/) with Euler on Base. \n\nSee the [previous](https://old.reddit.com/r/ethereum/comments/1j6or9z/yesterday_in_ethereum_saturday_march_8_2025/) Yesterday in Ethereum.",
+        "subreddit": "ethereum",
+        "score": 24,
+        "num_comments": 1,
+        "created_utc": 1741612533.0
+      },
+      {
+        "title": "Where is polynya and the l2 world",
+        "text": "Hey guys, I dont want to disrespect anyone based in prices and I read every post polynya did in the past. Not here to say he did anything bad to the market. But now, why is he so silent? Where is zksync and starknet? Can he admit he was not considering fragmentation like a big problem? Why nobody cares about unichain, swell, arbitrum etc? Even the devs are not sure if they have to put their l2 like a based rollup or like a cluster (superchain, elastic chain)...I feel like all the posts were great but it was a total failure, not here to say solana was a solution, but L2 failed!",
+        "subreddit": "ethereum",
+        "score": 0,
+        "num_comments": 12,
+        "created_utc": 1741703609.0
+      },
+      {
+        "title": "Client Testing Call #28, March 10th 2025",
+        "text": "",
+        "subreddit": "ethereum",
+        "score": 2,
+        "num_comments": 0,
+        "created_utc": 1741635998.0
+      },
+      {
+        "title": "Spanish lender BBVA to offer bitcoin and ether trading \ud83e\udd73",
+        "text": "(Reuters) - Spanish bank BBVA (BME:BBVA) said on Monday it received approval from the country's securities regulator to offer bitcoin and ether trading services in Spain.\n\nThe bank is set to launch a service that will allow its clients to securely purchase, sell, and handle bitcoin and ether transactions via its app.\n\n",
+        "subreddit": "ethereum",
+        "score": 37,
+        "num_comments": 2,
+        "created_utc": 1741585533.0
+      },
+      {
+        "title": "New PEEPanEIP 138 audio podcast is LIVE!",
+        "text": "Join [@AndreasFRHA](https://x.com/AndreasFRHA) and [@poojaranjan19](https://x.com/poojaranjan19) as we unpack [\\#RIP7759](https://x.com/hashtag/RIP7759?src=hashtag_click) \u2013 the proposal to standardize Layer 2 transaction fees!  \n  \n Learn how this boosts transparency & efficiency across the [\\#Ethereum](https://x.com/hashtag/Ethereum?src=hashtag_click) ecosystem.  \nTune in now: [https://open.spotify.com/episode/7v7qdqktRklAvlHXnSZm0A?si=9tvo\\_xGqRPK9ImrzG2-Eyw](https://open.spotify.com/episode/7v7qdqktRklAvlHXnSZm0A?si=9tvo_xGqRPK9ImrzG2-Eyw)\n\nFull Video Podcast: [https://youtu.be/j0epnbOy-2g?si=5bhF8rMjv2SGrh7z](https://youtu.be/j0epnbOy-2g?si=5bhF8rMjv2SGrh7z)\n\nPodcast edited by [@oceansofmilk](https://x.com/oceansofmilk)  \n  \n[\\#education](https://x.com/hashtag/education?src=hashtag_click) [\\#podcast](https://x.com/hashtag/podcast?src=hashtag_click) [\\#ERC](https://x.com/hashtag/ERC?src=hashtag_click) ",
+        "subreddit": "ethereum",
+        "score": 2,
+        "num_comments": 0,
+        "created_utc": 1741634235.0
+      }
+    ]
+  },
+  "hot_topics": [
+    "btc",
+    "wallet",
+    "link",
+    "exchange",
+    "crypto",
+    "blockchain",
+    "binance",
+    "ethereum",
+    "bitcoin",
+    "eth"
+  ]
+}

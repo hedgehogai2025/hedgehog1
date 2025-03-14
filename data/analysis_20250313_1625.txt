@@ -1,0 +1,10 @@
+The crypto market is showing bullish momentum today, with bitcoin leading the way. Technical indicators suggest a potential continuation of the upward trend. ethereum and solana are also showing promising signals, with increased trading volumes and positive community sentiment. Market anomalies detected in HYPE warrant caution.
+
+🚨 **Market Anomaly Alerts:**
+- HYPE: 24小时内异常下跌 8.2% (confidence: 62.2%)
+- PEPE: 24小时内异常上涨 12.0% (confidence: 79.6%)
+- TIA: 24小时内异常上涨 8.0% (confidence: 51.9%)
+- IP: 24小时内异常上涨 8.2% (confidence: 53.5%)
+- BTC: 交易量异常增加 ($38203.5M) (confidence: 73.8%)
+- ETH: 交易量异常增加 ($21911.2M) (confidence: 40.9%)
+- USDT: 交易量异常增加 ($60497.6M) (confidence: 95.0%)

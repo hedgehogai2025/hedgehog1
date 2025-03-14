@@ -1,0 +1,224 @@
+{
+  "HYPE": {
+    "name": "Hyperliquid",
+    "price_btc": 0.0001551549772037035,
+    "market_cap_rank": 32,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "PI": {
+    "name": "Pi Network",
+    "price_btc": 2.0499119341782795e-05,
+    "market_cap_rank": 12,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "SOL": {
+    "name": "Solana",
+    "price_btc": 0.0015272070274413975,
+    "market_cap_rank": 6,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "PEPE": {
+    "name": "Pepe",
+    "price_btc": 8.163004165557755e-11,
+    "market_cap_rank": 41,
+    "updated_at": "2025-03-14T05:47:25.540964"
+  },
+  "S": {
+    "name": "Sonic (prev. FTM)",
+    "price_btc": 6.0033961600159314e-06,
+    "market_cap_rank": 64,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "STRK": {
+    "name": "Starknet",
+    "price_btc": 2.0874232417952293e-06,
+    "market_cap_rank": 138,
+    "updated_at": "2025-03-13T21:44:57.881913"
+  },
+  "NEIRO": {
+    "name": "Neiro",
+    "price_btc": 3.17924574966684e-09,
+    "market_cap_rank": 389,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "SUI": {
+    "name": "Sui",
+    "price_btc": 2.6862956450886053e-05,
+    "market_cap_rank": 22,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "ETH": {
+    "name": "Ethereum",
+    "price_btc": 0.023038184435164203,
+    "market_cap_rank": 2,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "BTC": {
+    "name": "Bitcoin",
+    "price_btc": 1.0,
+    "market_cap_rank": 1,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "TRUMP": {
+    "name": "Official Trump",
+    "price_btc": 0.00012948360724631834,
+    "market_cap_rank": 52,
+    "updated_at": "2025-03-14T03:46:48.244819"
+  },
+  "PENGU": {
+    "name": "Pudgy Penguins",
+    "price_btc": 7.677483102983265e-08,
+    "market_cap_rank": 164,
+    "updated_at": "2025-03-13T23:45:33.851819"
+  },
+  "JUP": {
+    "name": "Jupiter",
+    "price_btc": 6.14253625288563e-06,
+    "market_cap_rank": 70,
+    "updated_at": "2025-03-13T21:44:57.881913"
+  },
+  "KAS": {
+    "name": "Kaspa",
+    "price_btc": 8.850866401076456e-07,
+    "market_cap_rank": 59,
+    "updated_at": "2025-03-13T21:44:57.881913"
+  },
+  "BNB": {
+    "name": "BNB",
+    "price_btc": 0.0072241728049753364,
+    "market_cap_rank": 5,
+    "updated_at": "2025-03-13T21:44:57.881913"
+  },
+  "ONDO": {
+    "name": "Ondo",
+    "price_btc": 1.0221754460632653e-05,
+    "market_cap_rank": 43,
+    "updated_at": "2025-03-14T07:47:57.731528"
+  },
+  "LAYER": {
+    "name": "Solayer",
+    "price_btc": 1.4840436175460376e-05,
+    "market_cap_rank": 217,
+    "updated_at": "2025-03-14T03:46:48.244819"
+  },
+  "POPCAT": {
+    "name": "Popcat",
+    "price_btc": 2.341734789591136e-06,
+    "market_cap_rank": 267,
+    "updated_at": "2025-03-13T23:45:33.851819"
+  },
+  "BERA": {
+    "name": "Berachain",
+    "price_btc": 7.275404960532464e-05,
+    "market_cap_rank": 113,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "AI16Z": {
+    "name": "ai16z",
+    "price_btc": 2.227813915914991e-06,
+    "market_cap_rank": 254,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "ENA": {
+    "name": "Ethena",
+    "price_btc": 4.15298554852219e-06,
+    "market_cap_rank": 59,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "XRP": {
+    "name": "XRP",
+    "price_btc": 2.761402819115168e-05,
+    "market_cap_rank": 4,
+    "updated_at": "2025-03-14T05:47:25.540964"
+  },
+  "SYRUP": {
+    "name": "Maple Finance",
+    "price_btc": 1.7370689715655966e-06,
+    "market_cap_rank": 398,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "AAVE": {
+    "name": "Aave",
+    "price_btc": 0.0019936575754490333,
+    "market_cap_rank": 49,
+    "updated_at": "2025-03-14T05:47:25.540964"
+  },
+  "OBT": {
+    "name": "Orbiter Finance",
+    "price_btc": 2.205211534636118e-07,
+    "market_cap_rank": 603,
+    "updated_at": "2025-03-14T01:46:15.906600"
+  },
+  "OM": {
+    "name": "MANTRA",
+    "price_btc": 7.907962464963171e-05,
+    "market_cap_rank": 26,
+    "updated_at": "2025-03-14T01:46:15.906600"
+  },
+  "VIRTUAL": {
+    "name": "Virtuals Protocol",
+    "price_btc": 7.135961686341192e-06,
+    "market_cap_rank": 169,
+    "updated_at": "2025-03-14T07:47:57.731528"
+  },
+  "MOVE": {
+    "name": "Movement",
+    "price_btc": 5.4504887026801815e-06,
+    "market_cap_rank": 75,
+    "updated_at": "2025-03-14T03:46:48.244819"
+  },
+  "TAO": {
+    "name": "Bittensor",
+    "price_btc": 0.0029271544886295105,
+    "market_cap_rank": 54,
+    "updated_at": "2025-03-14T05:47:25.540964"
+  },
+  "AVAX": {
+    "name": "Avalanche",
+    "price_btc": 0.00022196560084523798,
+    "market_cap_rank": 20,
+    "updated_at": "2025-03-14T05:47:25.540964"
+  },
+  "RED": {
+    "name": "RedStone",
+    "price_btc": 6.538581150840391e-06,
+    "market_cap_rank": 315,
+    "updated_at": "2025-03-14T05:47:25.540964"
+  },
+  "SEI": {
+    "name": "Sei",
+    "price_btc": 2.349222010570548e-06,
+    "market_cap_rank": 90,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "LINK": {
+    "name": "Chainlink",
+    "price_btc": 0.00016067155549070382,
+    "market_cap_rank": 16,
+    "updated_at": "2025-03-14T07:47:57.731528"
+  },
+  "TIA": {
+    "name": "Celestia",
+    "price_btc": 4.459396625706743e-05,
+    "market_cap_rank": 56,
+    "updated_at": "2025-03-14T07:47:57.731528"
+  },
+  "AERO": {
+    "name": "Aerodrome Finance",
+    "price_btc": 6.359553840523612e-06,
+    "market_cap_rank": 153,
+    "updated_at": "2025-03-14T07:47:57.731528"
+  },
+  "DOGINME": {
+    "name": "doginme",
+    "price_btc": 9.523328482337309e-09,
+    "market_cap_rank": 953,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  },
+  "ATH": {
+    "name": "Aethir",
+    "price_btc": 4.381785471287554e-07,
+    "market_cap_rank": 223,
+    "updated_at": "2025-03-14T09:48:36.264053"
+  }
+}

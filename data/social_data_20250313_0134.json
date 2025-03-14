@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-03-13T01:34:11.819424",
+  "news_count": 3,
+  "reddit_count": 3,
+  "average_sentiment": 0.5095999999999999,
+  "topics": [
+    [
+      "bitcoin",
+      3
+    ],
+    [
+      "ethereum",
+      3
+    ],
+    [
+      "solana",
+      2
+    ]
+  ],
+  "sources": {
+    "news": [
+      {
+        "title": "Bitcoin Price Surges Past $60,000, Analysts See More Growth",
+        "body": "Bitcoin has seen significant growth this week, passing the $60,000 mark for the first time since last year.",
+        "source": "CryptoNewsSource",
+        "published_on": 1741800851,
+        "categories": "BTC,Market,Price"
+      },
+      {
+        "title": "Ethereum Upgrade Expected to Improve Network Efficiency",
+        "body": "The upcoming Ethereum protocol upgrade is expected to significantly reduce gas fees and increase transaction throughput.",
+        "source": "BlockchainTimes",
+        "published_on": 1741797251,
+        "categories": "ETH,Technology,Upgrade"
+      },
+      {
+        "title": "DeFi Projects See Record Growth in Total Value Locked",
+        "body": "Decentralized finance platforms have seen a substantial increase in total value locked, indicating growing adoption.",
+        "source": "DeFiPulse",
+        "published_on": 1741793651,
+        "categories": "DeFi,Growth,TVL"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Why I think BTC will hit 100k by EOY - Analysis",
+        "text": "Looking at historical patterns and current market conditions, there are several indicators suggesting Bitcoin could reach $100,000 by the end of the year.",
+        "subreddit": "Bitcoin",
+        "score": 423,
+        "num_comments": 137,
+        "created_utc": 1741788851
+      },
+      {
+        "title": "Solana ecosystem growth is undervalued - discussion",
+        "text": "Despite recent price action, Solana has seen incredible developer adoption and transaction growth that isn't reflected in the current valuation.",
+        "subreddit": "CryptoCurrency",
+        "score": 312,
+        "num_comments": 89,
+        "created_utc": 1741775851
+      },
+      {
+        "title": "New to Ethereum - what should I know about staking?",
+        "text": "I'm considering staking my ETH but have concerns about liquidity and the upcoming changes. What are the pros and cons?",
+        "subreddit": "ethereum",
+        "score": 156,
+        "num_comments": 42,
+        "created_utc": 1741764851
+      }
+    ]
+  }
+}

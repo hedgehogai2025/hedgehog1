@@ -1,0 +1,81 @@
+2025-03-12 23:05:44,928 - src.modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-12 23:05:44,928 - src.modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-12 23:05:44,929 - src.modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-12 23:05:44,929 - src.modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-12 23:05:44,936 - src.modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-12 23:11:54,466 - src.modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-12 23:11:54,466 - src.modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-12 23:11:54,467 - src.modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-12 23:11:54,467 - src.modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-12 23:11:54,474 - src.modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-13 21:43:07,313 - __main__ - INFO - Starting Cryptocurrency Analysis Bot...
+2025-03-13 21:43:07,313 - modules.twitter_client - WARNING - Twitter API v1.1 credentials missing
+2025-03-13 21:43:07,313 - modules.twitter_client - WARNING - Authlib not installed, Twitter API v2 client not available
+2025-03-13 21:43:07,409 - modules.nlp_analyzer - INFO - Downloaded NLTK package: punkt
+2025-03-13 21:43:07,410 - modules.nlp_analyzer - INFO - Downloaded NLTK package: vader_lexicon
+2025-03-13 21:43:07,410 - modules.nlp_analyzer - INFO - Downloaded NLTK package: stopwords
+2025-03-13 21:43:07,410 - modules.nlp_analyzer - INFO - NLTK data download complete
+2025-03-13 21:43:07,419 - modules.nlp_analyzer - INFO - Reddit client initialized
+2025-03-13 21:43:07,419 - modules.nlp_analyzer - INFO - OpenAI API key loaded
+2025-03-13 21:43:07,419 - __main__ - INFO - Collecting market data...
+2025-03-13 21:43:07,700 - modules.market_data - INFO - Retrieved data for top 100 coins by market cap
+2025-03-13 21:43:07,705 - modules.market_data - INFO - Calculated market indicators successfully
+2025-03-13 21:43:07,760 - modules.market_data - INFO - Retrieved 15 trending coins
+2025-03-13 21:43:07,761 - __main__ - INFO - New trending tokens discovered: HYPE, PI, SOL, PEPE, S, STRK, NEIRO, SUI, ETH, BTC, TRUMP, PENGU, JUP, KAS, BNB
+2025-03-13 21:43:08,566 - modules.blockchain_data - ERROR - Failed to get gas prices: 404
+2025-03-13 21:43:08,567 - modules.blockchain_data - INFO - Retrieved 2 whale transactions
+2025-03-13 21:43:08,647 - modules.trading_signals - INFO - Trading signals saved to data/signals/trading_signals_20250313_2143.json
+2025-03-13 21:43:08,655 - __main__ - INFO - Market data collected and saved to data/market_data_20250313_2143.json
+2025-03-13 21:43:08,656 - __main__ - INFO - Generating market charts...
+2025-03-13 21:43:08,662 - __main__ - INFO - Collecting social media and news data...
+2025-03-13 21:43:09,016 - modules.nlp_analyzer - ERROR - Failed to fetch crypto news from CoinGecko Pro API: 400
+2025-03-13 21:43:09,246 - __main__ - INFO - Market overview chart saved to data/charts/market_overview_20250313_2143.png
+2025-03-13 21:43:09,378 - modules.nlp_analyzer - ERROR - Failed to fetch coin data from CoinGecko: 422
+2025-03-13 21:43:09,914 - modules.nlp_analyzer - INFO - Fetched 0 crypto news articles from CryptoCompare
+2025-03-13 21:43:11,209 - modules.nlp_analyzer - INFO - Fetched 28 posts from r/CryptoCurrency
+2025-03-13 21:43:11,704 - __main__ - INFO - BTC technical analysis chart saved to data/charts/BTC_analysis_20250313_2143.png
+2025-03-13 21:43:12,728 - __main__ - INFO - ETH technical analysis chart saved to data/charts/ETH_analysis_20250313_2143.png
+2025-03-13 21:43:13,325 - modules.nlp_analyzer - INFO - Fetched 56 posts from r/Bitcoin
+2025-03-13 21:43:13,779 - __main__ - INFO - BNB technical analysis chart saved to data/charts/BNB_analysis_20250313_2143.png
+2025-03-13 21:43:14,820 - __main__ - INFO - SOL technical analysis chart saved to data/charts/SOL_analysis_20250313_2143.png
+2025-03-13 21:43:15,679 - modules.nlp_analyzer - INFO - Fetched 84 posts from r/ethereum
+2025-03-13 21:43:16,011 - __main__ - INFO - XRP technical analysis chart saved to data/charts/XRP_analysis_20250313_2143.png
+2025-03-13 21:43:16,680 - modules.nlp_analyzer - INFO - Fetched 84 posts from Reddit
+2025-03-13 21:43:16,743 - __main__ - INFO - Social data collected and saved to data/social_data_20250313_2143.json
+2025-03-13 21:43:16,743 - __main__ - INFO - Generating market analysis...
+2025-03-13 21:43:17,086 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-03-13 21:43:17,087 - modules.nlp_analyzer - ERROR - Error using OpenAI: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-*******************************************VxzA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-03-13 21:43:17,088 - modules.nlp_analyzer - INFO - Falling back to template-based analysis
+2025-03-13 21:43:17,088 - modules.nlp_analyzer - INFO - Generated market analysis using templates
+2025-03-13 21:43:17,088 - __main__ - INFO - Market analysis saved to data/analysis_20250313_2143.txt
+2025-03-13 21:43:17,088 - __main__ - INFO - Posting market analysis to Twitter...
+2025-03-13 21:43:17,088 - modules.twitter_client - WARNING - Both Twitter APIs failed, generating mock response
+2025-03-13 21:43:17,088 - modules.twitter_client - INFO - Mock tweet with media (ID: 1741873397088): 🧵 #Crypto Market Analysis:
+
+The crypto market is s...
+2025-03-13 21:43:17,089 - modules.twitter_client - WARNING - Both Twitter APIs failed, generating mock response
+2025-03-13 21:43:17,089 - modules.twitter_client - INFO - Mock reply to 1741873397088 (ID: 1741873397089): bitcoin and eth are also showing promising signals...
+2025-03-13 21:43:17,089 - modules.twitter_client - WARNING - Both Twitter APIs failed, generating mock response
+2025-03-13 21:43:17,089 - modules.twitter_client - INFO - Mock reply to 1741873397089 (ID: 1741873397089): Market anomalies detected in XLM warrant caution.
+...
+2025-03-13 21:43:17,089 - __main__ - INFO - Analysis thread successfully posted to Twitter
+2025-03-13 21:43:17,089 - modules.twitter_client - WARNING - Both Twitter APIs failed, generating mock response
+2025-03-13 21:43:17,089 - modules.twitter_client - INFO - Mock tweet (ID: 1741873397089): 📈 #TradingSignal Alert:
+
+🔴 SELL ETH: Strength 0.6/...
+2025-03-13 21:43:17,089 - __main__ - INFO - Trading signals posted to Twitter
+2025-03-13 21:43:17,089 - modules.twitter_client - WARNING - Both Twitter APIs failed, generating mock response
+2025-03-13 21:43:17,089 - modules.twitter_client - INFO - Mock tweet (ID: 1741873397089): 🚨 #MarketAnomaly Alert:
+
+XLM: abnormal surge of 11...
+2025-03-13 21:43:17,089 - __main__ - INFO - Anomaly alerts posted to Twitter
+2025-03-13 21:43:17,089 - modules.twitter_client - WARNING - Both Twitter APIs failed, generating mock response
+2025-03-13 21:43:17,089 - modules.twitter_client - INFO - Mock tweet with media (ID: 1741873397089): 📊 #Crypto Market Update (2025-03-13 21:43):
+
+Total...
+2025-03-13 21:43:17,089 - __main__ - INFO - Simple market update posted to Twitter
+2025-03-13 21:43:17,090 - __main__ - INFO - Market analysis successfully generated
+2025-03-13 21:43:17,090 - __main__ - INFO - Checking mentions...
+2025-03-13 21:43:17,090 - modules.twitter_client - WARNING - Both Twitter APIs failed, returning empty mentions list
+2025-03-13 21:43:17,090 - __main__ - INFO - No new mentions found
+2025-03-13 21:43:17,090 - __main__ - INFO - All tasks scheduled, starting main loop

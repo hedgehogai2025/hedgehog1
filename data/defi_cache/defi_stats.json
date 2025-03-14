@@ -1,0 +1,44 @@
+{
+  "total_tvl_usd": 75000000000,
+  "daily_change_pct": -2.1,
+  "weekly_change_pct": 5.3,
+  "top_protocols": [
+    {
+      "name": "Lido",
+      "tvl": 15000000000,
+      "chain": "Multi-chain",
+      "change_24h": 1.2
+    },
+    {
+      "name": "MakerDAO",
+      "tvl": 7500000000,
+      "chain": "Ethereum",
+      "change_24h": -0.8
+    },
+    {
+      "name": "AAVE",
+      "tvl": 4800000000,
+      "chain": "Multi-chain",
+      "change_24h": -1.5
+    },
+    {
+      "name": "Curve",
+      "tvl": 3900000000,
+      "chain": "Multi-chain",
+      "change_24h": -2.2
+    },
+    {
+      "name": "Uniswap",
+      "tvl": 3600000000,
+      "chain": "Multi-chain",
+      "change_24h": 0.7
+    }
+  ],
+  "chain_tvl": {
+    "Ethereum": 31000000000,
+    "BSC": 5200000000,
+    "Arbitrum": 4800000000,
+    "Optimism": 3800000000,
+    "Solana": 2900000000
+  }
+}
