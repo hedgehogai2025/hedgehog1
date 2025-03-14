@@ -3509,3 +3509,7 @@ Unauthorized
 2025-03-14 10:59:04,187 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
 Unauthorized
 2025-03-14 10:59:04,188 - __main__ - INFO - No new mentions found
+2025-03-14 11:09:04,726 - __main__ - INFO - Checking mentions...
+2025-03-14 11:09:05,177 - modules.twitter_client - ERROR - Error fetching mentions: 401 Unauthorized
+Unauthorized
+2025-03-14 11:09:05,177 - __main__ - INFO - No new mentions found
