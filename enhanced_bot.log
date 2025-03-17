@@ -1,0 +1,113 @@
+2025-03-16 19:57:42,788 - __main__ - INFO - Running enhanced crypto & AI Twitter bot in test mode
+2025-03-16 19:57:42,811 - __main__ - INFO - Database initialized
+2025-03-16 19:57:42,811 - __main__ - INFO - Fetching content from selected sources
+2025-03-16 20:13:07,315 - __main__ - INFO - Starting enhanced crypto & AI Twitter bot
+2025-03-16 20:13:07,316 - __main__ - INFO - Selecting and posting content
+2025-03-16 20:13:07,510 - __main__ - ERROR - Twitter API connection error: 429 Too Many Requests
+Too Many Requests
+2025-03-16 20:13:11,709 - __main__ - ERROR - Twitter API connection error: 429 Too Many Requests
+Too Many Requests
+2025-03-16 20:13:15,908 - __main__ - ERROR - Twitter API connection error: 429 Too Many Requests
+Too Many Requests
+2025-03-16 20:13:20,106 - __main__ - ERROR - Twitter API connection error: 429 Too Many Requests
+Too Many Requests
+2025-03-16 20:13:28,309 - __main__ - ERROR - Twitter API connection error: 429 Too Many Requests
+Too Many Requests
+2025-03-16 20:13:28,310 - __main__ - ERROR - Error in post_content: RetryError[<Future at 0x7eff910e4eb0 state=finished raised TooManyRequests>]
+2025-03-16 20:13:28,310 - __main__ - WARNING - Failed to post content or no suitable content found
+2025-03-16 20:25:00,477 - __main__ - INFO - Starting enhanced crypto & AI Twitter bot
+2025-03-16 20:25:00,477 - __main__ - INFO - Starting enhanced bot with initial delay to avoid API conflicts
+2025-03-16 20:55:00,563 - __main__ - INFO - Last post was 0.7 hours ago, waiting until 5.5 hours have passed
+2025-03-16 20:55:00,563 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-16 20:55:29,223 - __main__ - INFO - Running enhanced crypto & AI Twitter bot in test mode
+2025-03-16 20:55:29,223 - __main__ - INFO - Fetching content from selected sources
+2025-03-16 20:55:29,411 - __main__ - INFO - Retrieved 5 items from Cointelegraph.com News
+2025-03-16 20:55:29,446 - __main__ - INFO - Retrieved 0 items from RSS Feed
+2025-03-16 20:55:29,507 - __main__ - INFO - Retrieved 5 items from Decrypt
+2025-03-16 20:55:30,467 - __main__ - INFO - Retrieved 5 items from CryptoSlate
+2025-03-16 20:55:30,498 - __main__ - INFO - Retrieved 0 items from RSS Feed
+2025-03-16 20:55:32,268 - __main__ - INFO - Retrieved 0 items from cs.AI updates on arXiv.org
+2025-03-16 20:55:32,559 - __main__ - INFO - Retrieved 5 items from AI
+2025-03-16 20:55:32,593 - __main__ - INFO - Retrieved 0 items from RSS Feed
+2025-03-16 20:55:32,822 - __main__ - INFO - Retrieved 5 items from The AI Blog
+2025-03-16 20:55:33,798 - __main__ - INFO - Retrieved 0 items from RSS Feed
+2025-03-16 20:55:34,424 - __main__ - INFO - Retrieved 5 items from Apple Machine Learning Research
+2025-03-16 20:55:34,428 - __main__ - INFO - Saved 3 new content items to database
+2025-03-16 20:55:34,429 - __main__ - INFO - Saved 3 new items
+2025-03-16 20:55:34,429 - __main__ - INFO - Testing regular content type
+2025-03-16 20:55:34,432 - __main__ - INFO - TEST MODE - Would post: ⚡ #Blockchain News | Forget Solana, XRP may flip Ethereum first amid 5-year high
+
+Via Cointelegraph.com News
+
+https://cointelegraph.com/news/forget-solana-xrp-flip-ethereum-first-5-year-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2025-03-16 20:55:34,432 - __main__ - INFO - Testing market content type
+2025-03-16 20:55:34,432 - __main__ - INFO - TEST MODE - Would post market summary: 📊 Cryptocurrency Market Update 📈
+🕒 As of 2025-03-16 20:55 UTC
+
+🔴 BTC: $56441.80 (-4.19%)
+🟢 ETH: $2624.15 (4.42%)
+🟢 BNB: $646.89 (4.00%)
+🟢 SOL: $150.57 (0.49%)
+
+#Crypto #Bitcoin #Ethereum
+2025-03-16 20:55:34,433 - __main__ - INFO - Testing research content type
+2025-03-16 20:55:34,433 - __main__ - INFO - TEST MODE - Would post research summary: 🔬 Latest #AI Research Highlights 📑
+
+1. Advances in Large Language Model Reasoning
+   Authors: Smith et al.
+   https://arxiv.org/abs/2403.12345
+
+2. Efficient Transformer Architecture for Real-time Applications
+   Authors: Johnson et al.
+   https://arxiv.org/abs/2403.54321
+
+#MachineLearning #ResearchPapers
+2025-03-16 20:55:34,433 - __main__ - INFO - Testing chart content type
+2025-03-16 20:55:34,563 - __main__ - INFO - Generated chart for BTC at enhanced_charts/btc_chart_20250316_2055.png
+2025-03-16 20:55:34,563 - __main__ - INFO - TEST MODE - Would post chart for BTC with content: 📊 #BTC Price Chart - Last 7 Days
+
+#Crypto #Trading #BTC
+2025-03-16 20:55:34,563 - __main__ - INFO - Chart saved at: enhanced_charts/btc_chart_20250316_2055.png
+2025-03-16 20:56:54,517 - __main__ - INFO - Starting enhanced crypto & AI Twitter bot
+2025-03-16 20:56:54,518 - __main__ - INFO - Starting enhanced bot with initial delay to avoid API conflicts
+2025-03-16 21:55:00,659 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-16 21:55:00,659 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-16 22:55:00,759 - __main__ - INFO - Last post was 2.7 hours ago, waiting until 7.1 hours have passed
+2025-03-16 22:55:00,759 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-16 23:55:00,858 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-16 23:55:00,858 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 00:55:00,934 - __main__ - INFO - Last post was 4.7 hours ago, waiting until 5.5 hours have passed
+2025-03-17 00:55:00,935 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 01:55:00,975 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-17 01:55:00,975 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 02:55:01,068 - __main__ - INFO - Selecting and posting content
+2025-03-17 02:55:01,287 - __main__ - INFO - Twitter API connection successful
+2025-03-17 02:55:01,474 - __main__ - INFO - Generated chart for SOL at enhanced_charts/sol_chart_20250317_0255.png
+2025-03-17 02:55:02,393 - __main__ - INFO - Posted tweet (ID: 1901346485628989924): 📊 #SOL Price Chart - Last 7 Days
+
+#Crypto #Trading...
+2025-03-17 02:55:02,393 - __main__ - INFO - Posted chart for SOL with ID 1901346485628989924
+2025-03-17 02:55:02,393 - __main__ - INFO - Successfully posted content
+2025-03-17 03:55:02,485 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-17 03:55:02,485 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 04:55:02,582 - __main__ - INFO - Last post was 2.0 hours ago, waiting until 7.0 hours have passed
+2025-03-17 04:55:02,583 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 05:55:02,683 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-17 05:55:02,683 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 06:55:02,782 - __main__ - INFO - Last post was 4.0 hours ago, waiting until 5.4 hours have passed
+2025-03-17 06:55:02,782 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 07:55:02,854 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-17 07:55:02,854 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 08:55:02,948 - __main__ - INFO - Selecting and posting content
+2025-03-17 08:55:03,162 - __main__ - INFO - Twitter API connection successful
+2025-03-17 08:55:03,484 - __main__ - INFO - Posted tweet (ID: 1901437087410536924): 💰 #Cryptocurrency Update | Forget Solana, XRP may ...
+2025-03-17 08:55:03,487 - __main__ - INFO - Marked item 3 as posted with post ID 1901437087410536924
+2025-03-17 08:55:03,488 - __main__ - INFO - Successfully posted content
+2025-03-17 09:55:03,586 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-17 09:55:03,586 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 10:55:03,683 - __main__ - INFO - Last post was 2.0 hours ago, waiting until 5.7 hours have passed
+2025-03-17 10:55:03,683 - __main__ - INFO - Not time to post yet, waiting...
+2025-03-17 11:02:16,840 - __main__ - INFO - Starting enhanced crypto & AI Twitter bot
+2025-03-17 11:02:16,840 - __main__ - INFO - Starting enhanced bot with initial delay to avoid API conflicts
+2025-03-17 11:32:16,937 - __main__ - INFO - Not in enhanced bot posting window (odd hour), skipping
+2025-03-17 11:32:16,937 - __main__ - INFO - Not time to post yet, waiting...

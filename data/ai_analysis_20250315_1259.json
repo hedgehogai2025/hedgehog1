@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bullish",
+    "analysis_text": "**Cryptocurrency Market Analysis:**\n\n1. **Overall Market Sentiment and Direction:**\n   The cryptocurrency market is currently experiencing a bullish trend with a total market cap of $2856.28 billion and a 24-hour market cap change of 1.46%. This indicates positive investor sentiment and a potential upward trajectory in the short term.\n\n2. **Top Performing Coins and Potential Reasons:**\n   - **XRP (Ripple):** With a significant 24-hour price change of 7.15%, XRP has shown strong performance. This could be attributed to positive developments in its ecosystem or increased investor interest.\n   - **SOL (Solana):** SOL has surged by 8.21% in the last 24 hours, possibly due to growing adoption of its blockchain platform and decentralized applications.\n\n3. **Underperforming Coins and Potential Concerns:**\n   - **TRX (Tron):** TRX has experienced a decline of -1.26% in the last 24 hours, indicating weaker performance compared to other coins. Concerns may include lack of significant developments or market interest.\n\n4. **Key Market Trends to Watch:**\n   - **DeFi Projects:** Decentralized Finance (DeFi) projects like Chainlink (LINK) and Ethereum (ETH) continue to be in focus due to their role in revolutionizing financial services.\n   - **NFTs:** Non-Fungible Tokens (NFTs) are gaining traction, with projects like Pi Network (PI) and Virtuals Protocol (VIRTUAL) emerging as trending coins.\n\n5. **Short-Term Price Movement Predictions (24-48 hours):**\n   Based on the current bullish trend and positive market sentiment, it is likely that top-performing coins such as XRP and SOL may continue to see price appreciation in the short term. Investors should monitor market developments and news for potential impact on prices.\n\n**Disclaimer: This analysis is based on historical data and market trends, and actual price movements may vary. Investors are advised to conduct their own research before making investment decisions.**",
+    "predictions": {
+      "BTC": "neutral",
+      "ETH": "neutral",
+      "USDT": "neutral",
+      "XRP": "bullish",
+      "BNB": "neutral"
+    },
+    "token_usage": {
+      "prompt_tokens": 951,
+      "completion_tokens": 423,
+      "total_tokens": 1374
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n  \"overall_market_sentiment\": \"bullish\",\n  \"sentiment_breakdown_major_cryptocurrencies\": {\n    \"Bitcoin\": {\n      \"sentiment\": \"bullish\",\n      \"mentions\": 6\n    },\n    \"Ethereum\": {\n      \"sentiment\": \"bullish\",\n      \"mentions\": 3\n    },\n    \"XRP\": {\n      \"sentiment\": \"bullish\",\n      \"mentions\": 3\n    },\n    \"Solana\": {\n      \"sentiment\": \"bullish\",\n      \"mentions\": 2\n    },\n    \"Stablecoins\": {\n      \"sentiment\": \"bullish\",\n      \"mentions\": 2\n    }\n  },\n  \"key_concerns_excitement_factors\": {\n    \"Excitement\": [\n      \"Goldman Sachs acknowledging crypto\",\n      \"BlackRock filing for Solana & XRP ETFs\",\n      \"Russian oil companies using crypto for trades\",\n      \"Ark Invest expanding Bitcoin holdings\",\n      \"Positive sentiment towards Bitcoin's fundamentals\"\n    ],\n    \"Concerns\": [\n      \"Phishing scams targeting crypto users\",\n      \"Negative sentiment towards Elon Musk's influence on DOGE\",\n      \"Criticism towards Crypto.com exchange\"\n    ]\n  },\n  \"emerging_trends_narratives\": {\n    \"Trends\": [\n      \"Institutional involvement in crypto through ETFs\",\n      \"Increased adoption of cryptocurrencies in traditional industries like oil trading\",\n      \"Growing interest in stablecoins and their role in global trade\"\n    ],\n    \"Narratives\": [\n      \"Importance of security awareness in the crypto space\",\n      \"Debate on the impact of influencers on specific cryptocurrencies\",\n      \"Discussion on the long-term value proposition of Bitcoin\"\n    ]\n  },\n  \"confidence_level\": \"high\"\n}\n```\n",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 2037,
+      "completion_tokens": 379,
+      "total_tokens": 2416
+    }
+  }
+}

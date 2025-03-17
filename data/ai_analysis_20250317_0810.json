@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bearish",
+    "analysis_text": "### Cryptocurrency Market Analysis:\n\n1. **Overall Market Sentiment and Direction:**\n   - **Total Market Cap:** $2789.02B\n   - **Market Cap Change (24h):** -4.22%\n   - **Trend:** Bearish sentiment persists in the market with a decline in total market cap.\n\n2. **Top Performing Coins and Potential Reasons:**\n   - **BTC (Bitcoin):** Despite a 24h decrease of -2.10509%, Bitcoin remains the top coin by market cap, showing resilience in the market.\n   - **ETH (Ethereum):** Ethereum, with a market cap of $227.72B, continues to be a strong player in the market despite a 24h change of -2.61996%.\n\n3. **Underperforming Coins and Potential Concerns:**\n   - **SOL (Solana):** Solana experienced a significant drop of -7.1351% in the last 24 hours, raising concerns about its short-term performance.\n   - **ADA (Cardano):** Cardano also faced a notable decrease of -5.45469%, indicating potential challenges in the current market conditions.\n\n4. **Key Market Trends to Watch:**\n   - **Trending Coins:** Keep an eye on trending coins like MANTRA, Melania Meme, and Pi Network for potential market movements.\n   - **Stablecoins:** USDT and USDC show stability amidst market fluctuations, reflecting investor interest in hedging risks.\n\n5. **Short-Term Price Movement Predictions (24-48 hours):**\n   - With the overall bearish trend, expect continued volatility in the market.\n   - Bitcoin's performance may influence the market direction, with potential support levels to watch around $80,000.\n   - Ethereum's price movement could indicate market sentiment towards altcoins.\n\n**Disclaimer:** Cryptocurrency markets are highly volatile and subject to rapid changes. Investors are advised to conduct thorough research and consider risk management strategies before making investment decisions.\n\nFor personalized investment advice, consider consulting with a financial advisor.",
+    "predictions": {
+      "BTC": "bearish",
+      "ETH": "bearish",
+      "USDT": "neutral",
+      "XRP": "neutral",
+      "BNB": "neutral"
+    },
+    "token_usage": {
+      "prompt_tokens": 953,
+      "completion_tokens": 423,
+      "total_tokens": 1376
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n    \"overall_market_sentiment\": \"Neutral\",\n    \"sentiment_breakdown\": {\n        \"Bitcoin\": \"Neutral\",\n        \"Ethereum\": \"Bearish\",\n        \"Cardano\": \"Neutral\",\n        \"Solana\": \"Neutral\",\n        \"XRP\": \"Neutral\"\n    },\n    \"key_concerns_excitement_factors\": {\n        \"concerns\": [\n            \"Uncertainty about the continuation of the current bull run\",\n            \"Market risk analysis indicating potential for a bear market\",\n            \"Negative news related to hacks, government involvement, and individual losses\"\n        ],\n        \"excitement_factors\": [\n            \"Institutional involvement and whale activities\",\n            \"National adoption of cryptocurrencies by countries like El Salvador\",\n            \"Positive sentiment around key figures like Michael Saylor and Charles Hoskinson\"\n        ]\n    },\n    \"emerging_trends_narratives\": [\n        \"Discussion on market cycles and potential scenarios for Bitcoin's future\",\n        \"Increased focus on macroeconomic indicators and their impact on crypto markets\",\n        \"Growing interest in trading strategies based on market patterns like Sunday dips\"\n    ],\n    \"confidence_level\": \"Medium\"\n}\n```\n",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 6013,
+      "completion_tokens": 245,
+      "total_tokens": 6258
+    }
+  }
+}

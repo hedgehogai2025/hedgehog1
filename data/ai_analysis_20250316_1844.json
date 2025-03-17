@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bearish",
+    "analysis_text": "**Cryptocurrency Market Analysis:**\n\n**1. Overall Market Sentiment and Direction:**\nThe cryptocurrency market is currently experiencing a bearish trend with a total market cap of $2829.22B, showing a decrease of -2.12% in the last 24 hours. Investor sentiment is cautious as the market faces downward pressure.\n\n**2. Top Performing Coins and Potential Reasons:**\n- **BNB (Binance Coin):** With a price increase of 0.45527% in the last 24 hours, BNB has shown resilience. This could be due to the continued growth of the Binance ecosystem and its utility within the platform.\n- **USDT (Tether):** Despite being a stablecoin, USDT remains stable with a minimal change of -0.00755%. Investors often seek stable assets during market uncertainties.\n\n**3. Underperforming Coins and Potential Concerns:**\n- **XRP:** XRP has experienced a significant decrease of -2.62472% in the last 24 hours. Regulatory concerns and ongoing legal battles with the SEC continue to weigh on XRP's performance.\n- **ADA (Cardano):** ADA also saw a decline of -2.14642%. Delays in protocol upgrades and increased competition in the smart contract platform space could be impacting ADA's performance.\n\n**4. Key Market Trends to Watch:**\n- **DeFi Evolution:** Keep an eye on the evolution of decentralized finance (DeFi) projects and their impact on the market.\n- **Regulatory Developments:** Regulatory actions and announcements can significantly influence market sentiment and direction.\n- **NFT Market Growth:** The growth of the non-fungible token (NFT) market and its impact on specific cryptocurrencies.\n\n**5. Short-Term Price Movement Predictions (24-48 hours):**\nGiven the current bearish trend, it is likely that the market will continue to face volatility in the short term. Investors should exercise caution and closely monitor key support and resistance levels of major cryptocurrencies. Potential price movements could be influenced by external factors such as market news, regulatory updates, and overall market sentiment.\n\n**Disclaimer: This analysis is based on historical data and market trends, and actual market movements may vary. Investors are advised to conduct their own research and consider their risk tolerance before making any investment decisions.**",
+    "predictions": {
+      "BTC": "neutral",
+      "ETH": "neutral",
+      "USDT": "bullish",
+      "XRP": "bullish",
+      "BNB": "bullish"
+    },
+    "token_usage": {
+      "prompt_tokens": 953,
+      "completion_tokens": 474,
+      "total_tokens": 1427
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n  \"overall_market_sentiment\": \"Neutral\",\n  \"sentiment_breakdown_major_cryptocurrencies\": {\n    \"Bitcoin\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 7\n    },\n    \"Ethereum\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 2\n    },\n    \"Chainlink\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 1\n    }\n  },\n  \"key_concerns_excitement_factors\": [\n    \"Michael Saylor owning more Bitcoin than the United States and China combined\",\n    \"Brazil introducing a new bill to legalize salary payment in Bitcoin\",\n    \"Geoblocking denying US investors $2.6 billion in airdrops since 2020\",\n    \"SEC Commissioner Hester Peirce on the New Crypto Task Force\",\n    \"BTC trading volume concerns and ownership distribution\",\n    \"Mixed sentiments on the 4-year cycle and Bitcoin's performance\"\n  ],\n  \"emerging_trends_narratives\": [\n    \"Increased interest in legalizing crypto payments for salaries\",\n    \"Growing concerns around airdrop scams and geoblocking\",\n    \"Discussion on changing narratives and cycles in the crypto market\"\n  ],\n  \"confidence_level\": \"Medium\"\n}\n```\n",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 2068,
+      "completion_tokens": 269,
+      "total_tokens": 2337
+    }
+  }
+}

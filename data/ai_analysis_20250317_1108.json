@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bearish",
+    "analysis_text": "### Cryptocurrency Market Analysis:\n\n1. **Overall Market Sentiment and Direction:**\n   The cryptocurrency market is currently experiencing a bearish trend, with the total market cap at $2814.34B, showing a decrease of -2.78% in the last 24 hours. Investors are cautious amidst market volatility.\n\n2. **Top Performing Coins and Potential Reasons:**\n   - **BNB (Binance Coin):** With a 24-hour price increase of 1.6923%, BNB has shown resilience. Potential reasons include its utility within the Binance ecosystem and ongoing developments.\n   \n3. **Underperforming Coins and Potential Concerns:**\n   - **SOL (Solana):** SOL has experienced a significant decrease of -4.91709% in the last 24 hours, possibly due to profit-taking after recent price surges. Concerns may arise regarding scalability issues.\n   - **ADA (Cardano):** ADA also saw a decline of -3.16965%, possibly impacted by market sentiment and delays in network upgrades.\n\n4. **Key Market Trends to Watch:**\n   - **DeFi Projects:** Continued interest in decentralized finance (DeFi) projects like Uniswap (UNI) and Avalanche (AVAX) could drive market movements.\n   - **Layer 1 Solutions:** Projects focusing on scalability and interoperability, such as Solana (SOL) and Ethereum (ETH), are crucial to monitor.\n\n5. **Short-Term Price Movement Predictions (24-48 hours):**\n   - Market volatility may persist, with potential price fluctuations in response to external factors like regulatory news or macroeconomic events.\n   - BTC and ETH are likely to remain key indicators of market sentiment, influencing the broader market direction.\n\nInvestors should closely monitor market developments, project updates, and external factors impacting the cryptocurrency landscape for informed decision-making.",
+    "predictions": {
+      "BTC": "neutral",
+      "ETH": "neutral",
+      "USDT": "neutral",
+      "XRP": "neutral",
+      "BNB": "bullish"
+    },
+    "token_usage": {
+      "prompt_tokens": 954,
+      "completion_tokens": 382,
+      "total_tokens": 1336
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n    \"overall_market_sentiment\": \"Neutral\",\n    \"sentiment_breakdown\": {\n        \"Bitcoin\": \"Neutral\",\n        \"Ethereum\": \"Bearish\",\n        \"Cardano\": \"Neutral\",\n        \"Solana\": \"Neutral\",\n        \"XRP\": \"Neutral\"\n    },\n    \"key_concerns_excitement_factors\": [\n        \"Concerns about the current state of the bull run and potential upcoming bear market\",\n        \"Excitement around El Salvador buying the Bitcoin dip\",\n        \"Michael Saylor owning more Bitcoin than the United States and China combined\",\n        \"Discussion on the market cycle of Bitcoin and potential scenarios\",\n        \"Cro vote passing despite community dissatisfaction\"\n    ],\n    \"emerging_trends_narratives\": [\n        \"Focus on macroeconomic indicators and liquidity as primary market drivers\",\n        \"Debate on whether Bitcoin is in a right-translated or left-translated cycle\",\n        \"Increased attention on institutional actions and government involvement in cryptocurrency\"\n    ],\n    \"confidence_level\": \"High\"\n}\n```\n",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 5963,
+      "completion_tokens": 219,
+      "total_tokens": 6182
+    }
+  }
+}

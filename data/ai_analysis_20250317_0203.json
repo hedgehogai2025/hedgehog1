@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bearish",
+    "analysis_text": "### Cryptocurrency Market Analysis:\n\n1. **Overall Market Sentiment and Direction:**\n   - The cryptocurrency market is currently experiencing a bearish trend with a total market cap of $2826.65B, showing a decrease of -2.83% in the last 24 hours.\n\n2. **Top Performing Coins and Potential Reasons:**\n   - **Bitcoin (BTC):** Despite a slight decrease in price (-0.46975%), BTC maintains its dominance with a market cap of $1.67T, likely due to its status as a store of value.\n   - **Ethereum (ETH):** ETH, with a market cap of $230.57B, remains a strong player in the market despite a decrease in price (-1.36212%), driven by its smart contract capabilities and decentralized applications.\n\n3. **Underperforming Coins and Potential Concerns:**\n   - **Cardano (ADA):** ADA has seen a significant drop of -5.95393% in the last 24 hours, raising concerns about its short-term performance and market sentiment.\n   - **Solana (SOL):** SOL, with a decrease of -3.99911%, faces challenges amidst the broader market downturn, potentially impacted by recent network issues.\n\n4. **Key Market Trends to Watch:**\n   - **Trending Coins:** Keep an eye on trending coins like Pi Network (PI) and Hyperliquid (HYPE) for potential market movements and emerging opportunities.\n   - **Regulatory Developments:** Monitor regulatory developments globally as they can significantly impact market sentiment and investor confidence.\n\n5. **Short-Term Price Movement Predictions (24-48 hours):**\n   - Given the current bearish trend, it is likely that the market may continue to face downward pressure in the short term. Investors should exercise caution and consider risk management strategies.\n\n**Disclaimer:** This analysis is based on the provided data and market conditions at the time of analysis. Cryptocurrency markets are highly volatile, and investors should conduct their own research before making any investment decisions.\n\nFor more detailed analysis and personalized investment advice, please consult with a financial advisor specializing in cryptocurrencies.",
+    "predictions": {
+      "BTC": "bearish",
+      "ETH": "bearish",
+      "USDT": "neutral",
+      "XRP": "neutral",
+      "BNB": "neutral"
+    },
+    "token_usage": {
+      "prompt_tokens": 947,
+      "completion_tokens": 436,
+      "total_tokens": 1383
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n  \"overall_market_sentiment\": \"Neutral\",\n  \"sentiment_breakdown_major_cryptocurrencies\": {\n    \"Bitcoin\": \"Neutral\",\n    \"Ethereum\": \"Bearish\",\n    \"Chainlink\": \"Neutral\"\n  },\n  \"key_concerns_excitement_factors\": {\n    \"Key_Concerns\": [\n      \"Market fluctuations due to geopolitical events like military actions\",\n      \"Decrease in sentiment towards Ethereum due to significant losses by notable figures\",\n      \"Potential impact of tariff wars on market stability\"\n    ],\n    \"Excitement_Factors\": [\n      \"Positive sentiment towards Bitcoin ownership by Michael Saylor\",\n      \"Interest in quantum-resistant tokens showing significant price movements\"\n    ]\n  },\n  \"emerging_trends_narratives\": [\n    \"Shift in sentiment towards longer holding periods for Bitcoin as a store of value\",\n    \"Increased focus on risk analysis and market strategy amidst market corrections\",\n    \"Growing interest in quantum computing-related tokens and their market movements\"\n  ],\n  \"confidence_level\": \"High\"\n}\n```\n",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 3286,
+      "completion_tokens": 222,
+      "total_tokens": 3508
+    }
+  }
+}

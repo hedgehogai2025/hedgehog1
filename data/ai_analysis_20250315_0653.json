@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bullish",
+    "analysis_text": "**Analysis of Cryptocurrency Market Data:**\n\n1. **Overall Market Sentiment and Direction:**\n   - The cryptocurrency market is currently experiencing a bullish trend with a total market cap of $2840.83 billion and a 24-hour market cap change of 2.43%. This indicates positive investor sentiment and a potential upward trajectory in the near term.\n\n2. **Top Performing Coins and Potential Reasons:**\n   - **SOL (Solana):** With a price increase of 9.54% in the last 24 hours, Solana has shown strong performance. This could be attributed to its growing popularity as a high-performance blockchain platform for decentralized applications (dApps).\n   - **XRP (Ripple):** XRP has also performed well with a 24-hour price change of 4.73%. Positive developments in its legal battles and increased adoption could be driving this surge.\n\n3. **Underperforming Coins and Potential Concerns:**\n   - **TRX (TRON):** TRON has experienced a price decrease of -1.21% in the last 24 hours, indicating underperformance. Concerns over market sentiment, competition, or project developments could be contributing to this decline.\n\n4. **Key Market Trends to Watch:**\n   - **DeFi Projects:** Decentralized Finance (DeFi) projects like Chainlink (LINK) continue to be a significant trend to watch due to their innovation and potential to disrupt traditional finance.\n   - **NFTs:** Non-Fungible Tokens (NFTs) are gaining popularity, and projects like Virtuals Protocol (VIRTUAL) are at the forefront of this trend. Monitoring NFT market developments is crucial.\n\n5. **Short-Term Price Movement Predictions (24-48 hours):**\n   - Based on the current bullish trend and positive market sentiment, it is likely that top-performing coins such as SOL and XRP may continue to see price appreciation in the short term. However, investors should remain cautious of potential market fluctuations and news developments that could impact prices.\n\n**Disclaimer: This analysis is based on historical data and market trends and should not be considered as financial advice. Investors are advised to conduct their own research before making any investment decisions.**",
+    "predictions": {
+      "BTC": "neutral",
+      "ETH": "neutral",
+      "USDT": "neutral",
+      "XRP": "bullish",
+      "BNB": "neutral"
+    },
+    "token_usage": {
+      "prompt_tokens": 948,
+      "completion_tokens": 455,
+      "total_tokens": 1403
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n  \"overall_market_sentiment\": \"Neutral\",\n  \"sentiment_breakdown_major_cryptocurrencies\": {\n    \"Bitcoin\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 5\n    },\n    \"Ethereum\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 3\n    },\n    \"XRP\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 3\n    },\n    \"Solana\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 2\n    },\n    \"DOGE\": {\n      \"sentiment\": \"Bearish\",\n      \"mentions\": 1\n    },\n    \"Tether\": {\n      \"sentiment\": \"Neutral\",\n      \"mentions\": 2\n    }\n  },\n  \"key_concerns_excitement_factors\": {\n    \"Concerns\": [\n      \"Phishing scams targeting crypto users\",\n      \"Negative sentiment towards DOGE due to Elon Musk's influence\",\n      \"Issues with major crypto exchanges like Crypto.com\",\n      \"Incidents of fraud and theft in the crypto space\"\n    ],\n    \"Excitement Factors\": [\n      \"Ark Invest expanding Bitcoin holdings\",\n      \"Potential ETF filings for Solana and XRP by BlackRock\",\n      \"Use of cryptocurrencies in international trade to bypass sanctions\"\n    ]\n  },\n  \"emerging_trends_narratives\": [\n    \"Increasing awareness about security risks in the crypto space\",\n    \"Growing interest from institutional investors like Ark Invest and BlackRock\",\n    \"Discussion around the role of cryptocurrencies in international trade and sanctions evasion\"\n  ],\n  \"confidence_level\": \"Medium\"\n}\n```\n",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 1852,
+      "completion_tokens": 348,
+      "total_tokens": 2200
+    }
+  }
+}
