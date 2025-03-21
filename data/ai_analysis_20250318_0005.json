@@ -1,0 +1,30 @@
+{
+  "market_analysis": {
+    "market_sentiment": "bearish",
+    "analysis_text": "**Cryptocurrency Market Analysis:**\n\n1. **Overall Market Sentiment and Direction:**\n   The cryptocurrency market is currently experiencing a bearish trend with a total market cap of $2826.30B, showing a decrease of 1.20% in the last 24 hours. Investors are cautious due to the overall market sentiment being negative.\n\n2. **Top Performing Coins and Potential Reasons:**\n   - **BNB (Binance Coin):** BNB has shown a significant increase of 5.10597% in the last 24 hours. This could be attributed to the growing popularity of the Binance Smart Chain and various utility features within the Binance ecosystem.\n   - **XRP (Ripple):** XRP has also performed well with a 2.27226% increase. Positive news and developments surrounding the Ripple lawsuit may have contributed to this rise.\n\n3. **Underperforming Coins and Potential Concerns:**\n   - **SOL (Solana):** SOL has experienced a decrease of -1.03025%. Concerns over network congestion and recent outages may have impacted its performance.\n   - **USDT (Tether):** USDT has shown a slight decline of -0.01065%. Market stability concerns and regulatory scrutiny could be affecting its performance.\n\n4. **Key Market Trends to Watch:**\n   - **DeFi Projects:** Keep an eye on decentralized finance (DeFi) projects like PancakeSwap and Chainlink, as they continue to innovate and attract investor interest.\n   - **NFTs and Gaming Tokens:** Trends in non-fungible tokens (NFTs) and gaming tokens like Heroes of Mavia could drive market movements.\n\n5. **Short-Term Price Movement Predictions (24-48 hours):**\n   Given the current bearish trend, it is advisable to proceed with caution in the short term. Volatility may persist, and prices could fluctuate based on market sentiment and external factors. Investors should closely monitor key support and resistance levels for potential trading opportunities.\n\nThis analysis provides a snapshot of the cryptocurrency market, highlighting both positive and negative trends to help investors make informed decisions.",
+    "predictions": {
+      "BTC": "neutral",
+      "ETH": "neutral",
+      "USDT": "bearish",
+      "XRP": "bullish",
+      "BNB": "bullish"
+    },
+    "token_usage": {
+      "prompt_tokens": 953,
+      "completion_tokens": 438,
+      "total_tokens": 1391
+    }
+  },
+  "trend_predictions": {
+    "full_analysis": "Insufficient historical data for trend prediction"
+  },
+  "sentiment_analysis": {
+    "text_analysis": "```json\n{\n    \"overall_market_sentiment\": \"Neutral\",\n    \"sentiment_breakdown_major_cryptocurrencies\": {\n        \"Bitcoin\": \"Neutral\",\n        \"Ethereum\": \"Bearish\",\n        \"Cardano\": \"Neutral\",\n        \"Solana\": \"Neutral\",\n        \"XRP\": \"Neutral\"\n    },\n    \"key_concerns_excitement_factors\": [\n        \"Concerns about the longevity of the current bull run and potential for a market correction\",\n        \"Excitement around legalizing Bitcoin salaries in Brazil\",\n        \"Mixed sentiments towards crypto advisors and market manipulation\",\n        \"North Korea becoming a significant Bitcoin holder after a hack\"\n    ],\n    \"emerging_trends_narratives\": [\n        \"Increased focus on risk analysis and market metrics to gauge the market sentiment\",\n        \"Growing interest in government involvement in cryptocurrency holdings\",\n        \"Debates around the role of AI agents in creating their own cryptocurrencies\"\n    ],\n    \"confidence_level\": \"Medium\"\n}\n```",
+    "format_error": "Response was not valid JSON",
+    "token_usage": {
+      "prompt_tokens": 6576,
+      "completion_tokens": 208,
+      "total_tokens": 6784
+    }
+  }
+}
