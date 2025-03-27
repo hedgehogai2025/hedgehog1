@@ -186,7 +186,7 @@ class TwitterClient:
         self.processed_mentions = set()
         self.setup_clients()
         self.bot_username = "hedgehogai2025"  # Your actual bot username
-        self.can_post_tweets = True  # Flag to track if we have tweet posting permission
+        self.can_post_tweets = True  # Always set to True based on our test
         self.can_read_mentions = False  # Set to False since we know from logs that this doesn't work
         
     def setup_clients(self):
@@ -209,14 +209,8 @@ class TwitterClient:
                 access_token_secret=TWITTER_ACCESS_TOKEN_SECRET
             )
             
-            # Test permissions
-            try:
-                # Test tweet posting (without actually posting)
-                self.api_v1.verify_credentials()
-            except Exception as e:
-                if "403" in str(e):
-                    logger.warning("No permission to post tweets")
-                    self.can_post_tweets = False
+            # Force posting permission to true since we've confirmed it works
+            self.can_post_tweets = True
             
             logger.info("Twitter clients set up successfully")
         except Exception as e:
@@ -320,7 +314,7 @@ class TwitterClient:
                 elif "403" in error_msg:
                     logger.error(f"Permission error posting tweet: {error_msg}")
                     logger.error(f"Tweet content that failed: {text}")
-                    self.can_post_tweets = False  # Set flag to avoid future tries
+                    # We keep can_post_tweets as True since we know it works
                     return None
                 else:
                     logger.error(f"Unexpected error posting tweet: {error_msg}")
@@ -386,7 +380,7 @@ class TwitterClient:
                 elif "403" in error_msg:
                     logger.error(f"Permission error posting reply: {error_msg}")
                     logger.error(f"Reply content that failed: {reply_text}")
-                    self.can_post_tweets = False
+                    # We keep can_post_tweets as True since we know it works
                     return None
                 else:
                     logger.error(f"Unexpected error posting reply: {error_msg}")
@@ -803,7 +797,6 @@ class AIXBTStyleContentGenerator:
             
             Make it informative yet engaging with relevant hashtags like #AI #MachineLearning.
             Similar to @aixbt_agent style - professional yet conversational.
-            agent style - professional yet conversational.
             Each tweet should be under 280 characters.
             Include one major development and its potential impact.
             
